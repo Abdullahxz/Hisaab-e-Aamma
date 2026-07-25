@@ -27,7 +27,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - run: npm ci
@@ -35,12 +35,13 @@ jobs:
       - name: Verify data invariants
         run: npm run check
 
+      # Pages must already be enabled with Source: GitHub Actions
+      # (Settings → Pages). `enablement: true` is NOT used: GITHUB_TOKEN cannot
+      # create a Pages site, it fails with "Resource not accessible".
       - name: Configure Pages
         id: pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Build
         env:
