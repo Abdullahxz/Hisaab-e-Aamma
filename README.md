@@ -2,9 +2,9 @@
 
 **Where does Pakistan's money come from, and where does it go?**
 
-Every year, Pakistan's federal budget is published across thousands of pages of PDFs. The information is public, but it isn't *accessible*. Understanding something as basic as “how much do we spend on debt interest versus schools?” means digging through dense tables written for accountants, not citizens.
+Every year, Pakistan's federal budget is published across thousands of pages of PDFs. The information is public, but it isn't accessible. Understanding something as basic as “how much do we spend on debt interest versus schools?” means digging through dense tables written for accountants, not citizens.
 
-*Hisaab-e-Aamma, which literally means public accounts takes the official federal budget documents and presents them in a form that is easier to explore, compare, and understand.
+Hisaab-e-Aamma, which literally means public accounts takes the official federal budget documents and presents them in a form that is easier to explore, compare, and understand.
 
 The budget is already public, this is one attempt to make budget information more accessible to the people whose money it describes.
 
