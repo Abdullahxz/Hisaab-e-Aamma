@@ -1,0 +1,1868 @@
+{
+  "meta": {
+    "title": "Pakistan Federal Budget",
+    "fiscalYear": "2026-27",
+    "currency": "PKR",
+    "unit": "billion",
+    "totalOutlay": 18771,
+    "grossRevenue": 20600,
+    "provincialTransfer": 8848,
+    "publishedDate": "2026-06-12",
+    "lastUpdated": "2026-07-05",
+    "note": "All figures in Rs. billion. Top-level totals follow the official 'Budget at a Glance' (Table 1). Sub-category figures are drawn from the detailed tables (in Rs. million there, converted to billion) and may differ from a rounded parent total by small rounding amounts. Where a category has many line items, only the largest are broken out and the remainder is grouped as 'Other'.",
+    "primarySource": "bib",
+    "yoyLabels": {
+      "prior": "Budget 2025-26",
+      "revised": "Revised 2025-26"
+    }
+  },
+  "sources": [
+    {
+      "id": "bib",
+      "title": "Budget in Brief 2026-27",
+      "publisher": "Finance Division, Government of Pakistan",
+      "file": "docs/Budget_in_Brief.pdf",
+      "url": "https://www.finance.gov.pk/fb_2026_27.html",
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Budget_in_Brief.pdf"
+    },
+    {
+      "id": "emfr",
+      "title": "Explanatory Memorandum on Federal Receipts 2026-27",
+      "publisher": "Finance Division, Government of Pakistan",
+      "file": "docs/Explanatory_Memorandum_on_Federal_Receipts.pdf",
+      "url": "https://www.finance.gov.pk/fb_2026_27.html",
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Explanatory_Memorandum_on_Federal_Receipts.pdf"
+    },
+    {
+      "id": "abs",
+      "title": "Annual Budget Statement 2026-27",
+      "publisher": "Finance Division, Government of Pakistan",
+      "file": "docs/Annual_Budget_Statement.pdf",
+      "url": "https://www.finance.gov.pk/fb_2026_27.html",
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Annual_Budget_Statement.pdf"
+    },
+    {
+      "id": "grants",
+      "title": "Regular & Technical Supplementary Grants 2026-27",
+      "publisher": "Finance Division, Government of Pakistan",
+      "file": "docs/Regular_&_Technical_Supplementary_Grants.pdf",
+      "url": "https://www.finance.gov.pk/fb_2026_27.html",
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Regular_&_Technical_Supplementary_Grants.pdf"
+    },
+    {
+      "id": "mtbf",
+      "title": "Medium Term Performance Based Budget 2026-27",
+      "publisher": "Finance Division, Government of Pakistan",
+      "file": "docs/Medium_Term_Performance_Based_Budget.pdf",
+      "url": "https://www.finance.gov.pk/fb_2026_27.html",
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Medium_Term_Performance_Based_Budget.pdf"
+    },
+    {
+      "id": "dfg1",
+      "title": "Details of Demands for Grants and Appropriations 2026-27, Vol-I (Current Expenditure)",
+      "publisher": "Finance Division, Government of Pakistan",
+      "file": "docs/Detail_of_Demands_for_Grants_Vol-I.pdf",
+      "url": "https://www.finance.gov.pk/fb_2026_27.html",
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Detail_of_Demands_for_Grants_Vol-I.pdf"
+    },
+    {
+      "id": "dfg2",
+      "title": "Details of Demands for Grants and Appropriations 2026-27, Vol-II (Current Expenditure)",
+      "publisher": "Finance Division, Government of Pakistan",
+      "file": "docs/Detail_of_Demands_for_Grants_Vol-II.pdf",
+      "url": "https://www.finance.gov.pk/fb_2026_27.html",
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Detail_of_Demands_for_Grants_Vol-II.pdf"
+    },
+    {
+      "id": "dfg3",
+      "title": "Details of Demands for Grants and Appropriations 2026-27, Vol-III",
+      "publisher": "Finance Division, Government of Pakistan",
+      "file": "docs/Detail_of_Demands_for_Grants_Vol-III.pdf",
+      "url": "https://www.finance.gov.pk/fb_2026_27.html",
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Detail_of_Demands_for_Grants_Vol-III.pdf"
+    },
+    {
+      "id": "dfg4",
+      "title": "Details of Demands for Grants and Appropriations 2026-27, Vol-IV (Development)",
+      "publisher": "Finance Division, Government of Pakistan",
+      "file": "docs/Detail_of_Demands_for_Grants_Vol-IV.pdf",
+      "url": "https://www.finance.gov.pk/fb_2026_27.html",
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Detail_of_Demands_for_Grants_Vol-IV.pdf"
+    }
+  ],
+  "structuralLinks": [
+    {
+      "source": "fbr_tax",
+      "target": "gross_revenue",
+      "value": 15264
+    },
+    {
+      "source": "nontax",
+      "target": "gross_revenue",
+      "value": 5335.598
+    },
+    {
+      "source": "gross_revenue",
+      "target": "net_federal_revenue",
+      "value": 11751.105
+    },
+    {
+      "source": "gross_revenue",
+      "target": "provincial_share",
+      "value": 8848.493
+    },
+    {
+      "source": "net_federal_revenue",
+      "target": "total_resources",
+      "value": 11751.105
+    },
+    {
+      "source": "financing",
+      "target": "total_resources",
+      "value": 7020.312
+    },
+    {
+      "source": "total_resources",
+      "target": "current_exp",
+      "value": 17495.417
+    },
+    {
+      "source": "total_resources",
+      "target": "development",
+      "value": 1276
+    }
+  ],
+  "nodes": [
+    {
+      "id": "fbr_tax",
+      "label": "FBR Tax Revenue",
+      "side": "receipt",
+      "parent": null,
+      "value": 15264,
+      "description": "Taxes collected by the Federal Board of Revenue (FBR) — the single largest source of federal money. Split into direct taxes (mainly income tax) and indirect taxes (sales tax, customs and federal excise).",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 4 — Revenue Receipts"
+      },
+      "prior": 14131,
+      "revised": 12983
+    },
+    {
+      "id": "direct_taxes",
+      "label": "Direct Taxes",
+      "side": "receipt",
+      "parent": "fbr_tax",
+      "value": 7613,
+      "description": "Taxes levied directly on income and wealth. Overwhelmingly income tax, plus small levies (Capital Value Tax, Workers' Welfare Fund, Workers' Profit Participation Fund).",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 4 — Revenue Receipts"
+      },
+      "prior": 6902,
+      "revised": 6431.754,
+      "facts": [
+        {
+          "title": "Collection performance",
+          "source": {
+            "docId": "emfr",
+            "page": 9,
+            "table": "para 3.1.3"
+          },
+          "items": [
+            {
+              "label": "Jul–Mar FY2025-26 collection",
+              "value": "Rs 4,638 bn"
+            },
+            {
+              "label": "Growth over same period last year",
+              "value": "+12.4%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "income_tax",
+      "label": "Income Tax",
+      "side": "receipt",
+      "parent": "direct_taxes",
+      "value": 7480.521,
+      "description": "Tax on the income of individuals and companies — the biggest single tax line in the federal budget.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 4 — Revenue Receipts"
+      },
+      "prior": 6811.243,
+      "revised": 6331.484
+    },
+    {
+      "id": "cvt",
+      "label": "Capital Value Tax",
+      "side": "receipt",
+      "parent": "direct_taxes",
+      "value": 26.581,
+      "description": "Tax on the capital value of certain assets.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 4 — Revenue Receipts"
+      },
+      "prior": 17.192,
+      "revised": 19.606
+    },
+    {
+      "id": "wwf",
+      "label": "Workers' Welfare Fund",
+      "side": "receipt",
+      "parent": "direct_taxes",
+      "value": 22.318,
+      "description": "Contributions to the Workers' Welfare Fund, collected with income tax.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 4 — Revenue Receipts"
+      },
+      "prior": 25.74,
+      "revised": 8.453
+    },
+    {
+      "id": "wppf",
+      "label": "Workers' Profit Participation Fund",
+      "side": "receipt",
+      "parent": "direct_taxes",
+      "value": 83.58,
+      "description": "Workers' share of company profits collected federally.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 4 — Revenue Receipts"
+      },
+      "prior": 47.825,
+      "revised": 72.211
+    },
+    {
+      "id": "indirect_taxes",
+      "label": "Indirect Taxes",
+      "side": "receipt",
+      "parent": "fbr_tax",
+      "value": 7651,
+      "description": "Taxes on transactions and goods rather than income: general sales tax, customs duties on imports, and federal excise duty.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 4 — Revenue Receipts"
+      },
+      "prior": 7229,
+      "revised": 6551.246
+    },
+    {
+      "id": "sales_tax",
+      "label": "Sales Tax",
+      "side": "receipt",
+      "parent": "indirect_taxes",
+      "value": 4927,
+      "description": "General Sales Tax on goods — the largest indirect tax.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 4 — Revenue Receipts"
+      },
+      "prior": 4753,
+      "revised": 4333.908,
+      "facts": [
+        {
+          "title": "Collection performance",
+          "source": {
+            "docId": "emfr",
+            "page": 9,
+            "table": "para 3.1.4"
+          },
+          "items": [
+            {
+              "label": "Jul–Mar FY2025-26 collection",
+              "value": "Rs 3,105 bn"
+            },
+            {
+              "label": "Growth over same period last year",
+              "value": "+8.5%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st_goods",
+      "label": "Sales Tax (Goods)",
+      "side": "receipt",
+      "parent": "sales_tax",
+      "value": 4908.935,
+      "prior": 4737.688,
+      "revised": 4316.625,
+      "description": "GST on goods across the economy — imports and domestic supplies.",
+      "source": {
+        "docId": "emfr",
+        "page": 9,
+        "table": "Table 5 — Sales Tax"
+      }
+    },
+    {
+      "id": "st_services",
+      "label": "Sales Tax (Services, ICT)",
+      "side": "receipt",
+      "parent": "sales_tax",
+      "value": 18.065,
+      "prior": 15.312,
+      "revised": 17.283,
+      "description": "Sales tax on services collected in Islamabad Capital Territory only (provinces tax services themselves).",
+      "source": {
+        "docId": "emfr",
+        "page": 9,
+        "table": "Table 5 — Sales Tax"
+      }
+    },
+    {
+      "id": "customs",
+      "label": "Customs Duties",
+      "side": "receipt",
+      "parent": "indirect_taxes",
+      "value": 1651,
+      "description": "Duties levied on imported goods.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 4 — Revenue Receipts"
+      },
+      "prior": 1588,
+      "revised": 1366.047,
+      "altBreakdowns": [
+        {
+          "title": "Gross collection by import category",
+          "note": "Major revenue spinners, gross (Rs 1,721 bn) before refunds and rebates of Rs 70 bn — the node value is net collection. Export Development Surcharge was discontinued from Dec 2025.",
+          "source": {
+            "docId": "emfr",
+            "page": 11,
+            "table": "Table 7 — Customs Duty"
+          },
+          "items": [
+            {
+              "label": "POL products",
+              "value": 410.252,
+              "prior": 437.472
+            },
+            {
+              "label": "Vehicles (non-railway)",
+              "value": 378.748,
+              "prior": 232.115
+            },
+            {
+              "label": "Electrical machinery",
+              "value": 98.633,
+              "prior": 96.582
+            },
+            {
+              "label": "Edible oil",
+              "value": 91.006,
+              "prior": 70.944
+            },
+            {
+              "label": "Iron & steel",
+              "value": 84.223,
+              "prior": 109.382
+            },
+            {
+              "label": "Machinery & mechanical appliances",
+              "value": 83.062,
+              "prior": 93.866
+            },
+            {
+              "label": "Plastic resins etc.",
+              "value": 62.716,
+              "prior": 72.016
+            },
+            {
+              "label": "Textile materials",
+              "value": 42.672,
+              "prior": 40.494
+            },
+            {
+              "label": "Tea & coffee",
+              "value": 41.35,
+              "prior": 43.376
+            },
+            {
+              "label": "Paper & paperboard",
+              "value": 35.765,
+              "prior": 40.657
+            },
+            {
+              "label": "All other categories",
+              "value": 313.622,
+              "prior": 268.111
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "title": "Collection performance",
+          "source": {
+            "docId": "emfr",
+            "page": 10,
+            "table": "para 3.1.6"
+          },
+          "items": [
+            {
+              "label": "Jul–Mar FY2025-26 collection",
+              "value": "Rs 956 bn"
+            },
+            {
+              "label": "Growth over same period last year",
+              "value": "+3.1%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "federal_excise",
+      "label": "Federal Excise",
+      "side": "receipt",
+      "parent": "indirect_taxes",
+      "value": 1073,
+      "description": "Federal excise duty on selected manufactured goods and services.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 4 — Revenue Receipts"
+      },
+      "prior": 888,
+      "revised": 851.291,
+      "facts": [
+        {
+          "title": "Collection performance",
+          "source": {
+            "docId": "emfr",
+            "page": 10,
+            "table": "para 3.1.5"
+          },
+          "items": [
+            {
+              "label": "Jul–Mar FY2025-26 collection",
+              "value": "Rs 609 bn"
+            },
+            {
+              "label": "Growth over same period last year",
+              "value": "+13.3%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fed_services",
+      "label": "FED on Services",
+      "side": "receipt",
+      "parent": "federal_excise",
+      "value": 294.036,
+      "prior": 163.661,
+      "revised": 234.75,
+      "description": "Federal excise duty on services (e.g. airline travel, telecom in ICT).",
+      "source": {
+        "docId": "emfr",
+        "page": 10,
+        "table": "Table 6 — Federal Excise Duty"
+      }
+    },
+    {
+      "id": "fed_cement",
+      "label": "Cement",
+      "side": "receipt",
+      "parent": "federal_excise",
+      "value": 204.977,
+      "prior": 194.365,
+      "revised": 163.648,
+      "description": "Excise duty on cement production.",
+      "source": {
+        "docId": "emfr",
+        "page": 10,
+        "table": "Table 6 — Federal Excise Duty"
+      }
+    },
+    {
+      "id": "fed_imported",
+      "label": "Imported Goods",
+      "side": "receipt",
+      "parent": "federal_excise",
+      "value": 197.817,
+      "prior": 110.105,
+      "revised": 157.931,
+      "description": "Excise duty collected on imported goods.",
+      "source": {
+        "docId": "emfr",
+        "page": 10,
+        "table": "Table 6 — Federal Excise Duty"
+      }
+    },
+    {
+      "id": "fed_cigarettes",
+      "label": "Cigarettes & Tobacco",
+      "side": "receipt",
+      "parent": "federal_excise",
+      "value": 170.971,
+      "prior": 169.6,
+      "revised": 136.498,
+      "description": "Excise duty on cigarettes and tobacco products.",
+      "source": {
+        "docId": "emfr",
+        "page": 10,
+        "table": "Table 6 — Federal Excise Duty"
+      }
+    },
+    {
+      "id": "fed_beverage",
+      "label": "Beverages",
+      "side": "receipt",
+      "parent": "federal_excise",
+      "value": 103.967,
+      "prior": 166.134,
+      "revised": 83.005,
+      "description": "Excise duty on beverages and beverage concentrate.",
+      "source": {
+        "docId": "emfr",
+        "page": 10,
+        "table": "Table 6 — Federal Excise Duty"
+      }
+    },
+    {
+      "id": "fed_pol",
+      "label": "POL Products",
+      "side": "receipt",
+      "parent": "federal_excise",
+      "value": 22.886,
+      "prior": 14.217,
+      "revised": 18.271,
+      "description": "Excise duty on petroleum, oil and lubricant products.",
+      "source": {
+        "docId": "emfr",
+        "page": 10,
+        "table": "Table 6 — Federal Excise Duty"
+      }
+    },
+    {
+      "id": "fed_gas",
+      "label": "Natural Gas",
+      "side": "receipt",
+      "parent": "federal_excise",
+      "value": 6.315,
+      "prior": 10.618,
+      "revised": 6.383,
+      "description": "Excise duty on natural gas (charged at well-head; not part of the divisible pool).",
+      "source": {
+        "docId": "emfr",
+        "page": 10,
+        "table": "Table 6 — Federal Excise Duty"
+      }
+    },
+    {
+      "id": "fed_other",
+      "label": "Other Items",
+      "side": "receipt",
+      "parent": "federal_excise",
+      "value": 72.031,
+      "prior": 59.3,
+      "revised": 50.805,
+      "description": "Excise duty on all remaining items.",
+      "source": {
+        "docId": "emfr",
+        "page": 10,
+        "table": "Table 6 — Federal Excise Duty"
+      }
+    },
+    {
+      "id": "nontax",
+      "label": "Non-Tax Revenue",
+      "side": "receipt",
+      "parent": null,
+      "value": 5335.598,
+      "description": "Federal income that is not a tax — chiefly the State Bank of Pakistan's profit, the Petroleum Levy, dividends, and various fees and surcharges.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 5 — Non-Tax Revenue Receipts"
+      },
+      "prior": 5147.09,
+      "revised": 5093.364
+    },
+    {
+      "id": "nontax_levies",
+      "label": "Levies & Fees",
+      "side": "receipt",
+      "parent": "nontax",
+      "value": 41.589,
+      "description": "Mobile handset levy, ICT administration fees and airport fees.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 5 (A) — Levies & Fees"
+      },
+      "prior": 29.79,
+      "revised": 37
+    },
+    {
+      "id": "nontax_property",
+      "label": "Income from Property & Enterprises",
+      "side": "receipt",
+      "parent": "nontax",
+      "value": 435.76,
+      "description": "Mark-up on loans to provinces and public-sector enterprises, dividends, and regulator surpluses (e.g. PTA spectrum licences).",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 5 (B)"
+      },
+      "prior": 519.332,
+      "revised": 480.792
+    },
+    {
+      "id": "markup_pses",
+      "label": "Mark-up (PSEs & Others)",
+      "side": "receipt",
+      "parent": "nontax_property",
+      "value": 170.851,
+      "prior": 188,
+      "revised": 156,
+      "description": "Interest received on federal loans to public-sector enterprises and others.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (B) — Income from Property & Enterprises"
+      }
+    },
+    {
+      "id": "dividends",
+      "label": "Dividends",
+      "side": "receipt",
+      "parent": "nontax_property",
+      "value": 130.387,
+      "prior": 206.134,
+      "revised": 201,
+      "description": "Dividends on government shareholdings in state-owned and part-owned companies.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (B) — Income from Property & Enterprises"
+      }
+    },
+    {
+      "id": "markup_provinces",
+      "label": "Mark-up (Provinces)",
+      "side": "receipt",
+      "parent": "nontax_property",
+      "value": 100.802,
+      "prior": 95.81,
+      "revised": 93.792,
+      "description": "Interest received on federal loans extended to provincial governments.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (B) — Income from Property & Enterprises"
+      }
+    },
+    {
+      "id": "pta_regulators",
+      "label": "PTA & Regulatory Authorities",
+      "side": "receipt",
+      "parent": "nontax_property",
+      "value": 33.721,
+      "prior": 29.388,
+      "revised": 30,
+      "description": "PTA surplus and 4G/5G licence receipts (Rs 29 bn) plus surpluses/penalties of other regulatory authorities.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 5 (B) — Income from Property & Enterprises"
+      }
+    },
+    {
+      "id": "nontax_civiladmin",
+      "label": "Civil Administration Receipts",
+      "side": "receipt",
+      "parent": "nontax",
+      "value": 1480.183,
+      "description": "Receipts from civil administration functions — dominated by the State Bank of Pakistan's surplus profit (Rs. 1,436 bn), plus defence, law-and-order and other administrative receipts.",
+      "source": {
+        "docId": "bib",
+        "page": 6,
+        "table": "Table 5 (C)"
+      },
+      "prior": 2450.392,
+      "revised": 2467.764
+    },
+    {
+      "id": "sbp_profit",
+      "label": "State Bank Profit",
+      "side": "receipt",
+      "parent": "nontax_civiladmin",
+      "value": 1435.75,
+      "prior": 2400,
+      "revised": 2428.364,
+      "description": "Surplus profit of the State Bank of Pakistan transferred to the federal government. Sharply lower than last year’s Rs 2,400 bn as interest rates (and hence SBP earnings) fall.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (C) — Receipts from Civil Administration"
+      }
+    },
+    {
+      "id": "ca_defence_receipts",
+      "label": "Defence Receipts",
+      "side": "receipt",
+      "parent": "nontax_civiladmin",
+      "value": 31.473,
+      "prior": 35.442,
+      "revised": 28,
+      "description": "Receipts of the defence establishment (services rendered, recoveries and miscellaneous defence income).",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (C) — Receipts from Civil Administration"
+      }
+    },
+    {
+      "id": "ca_other",
+      "label": "Other Civil Administration",
+      "side": "receipt",
+      "parent": "nontax_civiladmin",
+      "value": 12.96,
+      "prior": 14.95,
+      "revised": 11.399,
+      "description": "General administration, law and order, community and social services receipts.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (C) — Receipts from Civil Administration"
+      }
+    },
+    {
+      "id": "nontax_misc",
+      "label": "Miscellaneous Receipts",
+      "side": "receipt",
+      "parent": "nontax",
+      "value": 3378.066,
+      "description": "Largest components are the Petroleum Levy (Rs. 1,677 bn) and receipts from provinces under Article 164 (Rs. 1,035 bn), plus gas surcharge, royalties on oil and gas, passport fees and other levies.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (D)"
+      },
+      "prior": 2147.576,
+      "revised": 2107.809
+    },
+    {
+      "id": "petroleum_levy",
+      "label": "Petroleum Levy",
+      "side": "receipt",
+      "parent": "nontax_misc",
+      "value": 1676.509,
+      "prior": 1468.395,
+      "revised": 1498,
+      "description": "Levy charged on petroleum products at the pump — the largest non-tax revenue source, and unlike FBR taxes it is not shared with the provinces.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (D) — Miscellaneous Receipts"
+      }
+    },
+    {
+      "id": "article_164",
+      "label": "Provincial Receipts (Article 164)",
+      "side": "receipt",
+      "parent": "nontax_misc",
+      "value": 1035,
+      "prior": 0,
+      "revised": 0,
+      "description": "Grants/receipts from provinces under Article 164 of the Constitution — a new entry for FY2026-27 with no counterpart in the 2025-26 budget.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (D) — Miscellaneous Receipts"
+      }
+    },
+    {
+      "id": "oil_gas_royalties",
+      "label": "Oil & Gas Royalties",
+      "side": "receipt",
+      "parent": "nontax_misc",
+      "value": 140.504,
+      "prior": 207,
+      "revised": 125,
+      "description": "Royalty on crude oil (Rs 45.5 bn) and natural gas (Rs 95 bn) paid by exploration companies.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (D) — Miscellaneous Receipts"
+      }
+    },
+    {
+      "id": "passport_fees",
+      "label": "Passport & Citizenship Fees",
+      "side": "receipt",
+      "parent": "nontax_misc",
+      "value": 73.06,
+      "prior": 76.5,
+      "revised": 65,
+      "description": "Citizenship, naturalization and passport fees.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (D) — Miscellaneous Receipts"
+      }
+    },
+    {
+      "id": "gas_surcharge",
+      "label": "Gas Development Surcharge",
+      "side": "receipt",
+      "parent": "nontax_misc",
+      "value": 70.814,
+      "prior": 49.437,
+      "revised": 63,
+      "description": "Natural Gas Development Surcharge — the margin between prescribed and sale price of gas.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (D) — Miscellaneous Receipts"
+      }
+    },
+    {
+      "id": "climate_levy",
+      "label": "Climate Support Levy",
+      "side": "receipt",
+      "parent": "nontax_misc",
+      "value": 50,
+      "prior": null,
+      "revised": 48,
+      "description": "Climate Support Levy introduced during FY2025-26; budgeted at Rs 50 bn for FY2026-27.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (D) — Miscellaneous Receipts"
+      }
+    },
+    {
+      "id": "misc_other",
+      "label": "Other Miscellaneous",
+      "side": "receipt",
+      "parent": "nontax_misc",
+      "value": 332.179,
+      "prior": 346.244,
+      "revised": 308.809,
+      "description": "Everything else: economic services, windfall levies, GIDC, LPG levy, off-grid captive power levy, UN receipts, attached-department receipts and foreign grants.",
+      "source": {
+        "docId": "bib",
+        "page": 7,
+        "table": "Table 5 (D) — Miscellaneous Receipts"
+      }
+    },
+    {
+      "id": "financing",
+      "label": "Borrowing & Other Financing",
+      "side": "receipt",
+      "parent": null,
+      "value": 7020.312,
+      "description": "Because federal revenue does not cover federal spending, the gap (the federal deficit of Rs. 7,020 bn) is filled by borrowing and other financing: domestic bank and non-bank borrowing, net external loans, and privatisation proceeds.",
+      "source": {
+        "docId": "bib",
+        "page": 3,
+        "table": "Table 2 — Fiscal Deficit & Financing"
+      },
+      "prior": 6501,
+      "revised": 5157
+    },
+    {
+      "id": "nonbank_borrowing",
+      "label": "Non-Bank Borrowing",
+      "side": "receipt",
+      "parent": "financing",
+      "value": 2034,
+      "description": "Borrowing from non-bank sources — National Savings Schemes, GP Fund and public-account deposits.",
+      "source": {
+        "docId": "bib",
+        "page": 2,
+        "table": "Table 1 — Budget at a Glance"
+      }
+    },
+    {
+      "id": "external_receipts",
+      "label": "Net External Receipts",
+      "side": "receipt",
+      "parent": "financing",
+      "value": 813,
+      "description": "Net loans from external sources — multilateral and bilateral lenders plus commercial loans and bonds.",
+      "source": {
+        "docId": "bib",
+        "page": 2,
+        "table": "Table 1 — Budget at a Glance"
+      },
+      "prior": 105.523,
+      "revised": 1534.027
+    },
+    {
+      "id": "bank_borrowing",
+      "label": "Bank Borrowing",
+      "side": "receipt",
+      "parent": "financing",
+      "value": 4012.312,
+      "description": "Domestic borrowing from banks through Treasury Bills, Pakistan Investment Bonds (PIBs) and Sukuk. This is the largest single financing item.",
+      "source": {
+        "docId": "bib",
+        "page": 2,
+        "table": "Table 1 — Budget at a Glance"
+      }
+    },
+    {
+      "id": "privatisation",
+      "label": "Privatisation Proceeds",
+      "side": "receipt",
+      "parent": "financing",
+      "value": 161,
+      "description": "Proceeds expected from the sale of state-owned assets.",
+      "source": {
+        "docId": "bib",
+        "page": 2,
+        "table": "Table 1 — Budget at a Glance"
+      },
+      "prior": 86.55,
+      "revised": 14.257
+    },
+    {
+      "id": "gross_revenue",
+      "label": "Gross Revenue",
+      "side": "hub",
+      "parent": null,
+      "value": 20599.598,
+      "description": "Total federal revenue before the constitutionally-mandated transfer to the provinces: FBR taxes plus non-tax revenue (Rs. 20,600 bn).",
+      "source": {
+        "docId": "bib",
+        "page": 2,
+        "table": "Table 1 — Budget at a Glance"
+      },
+      "prior": 19278.09,
+      "revised": 18076.364
+    },
+    {
+      "id": "net_federal_revenue",
+      "label": "Net Federal Revenue",
+      "side": "hub",
+      "parent": null,
+      "value": 11751.105,
+      "description": "What the federal government keeps after transferring the provinces' share of the divisible pool: gross revenue (Rs. 20,600 bn) minus the provincial transfer (Rs. 8,848 bn).",
+      "source": {
+        "docId": "bib",
+        "page": 2,
+        "table": "Table 1 — Budget at a Glance"
+      },
+      "prior": 11072,
+      "revised": 10485
+    },
+    {
+      "id": "provincial_share",
+      "label": "Transfer to Provinces (NFC)",
+      "side": "transfer",
+      "parent": null,
+      "value": 8848.493,
+      "description": "Under Article 160 of the Constitution and the NFC Award, a fixed share (about 57.5%) of the divisible pool of federal taxes is transferred to the four provinces. At Rs. 8,848 bn this is larger than any single federal spending category — the federal government collects this money but never spends it itself.",
+      "source": {
+        "docId": "bib",
+        "page": 8,
+        "table": "Table 6 — Divisible Pool Taxes (Transfers to Provinces)"
+      },
+      "prior": 8205.723,
+      "revised": 7591.797,
+      "facts": [
+        {
+          "title": "NFC distribution formula (among provinces)",
+          "note": "Under the 7th NFC Award (President’s Order 5 of 2010, as amended), provinces receive 57.5% of the net divisible pool. 1% of the pool goes to Khyber Pakhtunkhwa first for the war on terror; the remainder is distributed by this multi-indicator formula:",
+          "source": {
+            "docId": "bib",
+            "page": 8,
+            "table": "NFC Award — Distribution of Revenues"
+          },
+          "items": [
+            {
+              "label": "Population",
+              "value": "82.0%"
+            },
+            {
+              "label": "Poverty / backwardness",
+              "value": "10.3%"
+            },
+            {
+              "label": "Revenue collection / generation",
+              "value": "5.0%"
+            },
+            {
+              "label": "Inverse population density",
+              "value": "2.7%"
+            }
+          ]
+        },
+        {
+          "title": "Official province shares of the divisible pool",
+          "note": "Balochistan is guaranteed its projected amount; any shortfall is made up by the federal government.",
+          "source": {
+            "docId": "bib",
+            "page": 9,
+            "table": "NFC Award — Allocation of shares"
+          },
+          "items": [
+            {
+              "label": "Punjab",
+              "value": "51.74%"
+            },
+            {
+              "label": "Sindh",
+              "value": "24.55%"
+            },
+            {
+              "label": "Khyber Pakhtunkhwa",
+              "value": "14.62% + 1% (war on terror)"
+            },
+            {
+              "label": "Balochistan",
+              "value": "9.09%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prov_punjab",
+      "label": "Punjab",
+      "side": "transfer",
+      "parent": "provincial_share",
+      "value": 4402.834,
+      "description": "Punjab's share of the divisible pool (about 51.7% of the provincial share, based on the NFC's population-weighted formula).",
+      "source": {
+        "docId": "bib",
+        "page": 9,
+        "table": "Table 6 — Province-wise Share"
+      },
+      "prior": 4076.008,
+      "revised": 3745.061
+    },
+    {
+      "id": "prov_sindh",
+      "label": "Sindh",
+      "side": "transfer",
+      "parent": "provincial_share",
+      "value": 2207.18,
+      "description": "Sindh's share of the divisible pool (about 24.6% of the provincial share).",
+      "source": {
+        "docId": "bib",
+        "page": 9,
+        "table": "Table 6 — Province-wise Share"
+      },
+      "prior": 2043.762,
+      "revised": 1879.057
+    },
+    {
+      "id": "prov_kp",
+      "label": "Khyber Pakhtunkhwa",
+      "side": "transfer",
+      "parent": "provincial_share",
+      "value": 1443.346,
+      "description": "KP's share (about 14.6%), inclusive of the additional 1% of the divisible pool assigned for the war on terror.",
+      "source": {
+        "docId": "bib",
+        "page": 9,
+        "table": "Table 6 — Province-wise Share"
+      },
+      "prior": 1342.788,
+      "revised": 1231.759
+    },
+    {
+      "id": "prov_balochistan",
+      "label": "Balochistan",
+      "side": "transfer",
+      "parent": "provincial_share",
+      "value": 795.133,
+      "description": "Balochistan's share (about 9.1%). The federation guarantees Balochistan a projected minimum amount and makes up any shortfall from its own resources.",
+      "source": {
+        "docId": "bib",
+        "page": 9,
+        "table": "Table 6 — Province-wise Share"
+      },
+      "prior": 743.166,
+      "revised": 735.919
+    },
+    {
+      "id": "total_resources",
+      "label": "Total Federal Resources",
+      "side": "hub",
+      "parent": null,
+      "value": 18771.417,
+      "description": "The total pool of money the federal government has to spend: net federal revenue (Rs. 11,751 bn) plus borrowing and other financing (Rs. 7,020 bn). This equals total federal expenditure of Rs. 18,771 bn — the budget balances by design.",
+      "source": {
+        "docId": "bib",
+        "page": 2,
+        "table": "Table 1 — Budget at a Glance"
+      },
+      "prior": 17573,
+      "revised": 15642
+    },
+    {
+      "id": "current_exp",
+      "label": "Current Expenditure",
+      "side": "expenditure",
+      "parent": null,
+      "value": 17495.417,
+      "description": "Day-to-day running costs of the federal government — 93% of all federal spending. Dominated by interest payments on debt, defence, pensions, grants and subsidies.",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 — Current Expenditures"
+      },
+      "prior": 16286.045,
+      "revised": 15006.324,
+      "altBreakdowns": [
+        {
+          "title": "Largest demands (ministry / division-wise)",
+          "note": "Current-expenditure demands for grants (charged + voted) from the demand-wise schedule — the parliamentary view of who is allocated money. Debt and loan repayments are excluded (refinancing, not expenditure). Classification differs slightly from the object-wise breakdown above.",
+          "source": {
+            "docId": "bib",
+            "page": 35,
+            "table": "Table 21 — Demand-Wise Budget Estimates"
+          },
+          "items": [
+            {
+              "label": "Servicing of Domestic Debt",
+              "value": 6982.607
+            },
+            {
+              "label": "Defence Services",
+              "value": 3000
+            },
+            {
+              "label": "Grants, Subsidies & Misc. Expenditure",
+              "value": 2561.467
+            },
+            {
+              "label": "Superannuation Allowances & Pension",
+              "value": 1169
+            },
+            {
+              "label": "Servicing of Foreign Debt",
+              "value": 1071.393
+            },
+            {
+              "label": "Benazir Income Support Programme",
+              "value": 844.78
+            },
+            {
+              "label": "Power Division",
+              "value": 578.837
+            },
+            {
+              "label": "Combined Civil Armed Forces",
+              "value": 298.052
+            },
+            {
+              "label": "Federal Board of Revenue",
+              "value": 85.604
+            },
+            {
+              "label": "Railways Division",
+              "value": 70.478
+            },
+            {
+              "label": "Higher Education Commission",
+              "value": 66.432
+            },
+            {
+              "label": "Foreign Missions",
+              "value": 63.66
+            },
+            {
+              "label": "Federal Education & Professional Training",
+              "value": 42.748
+            },
+            {
+              "label": "National Health Services & Regulation",
+              "value": 37.222
+            },
+            {
+              "label": "Intelligence Bureau",
+              "value": 22.961
+            }
+          ]
+        },
+        {
+          "title": "By function (alternative view)",
+          "note": "The same Rs 17,495 bn classified by government function instead of by object, from the Annual Budget Statement.",
+          "source": {
+            "docId": "abs",
+            "page": 11,
+            "table": "Summary of Expenditure — Current Exp. on Revenue Account"
+          },
+          "items": [
+            {
+              "label": "General Public Service (incl. debt servicing & transfers)",
+              "value": 12799.647,
+              "prior": 12210.851
+            },
+            {
+              "label": "Defence Affairs & Services",
+              "value": 3010.9,
+              "prior": 2557.95
+            },
+            {
+              "label": "Social Protection",
+              "value": 857.007,
+              "prior": 734.187
+            },
+            {
+              "label": "Public Order & Safety",
+              "value": 389.469,
+              "prior": 351.679
+            },
+            {
+              "label": "Economic Affairs",
+              "value": 238.438,
+              "prior": 242.144
+            },
+            {
+              "label": "Education Affairs & Services",
+              "value": 117.748,
+              "prior": 112.683
+            },
+            {
+              "label": "Health",
+              "value": 37.438,
+              "prior": 31.975
+            },
+            {
+              "label": "Recreation, Culture & Religion",
+              "value": 23.796,
+              "prior": 22.158
+            },
+            {
+              "label": "Housing & Community Amenities",
+              "value": 18.57,
+              "prior": 19.249
+            },
+            {
+              "label": "Environment Protection",
+              "value": 2.406,
+              "prior": 3.168
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interest",
+      "label": "Interest Payments",
+      "side": "expenditure",
+      "parent": "current_exp",
+      "value": 8054,
+      "description": "Mark-up (interest) on government debt — the single largest expense in the budget, larger than defence and development combined. Most of it services domestic debt.",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 (i) — Mark-up Payments"
+      },
+      "prior": 8206.657,
+      "revised": 6937.459
+    },
+    {
+      "id": "int_domestic",
+      "label": "Domestic Debt Interest",
+      "side": "expenditure",
+      "parent": "interest",
+      "value": 6982.607,
+      "description": "Interest paid on debt owed within Pakistan (T-Bills, PIBs, Sukuk, National Savings).",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 (i) — Mark-up Payments"
+      },
+      "prior": 7197.335,
+      "revised": 6006.541
+    },
+    {
+      "id": "int_foreign",
+      "label": "Foreign Debt Interest",
+      "side": "expenditure",
+      "parent": "interest",
+      "value": 1071.393,
+      "description": "Interest paid on external (foreign-currency) debt.",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 (i) — Mark-up Payments"
+      },
+      "prior": 1009.322,
+      "revised": 930.918
+    },
+    {
+      "id": "pension",
+      "label": "Pension",
+      "side": "expenditure",
+      "parent": "current_exp",
+      "value": 1169,
+      "description": "Pension payments to retired federal government employees, mostly military.",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 (ii) — Pension"
+      },
+      "prior": 1055,
+      "revised": 1055
+    },
+    {
+      "id": "pen_military",
+      "label": "Military Pensions",
+      "side": "expenditure",
+      "parent": "pension",
+      "value": 822,
+      "description": "Pensions for retired armed-forces personnel.",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 (ii) — Pension"
+      },
+      "prior": 742,
+      "revised": 742
+    },
+    {
+      "id": "pen_civil",
+      "label": "Civil Pensions",
+      "side": "expenditure",
+      "parent": "pension",
+      "value": 272.5,
+      "description": "Pensions for retired civil government employees.",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 (ii) — Pension"
+      },
+      "prior": 243,
+      "revised": 243
+    },
+    {
+      "id": "pen_increase",
+      "label": "Pension Increase (Civil + Defence)",
+      "side": "expenditure",
+      "parent": "pension",
+      "value": 64.5,
+      "description": "Provision for the budgeted increase in pension rates across civil and defence pensioners.",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 (ii) — Pension"
+      },
+      "prior": 65.7,
+      "revised": 65.7
+    },
+    {
+      "id": "pen_fund",
+      "label": "Federal Pension Fund",
+      "side": "expenditure",
+      "parent": "pension",
+      "value": 10,
+      "description": "Contribution to the Federal Pension Fund set up to pre-fund future pension liabilities.",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 (ii) — Pension"
+      },
+      "prior": 4.3,
+      "revised": 4.3
+    },
+    {
+      "id": "defence",
+      "label": "Defence Affairs & Services",
+      "side": "expenditure",
+      "parent": "current_exp",
+      "value": 3000,
+      "description": "The defence services budget (excludes military pensions, which are counted under Pension). The second-largest current expenditure after interest payments.",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 (iii) — Defence Affairs and Services"
+      },
+      "prior": 2550,
+      "revised": 2588.218
+    },
+    {
+      "id": "grants",
+      "label": "Grants & Transfers",
+      "side": "expenditure",
+      "parent": "current_exp",
+      "value": 2680.417,
+      "description": "Grants to provinces and other bodies, and social transfers. The largest single item is the Benazir Income Support Programme (BISP).",
+      "source": {
+        "docId": "bib",
+        "page": 22,
+        "table": "Table 13 — Grants and Transfers"
+      },
+      "prior": 1927.895,
+      "revised": 1971.429
+    },
+    {
+      "id": "g_bisp",
+      "label": "Benazir Income Support Programme",
+      "side": "expenditure",
+      "parent": "grants",
+      "value": 838,
+      "description": "BISP — Pakistan's flagship cash-transfer / social-protection programme for the poorest households.",
+      "source": {
+        "docId": "bib",
+        "page": 23,
+        "table": "Table 13 (II) — Grants to Others"
+      },
+      "prior": 716,
+      "revised": 706.188
+    },
+    {
+      "id": "g_contingent",
+      "label": "Contingent Liabilities",
+      "side": "expenditure",
+      "parent": "grants",
+      "value": 319.5,
+      "description": "Provision for government guarantees and contingent liabilities that may fall due.",
+      "source": {
+        "docId": "bib",
+        "page": 22,
+        "table": "Table 13 (II) — Grants to Others"
+      },
+      "prior": 300,
+      "revised": 300
+    },
+    {
+      "id": "g_provinces",
+      "label": "Grants to Provinces",
+      "side": "expenditure",
+      "parent": "grants",
+      "value": 152,
+      "description": "Discretionary grants to provinces (over and above the NFC divisible-pool transfer) — e.g. Sindh OZT and KP merged-districts support.",
+      "source": {
+        "docId": "bib",
+        "page": 22,
+        "table": "Table 13 (I) — Grants to Provinces"
+      },
+      "prior": 150,
+      "revised": 150
+    },
+    {
+      "id": "g_ajk",
+      "label": "AJK Government",
+      "side": "expenditure",
+      "parent": "grants",
+      "value": 146,
+      "description": "Grant to the Government of Azad Jammu & Kashmir.",
+      "source": {
+        "docId": "bib",
+        "page": 24,
+        "table": "Table 13 (II) — Grants to Others"
+      },
+      "prior": 140,
+      "revised": 140
+    },
+    {
+      "id": "g_gb",
+      "label": "Gilgit-Baltistan Government",
+      "side": "expenditure",
+      "parent": "grants",
+      "value": 88,
+      "description": "Grant to the Government of Gilgit-Baltistan.",
+      "source": {
+        "docId": "bib",
+        "page": 24,
+        "table": "Table 13 (II) — Grants to Others"
+      },
+      "prior": 80,
+      "revised": 80
+    },
+    {
+      "id": "g_railways",
+      "label": "Pakistan Railways",
+      "side": "expenditure",
+      "parent": "grants",
+      "value": 70,
+      "description": "Operating grant to Pakistan Railways.",
+      "source": {
+        "docId": "bib",
+        "page": 22,
+        "table": "Table 13 (II) — Grants to Others"
+      },
+      "prior": 70,
+      "revised": 70
+    },
+    {
+      "id": "g_hec",
+      "label": "Higher Education Commission",
+      "side": "expenditure",
+      "parent": "grants",
+      "value": 65,
+      "description": "Recurrent grant to the Higher Education Commission (universities).",
+      "source": {
+        "docId": "bib",
+        "page": 24,
+        "table": "Table 13 (II) — Grants to Others"
+      },
+      "prior": 65,
+      "revised": 65
+    },
+    {
+      "id": "g_other",
+      "label": "Other Grants & Transfers",
+      "side": "expenditure",
+      "parent": "grants",
+      "value": 798.417,
+      "description": "All remaining grants and transfers grouped together — AJK/GB subventions aside, this includes provision for relief, Bait-ul-Mal, EPI, insurance schemes and many smaller bodies.",
+      "source": {
+        "docId": "bib",
+        "page": 22,
+        "table": "Table 13 — Grants and Transfers"
+      },
+      "prior": 212.895,
+      "revised": 309.091
+    },
+    {
+      "id": "g_misc",
+      "label": "Miscellaneous Expenditure",
+      "side": "expenditure",
+      "parent": "grants",
+      "value": 149.5,
+      "prior": 144,
+      "revised": 144,
+      "description": "Miscellaneous grant expenditure not classified elsewhere.",
+      "source": {
+        "docId": "bib",
+        "page": 22,
+        "table": "Table 13 (II) — Grants to Others"
+      }
+    },
+    {
+      "id": "g_security",
+      "label": "Security Enhancement",
+      "side": "expenditure",
+      "parent": "grants",
+      "value": 54,
+      "prior": 50,
+      "revised": 7.15,
+      "description": "Grant for security enhancement measures.",
+      "source": {
+        "docId": "bib",
+        "page": 23,
+        "table": "Table 13 (II) — Grants to Others"
+      }
+    },
+    {
+      "id": "subsidies",
+      "label": "Subsidies",
+      "side": "expenditure",
+      "parent": "current_exp",
+      "value": 1091,
+      "description": "Subsidies that keep prices below cost — overwhelmingly to the power sector.",
+      "source": {
+        "docId": "bib",
+        "page": 20,
+        "table": "Table 12 — Subsidies"
+      },
+      "prior": 1186.036,
+      "revised": 1157.007
+    },
+    {
+      "id": "sub_power",
+      "label": "Power Sector",
+      "side": "expenditure",
+      "parent": "subsidies",
+      "value": 830,
+      "description": "Subsidies to the electricity sector (WAPDA/PEPCO, K-Electric, inter-DISCO tariff differential, AJK, merged districts, etc.) — the bulk of all subsidies.",
+      "source": {
+        "docId": "bib",
+        "page": 20,
+        "table": "Table 12 — Subsidies"
+      },
+      "prior": 1036.136,
+      "revised": 893.136
+    },
+    {
+      "id": "sub_others",
+      "label": "Other Subsidies",
+      "side": "expenditure",
+      "parent": "subsidies",
+      "value": 205,
+      "description": "Wheat subsidy to Gilgit-Baltistan, urea import subsidy, mark-up subsidies on housing and lending schemes, and other miscellaneous subsidies.",
+      "source": {
+        "docId": "bib",
+        "page": 21,
+        "table": "Table 12 — Subsidies (Others)"
+      },
+      "prior": 104.7,
+      "revised": 230.478
+    },
+    {
+      "id": "sub_industries",
+      "label": "Industries & Production",
+      "side": "expenditure",
+      "parent": "subsidies",
+      "value": 37,
+      "description": "Subsidies to industry — urea fertiliser production, the electric-vehicle incentive scheme, and Utility Stores arrears.",
+      "source": {
+        "docId": "bib",
+        "page": 20,
+        "table": "Table 12 — Subsidies"
+      },
+      "prior": 24,
+      "revised": 12.193
+    },
+    {
+      "id": "sub_food",
+      "label": "Food (PASSCO)",
+      "side": "expenditure",
+      "parent": "subsidies",
+      "value": 19,
+      "description": "Subsidy to PASSCO for wheat reserve stock and the cost differential on wheat sales.",
+      "source": {
+        "docId": "bib",
+        "page": 20,
+        "table": "Table 12 — Subsidies"
+      },
+      "prior": 20,
+      "revised": 20
+    },
+    {
+      "id": "running_civil",
+      "label": "Running of Civil Govt.",
+      "side": "expenditure",
+      "parent": "current_exp",
+      "value": 1071,
+      "description": "The cost of running federal ministries, divisions and attached departments — salaries and operating costs of the civil government.",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 (vi) — Running of Civil Government"
+      },
+      "prior": 971,
+      "revised": 1021.322
+    },
+    {
+      "id": "emergency",
+      "label": "Emergency & Others",
+      "side": "expenditure",
+      "parent": "current_exp",
+      "value": 430,
+      "description": "Provision for emergencies and other unallocated needs, including Rs. 20 bn earmarked for natural disasters.",
+      "source": {
+        "docId": "bib",
+        "page": 13,
+        "table": "Table 10 (vii) — Provision for Emergency and others"
+      },
+      "prior": 389,
+      "revised": 275.888
+    },
+    {
+      "id": "development",
+      "label": "Development & Net Lending",
+      "side": "expenditure",
+      "parent": null,
+      "value": 1276,
+      "description": "Money spent building things and lending onward — the Federal Public Sector Development Programme (PSDP) plus net lending. Just 7% of federal spending.",
+      "source": {
+        "docId": "bib",
+        "page": 2,
+        "table": "Table 1 — Budget at a Glance"
+      },
+      "prior": 1286.955,
+      "revised": 635.676
+    },
+    {
+      "id": "psdp",
+      "label": "Federal PSDP",
+      "side": "expenditure",
+      "parent": "development",
+      "value": 1000,
+      "description": "The Federal Public Sector Development Programme — the federal government's development / infrastructure budget, spread across ministries, corporations and special areas.",
+      "source": {
+        "docId": "bib",
+        "page": 29,
+        "table": "Table 17 — Public Sector Development Program (PSDP)"
+      },
+      "prior": 1000
+    },
+    {
+      "id": "psdp_nha",
+      "label": "National Highway Authority",
+      "side": "expenditure",
+      "parent": "psdp",
+      "value": 224.515,
+      "description": "Roads and highways built by the NHA — the largest single PSDP allocation.",
+      "source": {
+        "docId": "bib",
+        "page": 31,
+        "table": "Table 17 (B) — Corporations"
+      },
+      "prior": 226.982
+    },
+    {
+      "id": "psdp_water",
+      "label": "Water Resources",
+      "side": "expenditure",
+      "parent": "psdp",
+      "value": 103.086,
+      "description": "Dams, irrigation and water-storage projects under the Water Resources Division.",
+      "source": {
+        "docId": "bib",
+        "page": 31,
+        "table": "Table 17 (A) — Federal Ministries/Divisions"
+      },
+      "prior": 133.424
+    },
+    {
+      "id": "psdp_special_areas",
+      "label": "Special Areas (AJK & GB)",
+      "side": "expenditure",
+      "parent": "psdp",
+      "value": 89.023,
+      "description": "Development projects in Azad Jammu & Kashmir and Gilgit-Baltistan.",
+      "source": {
+        "docId": "bib",
+        "page": 31,
+        "table": "Table 17 (A) — Federal Ministries/Divisions"
+      },
+      "prior": 82
+    },
+    {
+      "id": "psdp_provincial_projects",
+      "label": "Provincial Projects",
+      "side": "expenditure",
+      "parent": "psdp",
+      "value": 88.286,
+      "description": "Federally-funded development projects located in the provinces.",
+      "source": {
+        "docId": "bib",
+        "page": 31,
+        "table": "Table 17 (A) — Federal Ministries/Divisions"
+      },
+      "prior": 105.786
+    },
+    {
+      "id": "psdp_power_division",
+      "label": "Power Division (NTDC/PEPCO)",
+      "side": "expenditure",
+      "parent": "psdp",
+      "value": 88,
+      "description": "Power transmission and generation development projects.",
+      "source": {
+        "docId": "bib",
+        "page": 31,
+        "table": "Table 17 (B) — Corporations"
+      },
+      "prior": 90.226
+    },
+    {
+      "id": "psdp_cabinet",
+      "label": "Cabinet Division",
+      "side": "expenditure",
+      "parent": "psdp",
+      "value": 64.08,
+      "description": "Development projects run under the Cabinet Division.",
+      "source": {
+        "docId": "bib",
+        "page": 29,
+        "table": "Table 17 (A) — Federal Ministries/Divisions"
+      },
+      "prior": 70.388
+    },
+    {
+      "id": "psdp_merged_kp",
+      "label": "Merged Districts of KP",
+      "side": "expenditure",
+      "parent": "psdp",
+      "value": 56.076,
+      "description": "Development spending in the former FATA (merged districts of Khyber Pakhtunkhwa).",
+      "source": {
+        "docId": "bib",
+        "page": 31,
+        "table": "Table 17 (A) — Federal Ministries/Divisions"
+      },
+      "prior": 65.444
+    },
+    {
+      "id": "psdp_hec",
+      "label": "Higher Education Commission",
+      "side": "expenditure",
+      "parent": "psdp",
+      "value": 46,
+      "description": "Development / infrastructure grants to universities via the HEC.",
+      "source": {
+        "docId": "bib",
+        "page": 29,
+        "table": "Table 17 (A) — Federal Ministries/Divisions"
+      },
+      "prior": 39.488
+    },
+    {
+      "id": "psdp_railways",
+      "label": "Railways Division",
+      "side": "expenditure",
+      "parent": "psdp",
+      "value": 40.658,
+      "description": "Development projects for Pakistan Railways.",
+      "source": {
+        "docId": "bib",
+        "page": 31,
+        "table": "Table 17 (A) — Federal Ministries/Divisions"
+      },
+      "prior": 22.415
+    },
+    {
+      "id": "psdp_education",
+      "label": "Federal Education & Training",
+      "side": "expenditure",
+      "parent": "psdp",
+      "value": 36.312,
+      "description": "Federal Education & Professional Training Division development projects.",
+      "source": {
+        "docId": "bib",
+        "page": 29,
+        "table": "Table 17 (A) — Federal Ministries/Divisions"
+      },
+      "prior": 18.58
+    },
+    {
+      "id": "psdp_other",
+      "label": "Other PSDP",
+      "side": "expenditure",
+      "parent": "psdp",
+      "value": 163.964,
+      "description": "All remaining PSDP allocations grouped together — dozens of smaller ministries and divisions, plus SOEs, project liabilities and CPEC 2.0 new initiatives.",
+      "source": {
+        "docId": "bib",
+        "page": 29,
+        "table": "Table 17 — Public Sector Development Program (PSDP)"
+      },
+      "prior": 145.267
+    },
+    {
+      "id": "net_lending",
+      "label": "Net Lending",
+      "side": "expenditure",
+      "parent": "development",
+      "value": 276,
+      "description": "Loans the federal government extends (net of recoveries), mainly to public-sector entities and provinces.",
+      "source": {
+        "docId": "bib",
+        "page": 2,
+        "table": "Table 1 — Budget at a Glance"
+      },
+      "prior": 286.955
+    }
+  ]
+}

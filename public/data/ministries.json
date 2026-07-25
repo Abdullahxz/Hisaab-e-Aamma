@@ -1,0 +1,4778 @@
+{
+  "meta": {
+    "title": "Explore by Ministry",
+    "unit": "billion",
+    "currency": "PKR",
+    "note": "Ministry/division (Principal Accounting Officer) budgets from the Medium Term Performance Based Budget (\"Green Book\"), covering current + development allocations. Output-level tables are shown only where every year column reconciles exactly with the printed total.",
+    "sourceDoc": "mtbf",
+    "generatedBy": "scripts/parse-mtbf.mjs",
+    "yearLabels": {
+      "actual2425": "Actual 2024-25",
+      "be2526": "Budget 2025-26",
+      "be2627": "Budget 2026-27",
+      "p2728": "Plan 2027-28",
+      "p2829": "Plan 2028-29"
+    },
+    "demandsNote": "Object classification per demand is from the Details of Demands for Grants and Appropriations (Vols I–IV). Every demand shown passed two independent checks: object heads sum exactly to the printed demand total, and the total matches Budget in Brief Table 21."
+  },
+  "objectWise": {
+    "title": "What the money buys — object classification (federal government)",
+    "note": "Gross Federal Consolidated Fund frame: the total (Rs 51,156 bn) includes Rs 31,959 bn of principal debt repayments (refinancing of maturing debt, not expenditure in the Rs 18,771 bn budget frame). Per-ministry object splits are published in the separate Demands for Grants volumes.",
+    "source": {
+      "docId": "abs",
+      "page": 37,
+      "table": "Schedule III — Object Classification Wise Expenditure (printed p. 31)"
+    },
+    "total": {
+      "be2627": 51156.209,
+      "prior": 37855.301
+    },
+    "items": [
+      {
+        "code": "A01",
+        "label": "Employees Related Expenses (salaries)",
+        "value": 1608.289,
+        "prior": 1438.843,
+        "detail": "Pay Rs 253 bn (officers 86, other staff 167) + allowances Rs 1,355 bn"
+      },
+      {
+        "code": "A04",
+        "label": "Employees Retirement Benefits (pensions)",
+        "value": 1176.179,
+        "prior": 1065.034
+      },
+      {
+        "code": "A03",
+        "label": "Operating Expenses",
+        "value": 2008.258,
+        "prior": 1782.38
+      },
+      {
+        "code": "A05",
+        "label": "Grants, Subsidies & Write-off of Loans",
+        "value": 3739.676,
+        "prior": 3103.344
+      },
+      {
+        "code": "A07",
+        "label": "Interest Payment",
+        "value": 8054.005,
+        "prior": 8207.255
+      },
+      {
+        "code": "A10",
+        "label": "Principal Repayments of Loans (refinancing)",
+        "value": 31958.778,
+        "prior": 19679.231
+      },
+      {
+        "code": "A08",
+        "label": "Loans and Advances",
+        "value": 1050.605,
+        "prior": 1238.381
+      },
+      {
+        "code": "A09",
+        "label": "Physical Assets",
+        "value": 971.378,
+        "prior": 720.174
+      },
+      {
+        "code": "A12",
+        "label": "Civil Works",
+        "value": 438.754,
+        "prior": 390.294
+      },
+      {
+        "code": "A11",
+        "label": "Investments",
+        "value": 100.234,
+        "prior": 187.091
+      },
+      {
+        "code": "A13",
+        "label": "Repairs and Maintenance",
+        "value": 27.463,
+        "prior": 23.573
+      },
+      {
+        "code": "A06",
+        "label": "Transfers",
+        "value": 20.192,
+        "prior": 16.982
+      },
+      {
+        "code": "A02",
+        "label": "Project Pre-investment Analysis",
+        "value": 2.399,
+        "prior": 2.72
+      }
+    ]
+  },
+  "ministries": [
+    {
+      "slug": "cabinet-division",
+      "name": "Cabinet Division",
+      "pao": "Cabinet Secretary",
+      "page": 9,
+      "goal": "The pivotal secretarial setup of the Federation of the Islamic Republic of Pakistan and symbolizes the mode of dispensation of the executive authority of the State under the Constitution and the Rules of Business framed there under.",
+      "outcomes": "Impact on Target Population The highest ethical standards in all our regulatory activities, openness and clarity in all our decisions and processes, responsibility for our actions and their impact on stakeholders, excellence in regulatory practices and stakeholder service.",
+      "outputs": [
+        {
+          "name": "Policy formulation and implementation",
+          "actual2425": 2.725,
+          "be2526": 3.636,
+          "be2627": 4.029,
+          "p2728": 4.469,
+          "p2829": 4.974
+        },
+        {
+          "name": "Emergency relief assistance / operation",
+          "actual2425": 0.93,
+          "be2526": 3.027,
+          "be2627": 1.797,
+          "p2728": 1.161,
+          "p2829": 1.292
+        },
+        {
+          "name": "Preservation of State Documents",
+          "actual2425": 0.252,
+          "be2526": 0.411,
+          "be2627": 0.27,
+          "p2728": 0.299,
+          "p2829": 0.333
+        },
+        {
+          "name": "Government administrative reforms",
+          "actual2425": 0.03,
+          "be2526": 0.076,
+          "be2627": 0.057,
+          "p2728": 0.062,
+          "p2829": 0.07
+        },
+        {
+          "name": "Security of classified communications",
+          "actual2425": 0.208,
+          "be2526": 0.35,
+          "be2627": 0.389,
+          "p2728": 0.431,
+          "p2829": 0.48
+        },
+        {
+          "name": "Regulatory Services",
+          "actual2425": 0.632,
+          "be2526": 0.311,
+          "be2627": 1.863,
+          "p2728": 2.067,
+          "p2829": 2.299
+        },
+        {
+          "name": "Community Development Service",
+          "actual2425": 47.276,
+          "be2526": 70,
+          "be2627": 64.08,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Promotion of tourism",
+          "actual2425": 0.105,
+          "be2526": 0.224,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Centralize supply of Forms / Gazettes",
+          "actual2425": 0.037,
+          "be2526": 0.047,
+          "be2627": 0.043,
+          "p2728": 0.048,
+          "p2829": 0.053
+        }
+      ],
+      "total": {
+        "actual2425": 52.194,
+        "be2526": 78.082,
+        "be2627": 72.528,
+        "p2728": 8.537,
+        "p2829": 9.501
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "presidents-secretariat-personal",
+      "name": "President’s Secretariat- Personal",
+      "pao": "Military Secretary to the President",
+      "page": 12,
+      "goal": "Efficient and smooth functioning of President’s Secretariat (Personal)",
+      "outcomes": "Improved Governance",
+      "outputs": [
+        {
+          "name": "Administrative Services",
+          "actual2425": 0.115,
+          "be2526": 0.213,
+          "be2627": 0.212,
+          "p2728": 0.235,
+          "p2829": 0.261
+        },
+        {
+          "name": "Staff and Household Services",
+          "actual2425": 0.937,
+          "be2526": 0.987,
+          "be2627": 1.237,
+          "p2728": 1.372,
+          "p2829": 1.527
+        },
+        {
+          "name": "Estate Gardens establishment Services",
+          "actual2425": 0.075,
+          "be2526": 0.105,
+          "be2627": 0.108,
+          "p2728": 0.12,
+          "p2829": 0.133
+        },
+        {
+          "name": "Travelling & conveyance services",
+          "actual2425": 0.449,
+          "be2526": 0.376,
+          "be2627": 0.198,
+          "p2728": 0.219,
+          "p2829": 0.244
+        },
+        {
+          "name": "Health Services for President Secretariat",
+          "actual2425": 0.047,
+          "be2526": 0.078,
+          "be2627": 0.082,
+          "p2728": 0.091,
+          "p2829": 0.101
+        }
+      ],
+      "total": {
+        "actual2425": 1.624,
+        "be2526": 1.76,
+        "be2627": 1.837,
+        "p2728": 2.037,
+        "p2829": 2.267
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "prime-ministers-office-public",
+      "name": "Prime Minister’s Office-Public",
+      "pao": "Secretary to the Prime Minister",
+      "page": 13,
+      "goal": "Prime Minister Office (Public) processes all cases requiring the decision of the Honorable Prime Minister.",
+      "outcomes": "Timely execution of all summaries/references/cases requiring decision of the Prime Minister and ensuring implementation of PM’s Directives.",
+      "outputs": [
+        {
+          "name": "Administrative Services",
+          "actual2425": 0.719,
+          "be2526": 0.897,
+          "be2627": 0.921,
+          "p2728": 1.022,
+          "p2829": 1.137
+        }
+      ],
+      "total": {
+        "actual2425": 0.719,
+        "be2526": 0.897,
+        "be2627": 0.921,
+        "p2728": 1.022,
+        "p2829": 1.137
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "prime-minister-office-internal",
+      "name": "Prime Minister Office-Internal",
+      "pao": "Military Secretary to the Prime Minister",
+      "page": 13,
+      "goal": "To facilitate Honorable Prime Minister of Pakistan in discharging of his duties, by managing & organizing the meetings, functions, ceremonies, tours and security arrangement for the Honorable Prime Minister.",
+      "outcomes": "The Prime Minister schedule is optimized, allowing for more efficient use of time and increased productivity.",
+      "outputs": [
+        {
+          "name": "Administrative Services",
+          "actual2425": 0.58,
+          "be2526": 0.698,
+          "be2627": 0.754,
+          "p2728": 0.836,
+          "p2829": 0.93
+        },
+        {
+          "name": "Reception Services",
+          "actual2425": 0.004,
+          "be2526": 0.004,
+          "be2627": 0.005,
+          "p2728": 0.006,
+          "p2829": 0.006
+        },
+        {
+          "name": "Estate Gardens Establishment Prime Minister’s Services Office (Internal)",
+          "actual2425": 0.029,
+          "be2526": 0.045,
+          "be2627": 0.045,
+          "p2728": 0.05,
+          "p2829": 0.056
+        },
+        {
+          "name": "Travel and Conveyance Services",
+          "actual2425": 0.058,
+          "be2526": 0.097,
+          "be2627": 0.076,
+          "p2728": 0.084,
+          "p2829": 0.094
+        },
+        {
+          "name": "Health Services",
+          "actual2425": 0.009,
+          "be2526": 0.014,
+          "be2627": 0.016,
+          "p2728": 0.017,
+          "p2829": 0.019
+        }
+      ],
+      "total": {
+        "actual2425": 0.679,
+        "be2526": 0.858,
+        "be2627": 0.895,
+        "p2728": 0.993,
+        "p2829": 1.105
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "prime-ministers-inspection-commission",
+      "name": "Prime Minister’s Inspection Commission",
+      "pao": "Chairman",
+      "page": 14,
+      "goal": "The Commission shall if so, directed by the Prime Minister to carry out the inspections and may conduct inquiries in respect of any Ministry/Division/Department/Office/Corporation and employees on various charges/allegations and any other assignment given by the Prime Minister.",
+      "outcomes": null,
+      "outputs": [
+        {
+          "name": "To Observe/ensure transparency in Ministry / Division/Department",
+          "actual2425": 0.143,
+          "be2526": 0.153,
+          "be2627": 0.2,
+          "p2728": 0.222,
+          "p2829": 0.247
+        }
+      ],
+      "total": {
+        "actual2425": 0.143,
+        "be2526": 0.153,
+        "be2627": 0.2,
+        "p2728": 0.222,
+        "p2829": 0.247
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-disaster-management-authority",
+      "name": "National Disaster Management Authority",
+      "pao": "Chairman",
+      "page": 14,
+      "goal": "To ensure safety and sustainability of Human Lives during a Natural Disaster through effective operational relief & Rescue activity. To prepare in advance against disaster to avoid human and infrastructure losses through a strengthening DRR mechanism.",
+      "outcomes": "Due to policy intervention loss in terms of Human Lives and infrastructure was minimum during flood-2022",
+      "outputs": null,
+      "total": {
+        "actual2425": 0.823,
+        "be2526": 1.1,
+        "be2627": 1.048,
+        "p2728": 1.163,
+        "p2829": 1.294
+      },
+      "reconciled": false
+    },
+    {
+      "slug": "board-of-investment",
+      "name": "Board of Investment",
+      "pao": "Secretary",
+      "page": 15,
+      "goal": "Promoting domestic and foreign investment to enhance Pakistan's economic development. Increase in investment to GDP ratio. i. Quarterly Regulatory Reform Packages till June, 2028. ii. Capacity Building of federal and provincial/regional public sector officials on good governance, Regulatory impact assessment (RIA) and regulatory principles. iii. Impact assessment study to evaluate the effectiveness and impact of the implemented reforms. iv. Business perception survey to identify persistent regulatory burdens and challenges faced by businesses, thereby informing future reform interventions. v. Support for operationalization of the Asaan Karobar Technical Unit.",
+      "outcomes": "Targeted impact as per PC-I. I. Introduce Reform to create ease of doing business in Pakistan. II. Submission of Regulatory Reform packages to the Cabinet Committee on Regulators Reforms (CCOR) on quarterly basis. III. Compliance cost saving of up to PKR 5 billion to business through Regulatory Reforms.",
+      "outputs": [
+        {
+          "name": "Investment advisory and facilitation services",
+          "actual2425": 0.9,
+          "be2526": 1.912,
+          "be2627": 0.858,
+          "p2728": 0.952,
+          "p2829": 1.059
+        },
+        {
+          "name": "Development",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 0.761,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 0.9,
+        "be2526": 1.912,
+        "be2627": 1.619,
+        "p2728": 0.952,
+        "p2829": 1.059
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "naya-pakistan-housing-development-authority",
+      "name": "Naya Pakistan Housing Development Authority",
+      "pao": "Chairman",
+      "page": 22,
+      "goal": "To meet overall mission of NAPHDA i.e., Planning, Development, Construction and management of real estate development schemes and projects with particular focus on social and affordable housing and to empower low- and middle-income segments of the society.",
+      "outcomes": "Ownership of decent housing to low-income segments of the society as well as improvement in the overall economy.",
+      "outputs": [
+        {
+          "name": "To facilitate the NAPHDA Head Low-Income Office Segment for availing Housing",
+          "actual2425": 0.428,
+          "be2526": 1.588,
+          "be2627": 0.143,
+          "p2728": 0.158,
+          "p2829": 0.176
+        }
+      ],
+      "total": {
+        "actual2425": 0.428,
+        "be2526": 1.588,
+        "be2627": 0.143,
+        "p2728": 0.158,
+        "p2829": 0.176
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "pakistan-atomic-energy-commission",
+      "name": "Pakistan Atomic Energy Commission",
+      "pao": "Chairman",
+      "page": 25,
+      "goal": "Research & Development through Energy & Social Sector",
+      "outcomes": "Impact on Target Population I. Awareness, Improved life quality II. Cost effective inputs etc. III. Ultimately benefit to overall society",
+      "outputs": null,
+      "total": {
+        "actual2425": 44.266,
+        "be2526": 20.843,
+        "be2627": 23.914,
+        "p2728": 25.038,
+        "p2829": 27.868
+      },
+      "reconciled": false
+    },
+    {
+      "slug": "pakistan-nuclear-regulatory-authority",
+      "name": "Pakistan Nuclear Regulatory Authority",
+      "pao": "Chairman",
+      "page": 27,
+      "goal": "Ensuring safety of Nuclear Installation and Radiation Facilities utilizing Nuclear Materials & Radiation sources in Industrial, Medical, Agriculture, Research & Development for protection of workers, public and environment from ionizing radiation.",
+      "outcomes": "Protection of workers, public & environment from ionizing radiation.",
+      "outputs": [
+        {
+          "name": "Development and maintenance of Regulatory Framework for Nuclear Installations &Radiation Facilities and their Authorization & Licensing, Review& Assessment, Inspection& Enforcement; Licensing of Operating Personnel; Research& Development.",
+          "actual2425": 1.862,
+          "be2526": 2.257,
+          "be2627": 2.357,
+          "p2728": 2.614,
+          "p2829": 2.91
+        },
+        {
+          "name": "Capacity building of Pakistan Nuclear Regulatory Authority",
+          "actual2425": 0.256,
+          "be2526": null,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 2.118,
+        "be2526": 2.257,
+        "be2627": 2.357,
+        "p2728": 2.614,
+        "p2829": 2.91
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "pakistan-space-and-upper-atmosphere-research-commission",
+      "name": "Pakistan Space and Upper Atmosphere Research Commission",
+      "pao": "Chairman",
+      "page": 28,
+      "goal": "To satiate Pakistan’s strategic and socio-economic developmental needs, SUPARCO is embarked on a comprehensive National Space Program (NSP 2047) catering all necessary elements including development of satellites, launch vehicle, launch facility, space science awareness and diverse space applications with an ultimate objective of achieving self-reliance / indigenous capabilities in the Space Science and Technology.",
+      "outcomes": "The envisaged outcomes of the NSP 2047 related programs and projects are to respond to national needs and concerns in terms of space applications, technology and disaster management. In Space Applications sector by utilizing data from remote sensing satellites reforms are expected in the sectors of agriculture, climate, urban planning, water resources, geology, disaster management etc. Earth observation will help in defence and national security domains. Further, own communication satellites provide services of telecommunication, TV broadcasting, cellular networking and internet services across Pakistan as well as South Asia, Middle East etc. and further DTH and SatComm services are soon to add. Through Navigation satellite program, SUPARCO aims to develop complete eco-system for its users that will consist of GNSS infrastructure, the technology and end-to-end solutions support. The Space Launch Facility and Space Launch Vehicle programs will enable the country to not only get independent access to space from the country but to also reduce / eventually eliminate the dependency on foreign resources thus saving precious national exchequer.",
+      "outputs": [
+        {
+          "name": "Space and upper atmosphere research services",
+          "actual2425": 9.22,
+          "be2526": 36.604,
+          "be2627": 4.895,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 9.22,
+        "be2526": 36.604,
+        "be2627": 4.895,
+        "p2728": null,
+        "p2829": null
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "establishment-division",
+      "name": "Establishment Division",
+      "pao": "Secretary",
+      "page": 32,
+      "goal": "Fostering excellence in the civil service by ensuring merit-based appointments, postings and promotions, capacity building through trainings, introduction of modern management techniques and technology, undertaking governance through institutions and systems and deconcentrating of power through effective decentralization. MS-Wing is mandated to act as HR advisory and Management Consulting arm of Federal Government organizations, assisting Ministries/Divisions in resolving any of their specific HR and management issues, determining the organizational status of the Federal Government entities, training manpower, managing Surplus pool, managing of Recruitment policy and looking after reform agenda of the Federal Government. To serve as coordinating arm of Establishment Division for the pay and pension Commission. To suggest research based international best practices in the areas of Civil Services and intuitional/administrative reforms. Meet economic, social and psychological needs of F.G employees and their dependents in every sphere of their community life. Research & providing training in Rural Development Administration. Capacity Building of the professionals involved in development process with special reference to the rural development, socio-economic empowerment of rural and under privilege communities for sustainable development, conduct research in the field of rural development and administration in order to make the realistic and meaningful development. Welfare of the employees and their families. To conduct STP of officers of OMG selected through competitive examination.",
+      "outcomes": "• Achieving better governance and effective public service delivery. Revamping the government machinery for enhancing productivity and efficiency. Preventing unnecessary expansion of the Government. Avoiding duplication / overlapping of functions allocated to Ministries/Divisions. Facilitating the Ministries/Divisions/Departments in identifying capacity gaps and suggesting measures/ recommendations, thereof. To meet the technical skill gaps, undertakes studies for creation of MP-Scale/SPPS Positions. To trains government functionaries in modern management tools and techniques and international best practices. Imported Civil Service delivery.",
+      "outputs": [
+        {
+          "name": "Policy formulation and implementation",
+          "actual2425": 2.197,
+          "be2526": 4.015,
+          "be2627": 3.793,
+          "p2728": 3.098,
+          "p2829": 3.448
+        },
+        {
+          "name": "Educational and Vocational",
+          "actual2425": 0.221,
+          "be2526": 0.286,
+          "be2627": 0.242,
+          "p2728": 0.268,
+          "p2829": 0.298
+        },
+        {
+          "name": "Pre and In- Service training of civil servants. Training infrastructure and management course development for civil servants",
+          "actual2425": 0.348,
+          "be2526": 0.772,
+          "be2627": 0.878,
+          "p2728": 0.974,
+          "p2829": 1.084
+        },
+        {
+          "name": "Research Administrative Policies and Improvement facilities provided to Civil Servants by the Federal Government",
+          "actual2425": 0.129,
+          "be2526": 0.167,
+          "be2627": 0.179,
+          "p2728": 0.199,
+          "p2829": 0.221
+        },
+        {
+          "name": "Sports, Recreational and Cultural",
+          "actual2425": 0.151,
+          "be2526": 0.179,
+          "be2627": 0.19,
+          "p2728": 0.21,
+          "p2829": 0.234
+        },
+        {
+          "name": "Relief and Rehabilitation",
+          "actual2425": 0.021,
+          "be2526": 0.041,
+          "be2627": 0.037,
+          "p2728": 0.04,
+          "p2829": 0.045
+        },
+        {
+          "name": "Women Hostel and Staff Day Care Centre Organization",
+          "actual2425": 0.019,
+          "be2526": 0.018,
+          "be2627": 0.022,
+          "p2728": 0.024,
+          "p2829": 0.027
+        },
+        {
+          "name": "Financial Relief to incapacitated, retired employees and issuance of benevolent funds, marriage grants, farewell grants and educational stipends",
+          "actual2425": 4.008,
+          "be2526": 4.098,
+          "be2627": 4.262,
+          "p2728": 4.727,
+          "p2829": 5.261
+        },
+        {
+          "name": "Rural Development support services",
+          "actual2425": 0.562,
+          "be2526": 0.64,
+          "be2627": 0.574,
+          "p2728": 0.637,
+          "p2829": 0.709
+        },
+        {
+          "name": "Development",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 1.786,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 7.657,
+        "be2526": 10.215,
+        "be2627": 11.963,
+        "p2728": 10.177,
+        "p2829": 11.328
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "federal-public-service-commission",
+      "name": "Federal Public Service Commission",
+      "pao": "Secretary",
+      "page": 37,
+      "goal": "Merit based recruitment and selection of human resource for public sector",
+      "outcomes": "Impact on Target Population",
+      "outputs": [
+        {
+          "name": "Recruitment through Competitive Exams & General Recruitment",
+          "actual2425": 1.304,
+          "be2526": 1.472,
+          "be2627": 1.474,
+          "p2728": 1.634,
+          "p2829": 1.819
+        }
+      ],
+      "total": {
+        "actual2425": 1.304,
+        "be2526": 1.472,
+        "be2627": 1.474,
+        "p2728": 1.634,
+        "p2829": 1.819
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-school-of-public-policy",
+      "name": "National School of Public Policy",
+      "pao": "Rector, National School of Public Policy",
+      "page": 38,
+      "goal": "Perpetual quest towards attainment of improved governance, effective service delivery and effort to build capacity in Pakistan in the different areas of nation building, Governance & leadership, Economy, Security, Sustainable Energy, Education, Health and Stabilization.",
+      "outcomes": "Administrative Management Training of Civil Servants belonging to Federal/Provincial Government and Public Sector Organizations (BS-20, BS-19 & BS-18 Officers)",
+      "outputs": [
+        {
+          "name": "Post induction- mandatory management trainings for civil servants",
+          "actual2425": 3.068,
+          "be2526": 3.391,
+          "be2627": 3.515,
+          "p2728": 3.898,
+          "p2829": 4.338
+        }
+      ],
+      "total": {
+        "actual2425": 3.068,
+        "be2526": 3.391,
+        "be2627": 3.515,
+        "p2728": 3.898,
+        "p2829": 4.338
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "civil-services-academy",
+      "name": "Civil Services Academy",
+      "pao": "Director General, Civil Services Academy",
+      "page": 39,
+      "goal": "To improve the quality and effectiveness of public policies and management in Pakistan by improving the quality of pre-service and in-service training and education of all those engaged in public service.",
+      "outcomes": "a. CTP: To organize pre-service common training programmed for probationary officers in BS-17 b. STP: Specialized Training Programme for PAS Officers c. MCMC: Mid Carrier Management Course for PAS Officers",
+      "outputs": [
+        {
+          "name": "Induction and Training of Occupational Groups",
+          "actual2425": 1.575,
+          "be2526": 2,
+          "be2627": 2.088,
+          "p2728": 2.315,
+          "p2829": 2.577
+        }
+      ],
+      "total": {
+        "actual2425": 1.575,
+        "be2526": 2,
+        "be2627": 2.088,
+        "p2728": 2.315,
+        "p2829": 2.577
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-security-division",
+      "name": "National Security Division",
+      "pao": "Secretary, National Security Division",
+      "page": 40,
+      "goal": "i. Function as Secretariat of the National Security Committee and convene its meetings. ii. Formulate and monitor implementation of National Security Committee decisions. iii. Periodic review of the National Security Policy in coordination with all stake holders. iv. Brief the Prime Minster/Government/Parliament on National Security Issues. v. Conduct National Security Dialogue with friendly countries. vi. Organize Islamabad security Dialogue.",
+      "outcomes": "Enhanced synergy in government organs for the formulation and implementation of new national security policy.",
+      "outputs": [
+        {
+          "name": "A comprehensive National Security Policy. Collective thinking on key National Security Issues. Better informed public and key stake holders on National Security issues. Improved relation with counterpart agencies in other countries.",
+          "actual2425": 0.13,
+          "be2526": 0.241,
+          "be2627": 0.489,
+          "p2728": 0.542,
+          "p2829": 0.603
+        }
+      ],
+      "total": {
+        "actual2425": 0.13,
+        "be2526": 0.241,
+        "be2627": 0.489,
+        "p2728": 0.542,
+        "p2829": 0.603
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "special-technology-zones-authority",
+      "name": "Special Technology Zones Authority",
+      "pao": "Chairperson, Special Technology Zones Authority",
+      "page": 42,
+      "goal": "Streamline and harmonize legal and regulatory framework for STZA, enabling, promoting ease of doing business and establishment of STZA",
+      "outcomes": null,
+      "outputs": [
+        {
+          "name": "Effective Legal and Licensing Compliance Framework Developed and Implemented",
+          "actual2425": 0.042,
+          "be2526": 0.068,
+          "be2627": 0.071,
+          "p2728": 0.078,
+          "p2829": 0.087
+        },
+        {
+          "name": "Notification of Zones and Licensing of Zone Entities",
+          "actual2425": 0.049,
+          "be2526": 0.076,
+          "be2627": 0.079,
+          "p2728": 0.087,
+          "p2829": 0.097
+        },
+        {
+          "name": "Development operationalization of Islamabad Technopolis (self-developed)",
+          "actual2425": 0.045,
+          "be2526": 0.138,
+          "be2627": 0.143,
+          "p2728": 0.159,
+          "p2829": 0.176
+        },
+        {
+          "name": "A digital portal for zone entities, integrated with other Government. Agencies for licensing operations and Management",
+          "actual2425": 0.378,
+          "be2526": 0.408,
+          "be2627": 0.422,
+          "p2728": 0.468,
+          "p2829": 0.521
+        },
+        {
+          "name": "Operationalization of fiscal and monetary Incentives at Federal & Provincial Level",
+          "actual2425": 0.056,
+          "be2526": 0.084,
+          "be2627": 0.087,
+          "p2728": 0.096,
+          "p2829": 0.107
+        },
+        {
+          "name": "Strategic marketing and branding nationally and globally to attract investments through partnerships and Alliances",
+          "actual2425": 0.134,
+          "be2526": 0.146,
+          "be2627": 0.151,
+          "p2728": 0.168,
+          "p2829": 0.187
+        },
+        {
+          "name": "Development",
+          "actual2425": 0.304,
+          "be2526": null,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 1.009,
+        "be2526": 0.921,
+        "be2627": 0.952,
+        "p2728": 1.056,
+        "p2829": 1.176
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "intelligence-bureau-ib",
+      "name": "Intelligence Bureau (IB)",
+      "pao": "Director General, Intelligence Bureau",
+      "page": 44,
+      "goal": "Federal Intelligence / Reporting to Govt. on National Security",
+      "outcomes": "Impact on Target Population (Federal Intelligence)",
+      "outputs": [
+        {
+          "name": "Federal Intelligence Service",
+          "actual2425": 18.809,
+          "be2526": 19.121,
+          "be2627": 20.961,
+          "p2728": 23.245,
+          "p2829": 25.872
+        }
+      ],
+      "total": {
+        "actual2425": 18.809,
+        "be2526": 19.121,
+        "be2627": 20.961,
+        "p2728": 23.245,
+        "p2829": 25.872
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "council-of-common-interests",
+      "name": "Council of Common Interests",
+      "pao": "Secretary",
+      "page": 44,
+      "goal": "Formulation and Regulation of Policies in relation to matters in Federal Legislative List, Part-II. Safeguard the interests of Provinces and resolve Federal, Provincial and Inter-Provincial disputes.",
+      "outcomes": "Since the inception of the Council apart from formulation of policies on matters enumerated in Federal Legislative List, Part II, it has been playing a very instrumental role in bringing the provinces closer to each other by resolving disputes between the federation and the provinces and safeguarding interests of federation and federating units.",
+      "outputs": [
+        {
+          "name": "Formulation and Regulation of CCI Policies in relation to matter in Secretariat Federal Legislative List II",
+          "actual2425": 0.088,
+          "be2526": 0.113,
+          "be2627": 0.118,
+          "p2728": 0.131,
+          "p2829": 0.146
+        }
+      ],
+      "total": {
+        "actual2425": 0.088,
+        "be2526": 0.113,
+        "be2627": 0.118,
+        "p2728": 0.131,
+        "p2829": 0.146
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "climate-change-and-environmental-coordination-division",
+      "name": "Climate Change and Environmental Coordination Division",
+      "pao": "Secretary",
+      "page": 45,
+      "goal": "To ensure that climate change is mainstreamed in the economically and socially vulnerable sectors of the economy and climate change performance index by 2026.",
+      "outcomes": "Enhance national capacity for climate resilience, low carbon development, mobilizing climate finance, biological diversity and forest cover/carbon sequestration in alignment with national priorities envisioned in URAAN Pakistan 5e & 5c by the planning commission.",
+      "outputs": [
+        {
+          "name": "Environmental Protection, Conservation, Rehabilitation and improvement Services",
+          "actual2425": 3.586,
+          "be2526": 0.124,
+          "be2627": 0.132,
+          "p2728": 0.147,
+          "p2829": 0.163
+        },
+        {
+          "name": "Conservation of Wildlife and Forest Services",
+          "actual2425": 0.055,
+          "be2526": 0.055,
+          "be2627": 0.065,
+          "p2728": 0.072,
+          "p2829": 0.08
+        },
+        {
+          "name": "Research and Survey Services",
+          "actual2425": 0.134,
+          "be2526": 0.125,
+          "be2627": 0.135,
+          "p2728": 0.15,
+          "p2829": 0.167
+        },
+        {
+          "name": "Policy making and administrative support Services",
+          "actual2425": 0.463,
+          "be2526": 0.701,
+          "be2627": 0.907,
+          "p2728": 1.006,
+          "p2829": 1.119
+        },
+        {
+          "name": "Wildlife Management Services-ICT",
+          "actual2425": 0.056,
+          "be2526": 0.063,
+          "be2627": 0.076,
+          "p2728": 0.085,
+          "p2829": 0.094
+        },
+        {
+          "name": "Formulate, Comprehensive adaptation and mitigation policies to address the effects of climate change",
+          "actual2425": 0.075,
+          "be2526": null,
+          "be2627": 0.15,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Development",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 2.478,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 4.369,
+        "be2526": 1.068,
+        "be2627": 3.943,
+        "p2728": 1.459,
+        "p2829": 1.624
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "commerce-division",
+      "name": "Commerce Division",
+      "pao": "Secretary",
+      "page": 51,
+      "goal": "a. To promote, protect and expand international and national trade interests of Pakistan with a view to become a leading exporting country in the region. Increase in Trade to GDP ratio from 20% to 22%. b. To sustain the growth of textile section and to keep domestic textile sector abreast of global competition and challenges.",
+      "outcomes": "To increase the volume of Pakistan’s export",
+      "outputs": null,
+      "total": {
+        "actual2425": 19.896,
+        "be2526": 26.999,
+        "be2627": 37.999,
+        "p2728": 15.426,
+        "p2829": 17.169
+      },
+      "reconciled": false
+    },
+    {
+      "slug": "communications-division",
+      "name": "Communications Division",
+      "pao": "Secretary",
+      "page": 53,
+      "goal": "National cohesion and integration through development of sustainable communication infrastructure",
+      "outcomes": "Impact on Target Population– Construction& Transport Communications",
+      "outputs": null,
+      "total": {
+        "actual2425": 210.38,
+        "be2526": 287.353,
+        "be2627": 286.744,
+        "p2728": 65.469,
+        "p2829": 72.867
+      },
+      "reconciled": false,
+      "demands": [
+        {
+          "no": 25,
+          "name": "Communications Division",
+          "docId": "dfg1",
+          "page": 209,
+          "kind": "current",
+          "voted": 0.355,
+          "charged": null,
+          "total": {
+            "be2526": 0.3137,
+            "re2526": 0.3075,
+            "be2627": 0.355
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 0.2327,
+              "re2526": 0.2327,
+              "be2627": 0.2545
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.0709,
+              "re2526": 0.066,
+              "be2627": 0.0854
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.0048,
+              "re2526": 0.004,
+              "be2627": 0.0059
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.0017,
+              "re2526": 0.0016,
+              "be2627": 0.0043
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.0001,
+              "re2526": 0.0001,
+              "be2627": 0.0001
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.0035,
+              "re2526": 0.0032,
+              "be2627": 0.0048
+            }
+          ]
+        },
+        {
+          "no": 26,
+          "name": "Other Expenditure of Communications Division",
+          "docId": "dfg1",
+          "page": 214,
+          "kind": "current",
+          "voted": 36.1374,
+          "charged": null,
+          "total": {
+            "be2526": 34.7548,
+            "re2526": 33.5404,
+            "be2627": 36.1374
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 14.3318,
+              "re2526": 15.9577,
+              "be2627": 14.9783
+            },
+            {
+              "code": "A02",
+              "label": "Project Pre-investment Analysis",
+              "be2526": 0.0015,
+              "re2526": null,
+              "be2627": 0.0003
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 14.6887,
+              "re2526": 13.4011,
+              "be2627": 16.3703
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.0458,
+              "re2526": 0.051,
+              "be2627": 0.0501
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 4.5017,
+              "re2526": 3.3004,
+              "be2627": 3.8476
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0514,
+              "re2526": 0.0637,
+              "be2627": 0.0468
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.5108,
+              "re2526": 0.1101,
+              "be2627": 0.2303
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.6231,
+              "re2526": 0.6565,
+              "be2627": 0.6137
+            }
+          ]
+        },
+        {
+          "no": 27,
+          "name": "Pakistan Post Office Department",
+          "docId": "dfg1",
+          "page": 248,
+          "kind": "current",
+          "voted": null,
+          "charged": null,
+          "total": {
+            "be2526": 24.4536,
+            "re2526": 24.0823,
+            "be2627": 25.5417
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 19.6136,
+              "re2526": 19.6148,
+              "be2627": 20.4972
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 3.6845,
+              "re2526": 3.3901,
+              "be2627": 3.7833
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.4776,
+              "re2526": 0.4575,
+              "be2627": 0.4993
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.467,
+              "re2526": 0.4224,
+              "be2627": 0.522
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0012,
+              "re2526": null,
+              "be2627": 0.0012
+            },
+            {
+              "code": "A07",
+              "label": "Interest Payment",
+              "be2526": 0.005,
+              "re2526": 0.0047,
+              "be2627": 0.005
+            },
+            {
+              "code": "A10",
+              "label": "Principal Repayments of Loans",
+              "be2526": 0.01,
+              "re2526": null,
+              "be2627": 0.01
+            },
+            {
+              "code": "A12",
+              "label": "Civil Works",
+              "be2526": 0.004,
+              "re2526": 0.0004,
+              "be2627": 0.006
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.1907,
+              "re2526": 0.1925,
+              "be2627": 0.2177
+            }
+          ]
+        },
+        {
+          "no": 100,
+          "name": "Development Expenditure of Communications Division",
+          "docId": "dfg4",
+          "page": 51,
+          "kind": "development",
+          "voted": 4.4395,
+          "charged": null,
+          "total": {
+            "be2526": 7.1592,
+            "re2526": 6.3728,
+            "be2627": 4.4395
+          },
+          "objects": [
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 7.01,
+              "re2526": 6.309,
+              "be2627": 4.252
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": null,
+              "re2526": null,
+              "be2627": 0.003
+            },
+            {
+              "code": "A12",
+              "label": "Civil Works",
+              "be2526": 0.1492,
+              "re2526": 0.0638,
+              "be2627": 0.1845
+            }
+          ]
+        },
+        {
+          "no": 125,
+          "name": "External Development Loans and Advances of Communication",
+          "docId": "dfg4",
+          "page": 401,
+          "kind": "development",
+          "voted": 59.255,
+          "charged": null,
+          "total": {
+            "be2526": 54.8562,
+            "re2526": 49.3706,
+            "be2627": 59.255
+          },
+          "objects": [
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": null,
+              "re2526": null,
+              "be2627": 0.002
+            },
+            {
+              "code": "A08",
+              "label": "Loans and Advances",
+              "be2526": 54.8562,
+              "re2526": 49.3706,
+              "be2627": 59.25
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": null,
+              "re2526": null,
+              "be2627": 0.003
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "defense-division",
+      "name": "Defense Division",
+      "pao": "Secretary",
+      "page": 56,
+      "goal": "To defend national sovereignty and territorial integrity of Pakistan and to protect its national interest and assets through military means.",
+      "outcomes": null,
+      "outputs": null,
+      "total": {
+        "actual2425": 2257.09,
+        "be2526": 2608.73,
+        "be2627": 3056.333,
+        "p2728": 59.923,
+        "p2829": 66.694
+      },
+      "reconciled": false,
+      "demands": [
+        {
+          "no": 28,
+          "name": "Defence Division",
+          "docId": "dfg1",
+          "page": 347,
+          "kind": "current",
+          "voted": 17.1007,
+          "charged": null,
+          "total": {
+            "be2526": 13.8921,
+            "re2526": 17.7712,
+            "be2627": 17.1007
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 7.0712,
+              "re2526": 7.0883,
+              "be2627": 7.7349
+            },
+            {
+              "code": "A02",
+              "label": "Project Pre-investment Analysis",
+              "be2526": 0.003,
+              "re2526": null,
+              "be2627": 0.003
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 3.4361,
+              "re2526": 3.2267,
+              "be2627": 3.6862
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.2883,
+              "re2526": 0.134,
+              "be2627": 0.3333
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.1737,
+              "re2526": 0.2237,
+              "be2627": 1.5035
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0004,
+              "re2526": 0.0003,
+              "be2627": 0.0005
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.701,
+              "re2526": 4.8944,
+              "be2627": 1.3105
+            },
+            {
+              "code": "A12",
+              "label": "Civil Works",
+              "be2526": null,
+              "re2526": null,
+              "be2627": 0.1919
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 2.2185,
+              "re2526": 2.2036,
+              "be2627": 2.337
+            }
+          ]
+        },
+        {
+          "no": 29,
+          "name": "Federal Government Educational Institutions In Cantonments",
+          "docId": "dfg1",
+          "page": 393,
+          "kind": "current",
+          "voted": 17.582,
+          "charged": null,
+          "total": {
+            "be2526": 15.9081,
+            "re2526": 15.7449,
+            "be2627": 17.582
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 12.9775,
+              "re2526": 12.9855,
+              "be2627": 14.5698
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 2.443,
+              "re2526": 1.4794,
+              "be2627": 2.807
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.0101,
+              "re2526": 0.0098,
+              "be2627": 0.0126
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.125,
+              "re2526": 0.1284,
+              "be2627": 0.12
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0226,
+              "re2526": 0.0226,
+              "be2627": 0.0226
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.33,
+              "re2526": 1.1192,
+              "be2627": 0.05
+            }
+          ]
+        },
+        {
+          "no": 30,
+          "name": "Airports Security Force",
+          "docId": "dfg1",
+          "page": 414,
+          "kind": "current",
+          "voted": 21.6507,
+          "charged": null,
+          "total": {
+            "be2526": 17.3754,
+            "re2526": 17.2227,
+            "be2627": 21.6507
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 14.9776,
+              "re2526": 14.9776,
+              "be2627": 18.3516
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 1.5532,
+              "re2526": 1.6139,
+              "be2627": 2.2208
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.1765,
+              "re2526": 0.177,
+              "be2627": 0.1118
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.0887,
+              "re2526": 0.0887,
+              "be2627": 0.1387
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0097,
+              "re2526": 0.0097,
+              "be2627": 0.015
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.4134,
+              "re2526": 0.2005,
+              "be2627": 0.6255
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.1563,
+              "re2526": 0.1553,
+              "be2627": 0.1873
+            }
+          ]
+        },
+        {
+          "no": 31,
+          "name": "Defence Services",
+          "docId": "dfg1",
+          "page": 432,
+          "kind": "current",
+          "voted": 3000,
+          "charged": null,
+          "total": {
+            "be2526": 2550,
+            "re2526": 2583.9682,
+            "be2627": 3000
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 846.032,
+              "re2526": 851.0803,
+              "be2627": 967.5477
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 704.3991,
+              "re2526": 721.0299,
+              "be2627": 743.4615
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 663.0769,
+              "re2526": 663.9228,
+              "be2627": 925.8331
+            },
+            {
+              "code": "A12",
+              "label": "Civil Works",
+              "be2526": 336.492,
+              "re2526": 347.9352,
+              "be2627": 363.1577
+            }
+          ]
+        },
+        {
+          "no": 101,
+          "name": "Development Expenditure of Defence Division",
+          "docId": "dfg4",
+          "page": 57,
+          "kind": "development",
+          "voted": 10.9025,
+          "charged": null,
+          "total": {
+            "be2526": 11.5538,
+            "re2526": 8.4085,
+            "be2627": 10.9025
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 0.1529,
+              "re2526": 0.1073,
+              "be2627": 0.1218
+            },
+            {
+              "code": "A02",
+              "label": "Project Pre-investment Analysis",
+              "be2526": 0.0166,
+              "re2526": 0.0166,
+              "be2627": 0.0555
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 2.0657,
+              "re2526": 1.6248,
+              "be2627": 1.2198
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 3.003,
+              "re2526": 0.3156,
+              "be2627": 1
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": null,
+              "re2526": null,
+              "be2627": 0.001
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 1.4597,
+              "re2526": 1.5696,
+              "be2627": 2.1253
+            },
+            {
+              "code": "A12",
+              "label": "Civil Works",
+              "be2526": 4.8272,
+              "re2526": 4.7524,
+              "be2627": 6.3524
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.0286,
+              "re2526": 0.0222,
+              "be2627": 0.0266
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "defense-production-division",
+      "name": "Defense Production Division",
+      "pao": "Secretary",
+      "page": 59,
+      "goal": "a) Self-Reliance through; Revitalization on Public Defense Industry, Growth of Private Defense Industry. Gradual Indigenization using Research & Develo9pment, Transfer of Technology, Offset, Human Resource Development etc. b) Self-Sustenance through; Enhancing Defense Export & Corporatization",
+      "outcomes": "Transformation, Modernization and innovation of Defense Production and Ship building Industry leading to Self-reliance in defense sector of the county.",
+      "outputs": [
+        {
+          "name": "Development of ship building industry in Pakistan for provision of ship-lift, repair and docking facilities to surface ships.",
+          "actual2425": 2.096,
+          "be2526": 1.786,
+          "be2627": 0.98,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Administrative support to different entities of Ministry of Defense Production",
+          "actual2425": 1.076,
+          "be2526": 1.093,
+          "be2627": 1.14,
+          "p2728": 1.264,
+          "p2829": 1.407
+        }
+      ],
+      "total": {
+        "actual2425": 3.172,
+        "be2526": 2.879,
+        "be2627": 2.12,
+        "p2728": 1.264,
+        "p2829": 1.407
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "economic-affairs-division",
+      "name": "Economic Affairs Division",
+      "pao": "Secretary",
+      "page": 60,
+      "goal": "Assessment of requirements, programming and negations for external economic assistance from foreign Governments and Organizations.",
+      "outcomes": "Mobilization of Foreign aid to achieve the development objectives in all sectors across the country.",
+      "outputs": [
+        {
+          "name": "Foreign assistance, programming, negotiations, realization and management services and bilateral economic cooperation",
+          "actual2425": 0.81,
+          "be2526": 0.944,
+          "be2627": 0.985,
+          "p2728": 1.093,
+          "p2829": 1.216
+        },
+        {
+          "name": "Contribution to International Agencies Organizations for membership",
+          "actual2425": 21.026,
+          "be2526": 16.281,
+          "be2627": 13.387,
+          "p2728": 14.846,
+          "p2829": 16.524
+        },
+        {
+          "name": "Capacity Building of the Nationals of Friendly countries",
+          "actual2425": 0.013,
+          "be2526": 0.04,
+          "be2627": 0.039,
+          "p2728": 0.043,
+          "p2829": 0.048
+        },
+        {
+          "name": "Support to Temporarily Displaced Persons-ERP",
+          "actual2425": 0.998,
+          "be2526": 3.4,
+          "be2627": 0.585,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Foreign Debt Servicing",
+          "actual2425": 922.461,
+          "be2526": 1009.238,
+          "be2627": 1071.393,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Foreign Loan Repayment",
+          "actual2425": 2213.518,
+          "be2526": 5472.306,
+          "be2627": 5966.567,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Repayment of Short- Term Foreign Credit",
+          "actual2425": 69.882,
+          "be2526": 199.81,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Foreign Loans for Provincial Government",
+          "actual2425": 549.616,
+          "be2526": 774.953,
+          "be2627": 0.015,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 3778.323,
+        "be2526": 7476.971,
+        "be2627": 7052.971,
+        "p2728": 15.982,
+        "p2829": 17.788
+      },
+      "reconciled": true,
+      "demands": [
+        {
+          "no": 33,
+          "name": "Economic Affairs Division",
+          "docId": "dfg1",
+          "page": 445,
+          "kind": "current",
+          "voted": 0.9853,
+          "charged": null,
+          "total": {
+            "be2526": 0.9436,
+            "re2526": 0.9244,
+            "be2627": 0.9853
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 0.6784,
+              "re2526": 0.6784,
+              "be2627": 0.7089
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.2028,
+              "re2526": 0.1944,
+              "be2627": 0.2114
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.022,
+              "re2526": 0.0177,
+              "be2627": 0.022
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.034,
+              "re2526": 0.028,
+              "be2627": 0.0341
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.0021,
+              "re2526": 0.0019,
+              "be2627": 0.0024
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.0044,
+              "re2526": 0.004,
+              "be2627": 0.0064
+            }
+          ]
+        },
+        {
+          "no": 34,
+          "name": "Miscellaneous Expenditure of Economic Affairs Division",
+          "docId": "dfg1",
+          "page": 448,
+          "kind": "current",
+          "voted": 14.026,
+          "charged": null,
+          "total": {
+            "be2526": 19.721,
+            "re2526": 19.638,
+            "be2627": 14.026
+          },
+          "objects": [
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.083,
+              "re2526": null,
+              "be2627": null
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.4871,
+              "re2526": 0.4871,
+              "be2627": 0.999
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 3.3254,
+              "re2526": 3.3254,
+              "be2627": 0.5934
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 9.1497,
+              "re2526": 9.1497,
+              "be2627": 8.2262
+            },
+            {
+              "code": "A11",
+              "label": "Investments",
+              "be2526": 6.6758,
+              "re2526": 6.6758,
+              "be2627": 4.2074
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "power-division",
+      "name": "Power Division",
+      "pao": "Secretary",
+      "page": 62,
+      "goal": "Double the rate of improvement in energy efficiency, engineering, cost-effective measures, and developing market-based mechanisms.",
+      "outcomes": "steer Pakistan towards a culture of conservation and efficient use of energy resources to achieve sustainable development.",
+      "outputs": [
+        {
+          "name": "Admin support /Policy development and approval /technical support",
+          "actual2425": 0.942,
+          "be2526": 0.437,
+          "be2627": 0.492,
+          "p2728": 0.546,
+          "p2829": 0.607
+        },
+        {
+          "name": "Reduction of electricity prices through provision of subsidies",
+          "actual2425": 1236,
+          "be2526": 636.136,
+          "be2627": 830,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Enhancement of electricity generation, transmission and distribution services",
+          "actual2425": 128.334,
+          "be2526": 89.526,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Alternate energy support services",
+          "actual2425": 0.35,
+          "be2526": 0.33,
+          "be2627": 0.345,
+          "p2728": 0.383,
+          "p2829": 0.426
+        },
+        {
+          "name": "Development",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 88,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 1365.626,
+        "be2526": 726.429,
+        "be2627": 918.937,
+        "p2728": 0.928,
+        "p2829": 1.033
+      },
+      "reconciled": true,
+      "demands": [
+        {
+          "no": 35,
+          "name": "Power Division",
+          "docId": "dfg1",
+          "page": 457,
+          "kind": "current",
+          "voted": 578.8372,
+          "charged": null,
+          "total": {
+            "be2526": 636.9037,
+            "re2526": 741.7597,
+            "be2627": 578.8372
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 0.4094,
+              "re2526": 0.4539,
+              "be2627": 0.5254
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.3131,
+              "re2526": 0.1381,
+              "be2627": 0.2542
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.0118,
+              "re2526": 0.0127,
+              "be2627": 0.0175
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 493.1385,
+              "re2526": 493.1385,
+              "be2627": 530.0018
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0001,
+              "re2526": null,
+              "be2627": 0.0001
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.0208,
+              "re2526": 0.0005,
+              "be2627": 0.0198
+            },
+            {
+              "code": "A11",
+              "label": "Investments",
+              "be2526": 143,
+              "re2526": 248,
+              "be2627": 48
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.01,
+              "re2526": 0.016,
+              "be2627": 0.0184
+            }
+          ]
+        },
+        {
+          "no": 103,
+          "name": "Development Expediture of Power Division",
+          "docId": "dfg4",
+          "page": 87,
+          "kind": "development",
+          "voted": 3.1966,
+          "charged": null,
+          "total": {
+            "be2526": 2.397,
+            "re2526": 8.755,
+            "be2627": 3.1966
+          },
+          "objects": [
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 2.397,
+              "re2526": 8.755,
+              "be2627": 3.1966
+            }
+          ]
+        },
+        {
+          "no": 127,
+          "name": "External Development Loans and Advances of Power Division",
+          "docId": "dfg4",
+          "page": 413,
+          "kind": "development",
+          "voted": 76.6075,
+          "charged": null,
+          "total": {
+            "be2526": 72.1069,
+            "re2526": 63.1313,
+            "be2627": 76.6075
+          },
+          "objects": [
+            {
+              "code": "A08",
+              "label": "Loans and Advances",
+              "be2526": 72.1069,
+              "re2526": 63.1313,
+              "be2627": 76.6075
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "higher-education-commission",
+      "name": "Higher Education Commission",
+      "pao": "Executive Director",
+      "page": 88,
+      "goal": "Improvement and promotion of higher education, research and development thereby contributing to the development of a competitive knowledge-based economy.",
+      "outcomes": "Improved access and enhanced quality of higher education led to development of skilled workforce, which in turn have a significant impact on socio-economic well-being of the country.",
+      "outputs": [
+        {
+          "name": "Enhance the Equitable Access to Higher Education",
+          "actual2425": 46.442,
+          "be2526": 38.993,
+          "be2627": 24.462,
+          "p2728": 0.585,
+          "p2829": 0.651
+        },
+        {
+          "name": "Enhance Quality of Higher Education, Outcome-based Learning and Use of Innovative Modes of Delivery",
+          "actual2425": 28.396,
+          "be2526": 24.16,
+          "be2627": 15.156,
+          "p2728": 0.362,
+          "p2829": 0.403
+        },
+        {
+          "name": "Increase Faculty with Highest Academic Qualifications and Professional Skills",
+          "actual2425": 12.553,
+          "be2526": 14.589,
+          "be2627": 9.152,
+          "p2728": 0.219,
+          "p2829": 0.244
+        },
+        {
+          "name": "Promote relevant Research, Innovation& Commercialization",
+          "actual2425": 17.838,
+          "be2526": 14.126,
+          "be2627": 8.862,
+          "p2728": 0.212,
+          "p2829": 0.236
+        },
+        {
+          "name": "Strengthen Leadership, Governance and Financial Management in Higher Education",
+          "actual2425": 25.107,
+          "be2526": 14.027,
+          "be2627": 8.8,
+          "p2728": 0.21,
+          "p2829": 0.234
+        },
+        {
+          "name": "Development",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 46,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 130.337,
+        "be2526": 105.895,
+        "be2627": 112.432,
+        "p2728": 1.588,
+        "p2829": 1.768
+      },
+      "reconciled": true,
+      "demands": [
+        {
+          "no": 39,
+          "name": "Higher Education Commission (HEC)",
+          "docId": "dfg1",
+          "page": 849,
+          "kind": "current",
+          "voted": 66.4321,
+          "charged": null,
+          "total": {
+            "be2526": 66.4071,
+            "re2526": 66.3835,
+            "be2627": 66.4321
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 1.07,
+              "re2526": 1.07,
+              "be2627": 1.0807
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.3371,
+              "re2526": 0.3135,
+              "be2627": 0.3514
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 65,
+              "re2526": 65,
+              "be2627": 65
+            }
+          ]
+        },
+        {
+          "no": 105,
+          "name": "Development Expenditure of Higher Education Commission (HEC)",
+          "docId": "dfg4",
+          "page": 106,
+          "kind": "development",
+          "voted": 46,
+          "charged": null,
+          "total": {
+            "be2526": 39.4882,
+            "re2526": 35.2724,
+            "be2627": 46
+          },
+          "objects": [
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 39.4882,
+              "re2526": 35.2724,
+              "be2627": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "national-vocational-and-technical-training-commission",
+      "name": "National Vocational and Technical Training Commission",
+      "pao": "Executive Director",
+      "page": 92,
+      "goal": "To facilitate, regulated and provide policy direction for Vocational and Technical Training of the unskilled workforce",
+      "outcomes": null,
+      "outputs": [
+        {
+          "name": "Governance of TVET Sector(non- development expenses)",
+          "actual2425": 0.71,
+          "be2526": 1.147,
+          "be2627": 1.092,
+          "p2728": 1.211,
+          "p2829": 1.348
+        },
+        {
+          "name": "Capacity building through skill development",
+          "actual2425": 9.167,
+          "be2526": 4.9,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 9.877,
+        "be2526": 6.047,
+        "be2627": 1.092,
+        "p2728": 1.211,
+        "p2829": 1.348
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-heritage-and-culture-division",
+      "name": "National Heritage and Culture Division",
+      "pao": "Secretary",
+      "page": 94,
+      "goal": "Preservation & Promotion of National History, tangible and intangible Heritage and promotion of Literary Heritage, National & Regional languages and develop common values of arts and culture.",
+      "outcomes": "To spread the vision and ideas of Quaid-i-Azam & Allama Iqbal and projection of Iqbal's message through research, IT products, books and exhibitions. Promotion & protection of tangible & intangible heritage of Pakistan. Promotion of Book culture, promotion of Urdu and regional languages. Exploration of archeological sites, preservation and presentation of antique artifacts. Financial assistance and welfare of writers and bereaved families.",
+      "outputs": [
+        {
+          "name": "Research guidance & academic assistance to the researchers through publication of Jinnah papers & Other Publications.",
+          "actual2425": 0.031,
+          "be2526": 0.044,
+          "be2627": 0.046,
+          "p2728": 0.051,
+          "p2829": 0.057
+        },
+        {
+          "name": "Repair, Maintenance and Security of Quaid's mausoleum and its allied building and security arrangements.",
+          "actual2425": 0.119,
+          "be2526": 0.415,
+          "be2627": 0.124,
+          "p2728": 0.137,
+          "p2829": 0.153
+        },
+        {
+          "name": "Projection of Iqbal's Message through, Research, Books, IT Products & Exhibitions.",
+          "actual2425": 0.093,
+          "be2526": 1.094,
+          "be2627": 0.098,
+          "p2728": 0.109,
+          "p2829": 0.121
+        },
+        {
+          "name": "Carry out archeological survey for documentation of archeological sites and historical monuments under Antiquities Act 1975.sss",
+          "actual2425": 0.46,
+          "be2526": 0.389,
+          "be2627": 0.268,
+          "p2728": 0.297,
+          "p2829": 0.33
+        },
+        {
+          "name": "Policy Formulation, Administration and Implementation of International agreements.",
+          "actual2425": 0.306,
+          "be2526": 0.888,
+          "be2627": 0.69,
+          "p2728": 0.765,
+          "p2829": 0.851
+        },
+        {
+          "name": "Printing & Publication of official material, books in the field of science and compilation of dictionaries in Urdu language.",
+          "actual2425": 0.213,
+          "be2526": 0.398,
+          "be2627": 0.408,
+          "p2728": 0.453,
+          "p2829": 0.504
+        },
+        {
+          "name": "Printing & publication of different books of literature, translation of mystic poets and promotion of national & regional languages.",
+          "actual2425": 0.136,
+          "be2526": 0.156,
+          "be2627": 0.151,
+          "p2728": 0.168,
+          "p2829": 0.187
+        },
+        {
+          "name": "Provision of stipend to Writers and financial assistance to learned bodies.",
+          "actual2425": 0.149,
+          "be2526": 0.165,
+          "be2627": 0.172,
+          "p2728": 0.191,
+          "p2829": 0.212
+        },
+        {
+          "name": "Library Services",
+          "actual2425": 0.109,
+          "be2526": 0.13,
+          "be2627": 0.136,
+          "p2728": 0.151,
+          "p2829": 0.168
+        },
+        {
+          "name": "Arts & cultural activities through various arts councils, academies & encouragement of artists, artisans & folk performances. To maintain the Aiwan- e-Iqbal complex as an attractive monument for the visitors nationwide",
+          "actual2425": 0.599,
+          "be2526": 0.492,
+          "be2627": 0.512,
+          "p2728": 0.568,
+          "p2829": 0.632
+        },
+        {
+          "name": "and abroad and keep its systems and services to the state of the art Development",
+          "actual2425": 0.037,
+          "be2526": null,
+          "be2627": 0.445,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 2.25,
+        "be2526": 4.172,
+        "be2627": 3.05,
+        "p2728": 2.889,
+        "p2829": 3.215
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-rehmatul-lil-aalameen-authority",
+      "name": "National Rehmatul-lil Aalameen Authority",
+      "pao": "Director General",
+      "page": 98,
+      "goal": "To promote research in practical & theoretical aspects of Seerat for addressing contemporary social challenges and inculcating positive changes in the global society. Provincial Level i. NKRNA Act 2022",
+      "outcomes": "I. Rs. 646,120/- Lectures/sessions organized awareness program of Seerat Un Nabi (PBUH) at Federal & Provincial level II. Rs. 2,538,900/- Conduct of International Seerat Conference & Seerat Festival III. Rs. 1,588,198/- Conduct of Provincial Seerat Conferences IV. Rs. 801,700/- Youth conventions organized in different universities, college, school & madaris students. V. Rs. 1,177,050/- Several activities regarding creation of link up with Muslim & non-Muslim community at national level etc. VI. Rs. 389,400/- Organized Principals Seminars on Character Education VII. Rs. 389,676/- Organized convention for minorities under the banner of blessing for all. VIII. Rs. 681,450/- Signed MOU with different universities institutions regarding role of Authority's mandate. 9- Rs. 571,120/- Conducted research studies and printed three books and fifteen booklets",
+      "outputs": [
+        {
+          "name": "Formulate Policies, Strategies and interventions to advance and propagate key elements of the Life of Holy Prophet (PBUH)",
+          "actual2425": 0.091,
+          "be2526": 0.111,
+          "be2627": 0.116,
+          "p2728": 0.128,
+          "p2829": 0.143
+        }
+      ],
+      "total": {
+        "actual2425": 0.091,
+        "be2526": 0.111,
+        "be2627": 0.116,
+        "p2728": 0.128,
+        "p2829": 0.143
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "finance-division",
+      "name": "Finance Division",
+      "pao": "Secretary",
+      "page": 101,
+      "goal": "Macro Finance & Economic Management of Federal Government",
+      "outcomes": "• Reduction in Commodity Prices through Subsidies to Public and Private Corporations • Management of Funds Transfer to Provinces, Special Areas, and other National and International Organizations • Reforms and Improvement in Public Sector Enterprises • Reduction of Poverty",
+      "outputs": null,
+      "total": {
+        "actual2425": 33409.643,
+        "be2526": 24216.989,
+        "be2627": 36394.1,
+        "p2728": 19.722,
+        "p2829": 21.951
+      },
+      "reconciled": false,
+      "demands": [
+        {
+          "no": 43,
+          "name": "Finance Division",
+          "docId": "dfg2",
+          "page": 9,
+          "kind": "current",
+          "voted": 5.6605,
+          "charged": null,
+          "total": {
+            "be2526": 4.8218,
+            "re2526": 4.6964,
+            "be2627": 5.6605
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 3.1506,
+              "re2526": 3.1522,
+              "be2627": 3.2924
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 1.0899,
+              "re2526": 0.982,
+              "be2627": 1.5509
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.0944,
+              "re2526": 0.0911,
+              "be2627": 0.102
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.0389,
+              "re2526": 0.0394,
+              "be2627": 0.0389
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.3018,
+              "re2526": 0.3017,
+              "be2627": 0.4765
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.1462,
+              "re2526": 0.13,
+              "be2627": 0.1998
+            }
+          ]
+        },
+        {
+          "no": 44,
+          "name": "Other Expenditure of Finance Division",
+          "docId": "dfg2",
+          "page": 19,
+          "kind": "current",
+          "voted": 9.8733,
+          "charged": null,
+          "total": {
+            "be2526": 8.6907,
+            "re2526": 7.0322,
+            "be2627": 9.8733
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 4.2404,
+              "re2526": 3.7468,
+              "be2627": 4.535
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 4.071,
+              "re2526": 3.0752,
+              "be2627": 4.8201
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.0999,
+              "re2526": 0.0961,
+              "be2627": 0.0986
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.1741,
+              "re2526": 0.0534,
+              "be2627": 0.2146
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0001,
+              "re2526": 0.0001,
+              "be2627": 0.0001
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.0337,
+              "re2526": 0.0216,
+              "be2627": 0.0622
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.0716,
+              "re2526": 0.0391,
+              "be2627": 0.1428
+            }
+          ]
+        },
+        {
+          "no": 45,
+          "name": "Controller General of Accounts",
+          "docId": "dfg2",
+          "page": 60,
+          "kind": "current",
+          "voted": 14.9145,
+          "charged": null,
+          "total": {
+            "be2526": 13.812,
+            "re2526": 13.4538,
+            "be2627": 14.9145
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 8.6487,
+              "re2526": 8.7396,
+              "be2627": 9.1331
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 2.9786,
+              "re2526": 2.5099,
+              "be2627": 3.5157
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.3035,
+              "re2526": 0.2807,
+              "be2627": 0.2723
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.2159,
+              "re2526": 0.1178,
+              "be2627": 0.219
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 1.4822,
+              "re2526": 1.6439,
+              "be2627": 1.5849
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.1831,
+              "re2526": 0.1618,
+              "be2627": 0.1895
+            }
+          ]
+        },
+        {
+          "no": 46,
+          "name": "Superannuation Allowances and Pensions",
+          "docId": "dfg2",
+          "page": 118,
+          "kind": "current",
+          "voted": null,
+          "charged": null,
+          "total": {
+            "be2526": 1055,
+            "re2526": 1055,
+            "be2627": 1169
+          },
+          "objects": [
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 1055,
+              "re2526": 1055,
+              "be2627": 1169
+            }
+          ]
+        },
+        {
+          "no": 47,
+          "name": "Grants Subsidies and Miscellaneous Expenditure",
+          "docId": "dfg2",
+          "page": 126,
+          "kind": "current",
+          "voted": null,
+          "charged": null,
+          "total": {
+            "be2526": 1896.345,
+            "re2526": 1627.3709,
+            "be2627": 2561.4675
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 0.205,
+              "re2526": 0.205,
+              "be2627": 0.205
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.025,
+              "re2526": 0.025,
+              "be2627": 0.025
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 1892.115,
+              "re2526": 1496.0409,
+              "be2627": 2559.2375
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": null,
+              "re2526": 127.1,
+              "be2627": null
+            },
+            {
+              "code": "A11",
+              "label": "Investments",
+              "be2526": 4,
+              "re2526": 4,
+              "be2627": 2
+            }
+          ]
+        },
+        {
+          "no": 108,
+          "name": "Development Expenditure of Finance Division",
+          "docId": "dfg4",
+          "page": 153,
+          "kind": "development",
+          "voted": 1.44,
+          "charged": null,
+          "total": {
+            "be2526": 0.8516,
+            "re2526": 0.7259,
+            "be2627": 1.44
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 0.0568,
+              "re2526": 0.0507,
+              "be2627": 0.0037
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.2337,
+              "re2526": 0.1725,
+              "be2627": 0.2184
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": null,
+              "re2526": 0.05,
+              "be2627": 0.05
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.2218,
+              "re2526": 0.1158,
+              "be2627": 0.4
+            },
+            {
+              "code": "A12",
+              "label": "Civil Works",
+              "be2526": 0.338,
+              "re2526": 0.3364,
+              "be2627": 0.7667
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.0013,
+              "re2526": 0.0006,
+              "be2627": 0.0014
+            }
+          ]
+        },
+        {
+          "no": 109,
+          "name": "Other Development Expenditure",
+          "docId": "dfg4",
+          "page": 158,
+          "kind": "development",
+          "voted": 231.0859,
+          "charged": null,
+          "total": {
+            "be2526": 251.1301,
+            "re2526": 197.0421,
+            "be2627": 231.0859
+          },
+          "objects": [
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 251.1301,
+              "re2526": 197.0421,
+              "be2627": 231.0859
+            }
+          ]
+        }
+      ],
+      "demandsNote": "The charged appropriations Finance Division also accounts for (domestic/foreign debt servicing and repayments, ~Rs 33 tn gross) sit outside the numbered demands and are not shown here."
+    },
+    {
+      "slug": "controller-general-of-accounts",
+      "name": "Controller General of Accounts",
+      "pao": "Controller General of Accounts",
+      "page": 104,
+      "goal": "Disbursement of funds and maintenance of accounts for Federation, Provinces and District Governments",
+      "outcomes": "I. Effective, efficient and timely disbursement of public money. II. Accuracy and transparency in the presentation of financial statements of the Govt.of Pakistan. III. Improved system of disbursement of salaries, GPF (off-cycle) and pension Direct system (DCS). IV. Reporting expenditure of the Govt. of Pakistan on real time basis. V. Providing accurate and timely financial information to all stakeholders. VI. Maintenance of SAP server and application software all over Pakistan. VII. Online SAP connectivity to Ministry/Division. VIII. Collection of income tax from salary Got; employees, collection of withholding/GST on goods & services, income tax deduction from vender on behalf of FBR as withholding Agent.",
+      "outputs": [
+        {
+          "name": "Administration, Policy Formulation/ Revision and overall implementation Services",
+          "actual2425": 0.408,
+          "be2526": 1.702,
+          "be2627": 1.924,
+          "p2728": 2.134,
+          "p2829": 2.375
+        },
+        {
+          "name": "Pre-Audit payment, accounting and internal control services",
+          "actual2425": 9.876,
+          "be2526": 10.215,
+          "be2627": 10.785,
+          "p2728": 11.96,
+          "p2829": 13.312
+        },
+        {
+          "name": "Development of System for Public Financial Management, Financial Reporting and Internal Control Services",
+          "actual2425": 1.697,
+          "be2526": 1.898,
+          "be2627": 2.206,
+          "p2728": 2.446,
+          "p2829": 2.722
+        }
+      ],
+      "total": {
+        "actual2425": 11.981,
+        "be2526": 13.812,
+        "be2627": 14.914,
+        "p2728": 16.54,
+        "p2829": 18.409
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "auditor-general-of-pakistan",
+      "name": "Auditor General of Pakistan",
+      "pao": "Additional Auditor General",
+      "page": 106,
+      "goal": "To ensure judicious utilization of public money by the Government Departments and ensure transparency, accountability and good governance in operation of the Public Sector Organizations through improved financial management/discipline",
+      "outcomes": "I. Improved transparency, accountability and good governance in operation of the Public-Sector organizations through improved financial management/discipline.",
+      "outputs": [
+        {
+          "name": "Administration, Co- Additional ordination, and Policy Auditor General- Formulation I",
+          "actual2425": 2.433,
+          "be2526": 2.122,
+          "be2627": 2.525,
+          "p2728": 2.8,
+          "p2829": 3.117
+        },
+        {
+          "name": "Provision of Public Additional Sector Auditing Services Auditor General- at various tiers of II Government: Federal Provincial District and State- Owned Corporations",
+          "actual2425": 5.869,
+          "be2526": 6.435,
+          "be2627": 6.842,
+          "p2728": 7.588,
+          "p2829": 8.445
+        },
+        {
+          "name": "Staff Training and Deputy Auditor capacity building General (A&C)",
+          "actual2425": 0.398,
+          "be2526": 0.451,
+          "be2627": 0.453,
+          "p2728": 0.503,
+          "p2829": 0.559
+        }
+      ],
+      "total": {
+        "actual2425": 8.701,
+        "be2526": 9.009,
+        "be2627": 9.82,
+        "p2728": 10.891,
+        "p2829": 12.121
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "revenue-division-federal-board-of-revenue",
+      "name": "Revenue Division / Federal Board of Revenue",
+      "pao": "Secretary Revenue Division/Chairman, Federal Board of Revenue",
+      "page": 108,
+      "goal": "Optimizing revenue by providing quality services and promoting compliance with tax & related laws",
+      "outcomes": null,
+      "outputs": null,
+      "total": {
+        "actual2425": 73.447,
+        "be2526": 90.351,
+        "be2627": 97.28,
+        "p2728": 95.053,
+        "p2829": 105.794
+      },
+      "reconciled": false,
+      "demands": [
+        {
+          "no": 48,
+          "name": "Revenue Division",
+          "docId": "dfg2",
+          "page": 142,
+          "kind": "current",
+          "voted": 0.106,
+          "charged": null,
+          "total": {
+            "be2526": 0.1015,
+            "re2526": 0.0907,
+            "be2627": 0.106
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 0.0754,
+              "re2526": 0.0673,
+              "be2627": 0.0788
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.0179,
+              "re2526": 0.0187,
+              "be2627": 0.0192
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.0031,
+              "re2526": 0.0013,
+              "be2627": 0.0024
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.0041,
+              "re2526": 0.0015,
+              "be2627": 0.0042
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.001,
+              "re2526": 0.0019,
+              "be2627": 0.0014
+            }
+          ]
+        },
+        {
+          "no": 49,
+          "name": "Federal Board of Revenue",
+          "docId": "dfg2",
+          "page": 145,
+          "kind": "current",
+          "voted": 85.6042,
+          "charged": null,
+          "total": {
+            "be2526": 83.0996,
+            "re2526": 77.0178,
+            "be2627": 85.6042
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 28.3972,
+              "re2526": 28.3957,
+              "be2627": 29.6752
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 37.1461,
+              "re2526": 32.6577,
+              "be2627": 40.4965
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 1.0894,
+              "re2526": 1.063,
+              "be2627": 1.2222
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 3.8894,
+              "re2526": 3.433,
+              "be2627": 5.5749
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.1,
+              "re2526": 0.436,
+              "be2627": 1.05
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 6.914,
+              "re2526": 4.7285,
+              "be2627": 1.5877
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 5.5635,
+              "re2526": 6.3039,
+              "be2627": 5.9978
+            }
+          ]
+        },
+        {
+          "no": 110,
+          "name": "Development Expenditure of Revenue Division",
+          "docId": "dfg4",
+          "page": 196,
+          "kind": "development",
+          "voted": 11.57,
+          "charged": null,
+          "total": {
+            "be2526": 7.15,
+            "re2526": 17.15,
+            "be2627": 11.57
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 0.0343,
+              "re2526": 0.0343,
+              "be2627": 0.0705
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 2.9818,
+              "re2526": 12.8379,
+              "be2627": 5.7814
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.1526,
+              "re2526": 0.1513,
+              "be2627": 0.0676
+            },
+            {
+              "code": "A12",
+              "label": "Civil Works",
+              "be2526": 3.9801,
+              "re2526": 4.125,
+              "be2627": 5.648
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.0012,
+              "re2526": 0.0014,
+              "be2627": 0.0025
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "foreign-affairs-division",
+      "name": "Foreign Affairs Division",
+      "pao": "Secretary, Foreign Affairs Division",
+      "page": 114,
+      "goal": "Pursuit of Pakistan's vital political, socio-economic, geo-strategic and security interests through bilateral, regional, and international cooperation, with special emphasis on the economic diplomacy to take advantages offered by the process of globalization and taking necessary steps to face the challenges of the 21\" century.",
+      "outcomes": "The outcome of Foreign Policy directly or indirectly impacts 09 million Diasporas",
+      "outputs": [
+        {
+          "name": "Conflict prevention and peace keeping",
+          "actual2425": 51.448,
+          "be2526": 0.306,
+          "be2627": 0.305,
+          "p2728": 0.338,
+          "p2829": 0.376
+        },
+        {
+          "name": "Constant engagement with international community by developing friendly relations with all countries of the world.",
+          "actual2425": 0.048,
+          "be2526": 62.279,
+          "be2627": 68.367,
+          "p2728": 75.819,
+          "p2829": 84.387
+        }
+      ],
+      "total": {
+        "actual2425": 51.495,
+        "be2526": 62.585,
+        "be2627": 68.672,
+        "p2728": 76.158,
+        "p2829": 84.763
+      },
+      "reconciled": true,
+      "demands": [
+        {
+          "no": 50,
+          "name": "Foreign Affairs Division",
+          "docId": "dfg2",
+          "page": 313,
+          "kind": "current",
+          "voted": 5.0125,
+          "charged": null,
+          "total": {
+            "be2526": 4.5041,
+            "re2526": 4.3698,
+            "be2627": 5.0125
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 2.6664,
+              "re2526": 2.692,
+              "be2627": 2.8122
+            },
+            {
+              "code": "A02",
+              "label": "Project Pre-investment Analysis",
+              "be2526": 0.0001,
+              "re2526": 0.0001,
+              "be2627": 0.0001
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 1.4193,
+              "re2526": 1.2755,
+              "be2627": 1.7623
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.1162,
+              "re2526": 0.1391,
+              "be2627": 0.1355
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.0194,
+              "re2526": 0.0202,
+              "be2627": 0.0194
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0032,
+              "re2526": 0.0032,
+              "be2627": 0.0032
+            },
+            {
+              "code": "A12",
+              "label": "Civil Works",
+              "be2526": 0.0572,
+              "re2526": 0.0659,
+              "be2627": 0.0572
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.2224,
+              "re2526": 0.1739,
+              "be2627": 0.2228
+            }
+          ]
+        },
+        {
+          "no": 51,
+          "name": "Foreign Missions",
+          "docId": "dfg2",
+          "page": 324,
+          "kind": "current",
+          "voted": null,
+          "charged": null,
+          "total": {
+            "be2526": 58.0807,
+            "re2526": 56.7722,
+            "be2627": 63.6598
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 25.5946,
+              "re2526": 24.6656,
+              "be2627": 26.8011
+            },
+            {
+              "code": "A02",
+              "label": "Project Pre-investment Analysis",
+              "be2526": 0.0006,
+              "re2526": 0.0006,
+              "be2627": 0.0006
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 30.6241,
+              "re2526": 29.887,
+              "be2627": 34.3549
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.0274,
+              "re2526": 0.0241,
+              "be2627": 0.0281
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.1,
+              "re2526": 0.4,
+              "be2627": 0.35
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.0103,
+              "re2526": 0.1552,
+              "be2627": 0
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 1.7238,
+              "re2526": 1.6397,
+              "be2627": 2.125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "housing-and-works-division",
+      "name": "Housing And Works Division",
+      "pao": "Secretary",
+      "page": 115,
+      "goal": "The aim of the Ministry is acquisition and development of the site construction, furnishing and maintenance of Federal Government owned buildings. Provision of Government owned official accommodation to eligible Federal Government Employees.",
+      "outcomes": "Federal Government Servants are getting residential Accommodation till the age of Superannuation under AAR, 2002. FGS (if applies) is being provided on merit basis one plot and flat from the Federal Government Employees Housing Authority and Pakistan Housing Authority Foundation.",
+      "outputs": null,
+      "total": {
+        "actual2425": 37.204,
+        "be2526": 22.118,
+        "be2627": 22.32,
+        "p2728": 6.571,
+        "p2829": 7.314
+      },
+      "reconciled": false
+    },
+    {
+      "slug": "human-rights-division",
+      "name": "Human Rights Division",
+      "pao": "Secretary",
+      "page": 116,
+      "goal": "To promote, and protect human rights guaranteed under the Constitution of the Islamic Republic of Pakistan and international human rights instruments to which Pakistan is a State Party, through legislation, institutional strengthening, monitoring, advocacy, and coordinated implementation mechanisms",
+      "outcomes": "Improved the human rights situation in the country by strengthening national human rights institutions and enhancing compliance with constitutional and international human rights obligations. Promoted a culture of respect, awareness, tolerance, gender equality, dignity, and freedom to ensure the protection of fundamental human rights without discrimination, as enshrined in the Constitution of Pakistan and international human rights conventions.",
+      "outputs": [
+        {
+          "name": "Review, Protection& Implementation of Human Rights laws, Policies and measures (Reports/actions) National/Provincial level",
+          "actual2425": 0.609,
+          "be2526": 0.932,
+          "be2627": 1.43,
+          "p2728": 1.153,
+          "p2829": 1.283
+        },
+        {
+          "name": "Coordination with regard to HR related International Commitments",
+          "actual2425": 0.006,
+          "be2526": 0.006,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Disseminating HR related Awareness, Research, Training program etc.",
+          "actual2425": 0.036,
+          "be2526": 0.036,
+          "be2627": 0.031,
+          "p2728": 0.034,
+          "p2829": 0.038
+        },
+        {
+          "name": "Providing Services relating to HR",
+          "actual2425": 0.075,
+          "be2526": 0.13,
+          "be2627": 0.182,
+          "p2728": 0.202,
+          "p2829": 0.225
+        },
+        {
+          "name": "Strengthening redressal NCSW/NCHR/ LAJA of Human Rights violations or social welfare services Development of DGSE/NCRDP/NCS Institutions for care, W education, training and rehabilitation of persons with disabilities and social welfare services",
+          "actual2425": 0.2,
+          "be2526": 0.192,
+          "be2627": 0.189,
+          "p2728": 0.21,
+          "p2829": 0.233
+        }
+      ],
+      "total": {
+        "actual2425": 0.927,
+        "be2526": 1.296,
+        "be2627": 1.832,
+        "p2728": 1.599,
+        "p2829": 1.779
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-commission-of-human-rights",
+      "name": "National Commission of Human Rights",
+      "pao": "Chairperson",
+      "page": 119,
+      "goal": "Operate as a NHRI under Paris principals to act watchdog of the Government and advocate for interventions that protect and promote human rights in the country.",
+      "outcomes": "Handle complaints of human rights violations, production reports and policy briefs related to human rights, design and execute advocacy and awareness campaigns for human rights in the country.",
+      "outputs": [
+        {
+          "name": "National Commission of Human Rights",
+          "actual2425": 0.224,
+          "be2526": 0.236,
+          "be2627": 0.271,
+          "p2728": 0.301,
+          "p2829": 0.335
+        }
+      ],
+      "total": {
+        "actual2425": 0.224,
+        "be2526": 0.236,
+        "be2627": 0.271,
+        "p2728": 0.301,
+        "p2829": 0.335
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-commission-on-the-status-of-women-islamabad",
+      "name": "National Commission on the Status of Women, Islamabad",
+      "pao": "Chairperson",
+      "page": 120,
+      "goal": "Uplifting the Status and Rights of Women of Pakistan",
+      "outcomes": "Empowering Women in the field of Climate Change & Digitalization, Economic stability, Political participation, prevention of Violence Against Women (VAW) and enabling women to get awareness about their rights as per enactment of legislations",
+      "outputs": [
+        {
+          "name": "Strengthening redressal of Human Rights violations Awareness & Advocacy, Research & Publications, Monitoring, Review of pro- women Legislation, Strengthening of Institution, Commemorating International Events, Engagements for the Commission on the Status of Women Session",
+          "actual2425": 0.108,
+          "be2526": 0.119,
+          "be2627": 0.132,
+          "p2728": 0.146,
+          "p2829": 0.163
+        }
+      ],
+      "total": {
+        "actual2425": 0.108,
+        "be2526": 0.119,
+        "be2627": 0.132,
+        "p2728": 0.146,
+        "p2829": 0.163
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-commission-on-the-rights-of-child",
+      "name": "National Commission on the rights of Child",
+      "pao": "Chairperson",
+      "page": 122,
+      "goal": "The rights of all children of Pakistan are promoted, protected and fulfilled as enshrined in the constitution of Pakistan.",
+      "outcomes": "An effective and resource institution is strengthened to uphold child rights through legislative reforms, steering research, policy advocacy, raising awareness and monitoring child rights violation.",
+      "outputs": [
+        {
+          "name": "Address & promote the rights National of children Commission on the rights of Child",
+          "actual2425": 0.077,
+          "be2526": 0.093,
+          "be2627": 0.098,
+          "p2728": 0.108,
+          "p2829": 0.121
+        }
+      ],
+      "total": {
+        "actual2425": 0.077,
+        "be2526": 0.093,
+        "be2627": 0.098,
+        "p2728": 0.108,
+        "p2829": 0.121
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "industries-and-production-division",
+      "name": "Industries and Production Division",
+      "pao": "Secretary",
+      "page": 123,
+      "goal": "Industries and Production Division's role is that of a facilitator in creating an enabling environment for industrial growth in the country. To be a facilitator in Industrial Development through integration and by promoting standards, Increase the level and quality of investment in productive sectors, Create an environment conducive to both public & private sector industrial development.",
+      "outcomes": "Facilitator in industrial development and entrepreneurship through policy intervention, setting up Industrial Parks and Export Processing Zones for investors, skill development of human resource for industrial sector and socio-economic development of country with particular focus on SME development and promotion of traditional crafts of Pakistan.",
+      "outputs": null,
+      "total": {
+        "actual2425": 18.999,
+        "be2526": 32.38,
+        "be2627": 29.54,
+        "p2728": 10.072,
+        "p2829": 11.21
+      },
+      "reconciled": false
+    },
+    {
+      "slug": "information-technology-and-telecommunication-division",
+      "name": "Information Technology and Telecommunication Division",
+      "pao": "Secretary",
+      "page": 131,
+      "goal": "Using ICT as a key lever of accelerated digitization to spur socio economic growth by instituting an effective mechanism for formulation of legislations, regulations and policies, creating an enabling ecosystem for the growth of ICT infrastructure and entrepreneurship, providing an IT export centric facilitative mechanism, providing support to public sector institutions for e enablement and providing the learning and growth opportunities for the development of human capital. To regulate electronic identities and all types of electronic transactions.",
+      "outcomes": null,
+      "outputs": [
+        {
+          "name": "Formulate policies, regulations, legislations for the growth of ICT sector and Regulate e-commerce in Electronic Transaction",
+          "actual2425": 29.785,
+          "be2526": 10.433,
+          "be2627": 4.796,
+          "p2728": 3.101,
+          "p2829": 3.451
+        },
+        {
+          "name": "Ensure facilitative mechanism to accelerate the growth of IT exports, services and products",
+          "actual2425": 6.278,
+          "be2526": 12.985,
+          "be2627": 2.265,
+          "p2728": 1.957,
+          "p2829": 2.179
+        },
+        {
+          "name": "Provide technical consultative support to public sector e enablement projects to ensure an effective and transparent e Governance",
+          "actual2425": 1.526,
+          "be2526": 1.846,
+          "be2627": 1.484,
+          "p2728": 1.646,
+          "p2829": 1.832
+        },
+        {
+          "name": "Enable the provision of telecom and broadband infrastructure to augment the supply side of ICT ecosystem Develop the human capital to utilize their true potential for the uplift of the sector",
+          "actual2425": 8.64,
+          "be2526": 8.013,
+          "be2627": 7.5,
+          "p2728": 8.318,
+          "p2829": 9.257
+        },
+        {
+          "name": "To facilitate/regulate e- commerce and e-governance",
+          "actual2425": 0.314,
+          "be2526": 0.383,
+          "be2627": 0.45,
+          "p2728": 0.5,
+          "p2829": 0.556
+        },
+        {
+          "name": "Provision",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 5,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "ICT and Research & Development Fund",
+          "actual2425": null,
+          "be2526": 2,
+          "be2627": 1,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Development",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 19.58,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 46.544,
+        "be2526": 35.66,
+        "be2627": 42.075,
+        "p2728": 15.521,
+        "p2829": 17.275
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-counter-terrorism-authority",
+      "name": "National Counter Terrorism Authority",
+      "pao": "Secretary",
+      "page": 140,
+      "goal": "Making Pakistan a Peaceful and Secure Country.",
+      "outcomes": "Deradicalization of Terrorism and Extremism, Peaceful Environment for Political, Social, Religious and Economic activities, counter violence Extremism within Pakistan and to achieve the goals of FATF",
+      "outputs": [
+        {
+          "name": "Countering of Terrorism, Violent Extremism and Financing Terrorism",
+          "actual2425": 0.9,
+          "be2526": 1.059,
+          "be2627": 1.356,
+          "p2728": 1.504,
+          "p2829": 1.674
+        }
+      ],
+      "total": {
+        "actual2425": 0.9,
+        "be2526": 1.059,
+        "be2627": 1.356,
+        "p2728": 1.504,
+        "p2829": 1.674
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "kashmir-affairs-gilgit-baltistan-and-states-and-affairs-division",
+      "name": "Kashmir Affairs, Gilgit Baltistan and States and Affairs Division",
+      "pao": "Secretary",
+      "page": 143,
+      "goal": "Define Goal with Timeline. Observance of the Kashmir Solidarity Day-5th February, Youm-i-Istehsal 5th August, Kashmir, Black Day-27th October. To administer affairs of the acceding and merged states and matters relating to Afghan Refugees in Pakistan.",
+      "outcomes": null,
+      "outputs": [
+        {
+          "name": "Administration of the Ministry and supporting political stability of Kashmir and GB",
+          "actual2425": 1.169,
+          "be2526": 1.352,
+          "be2627": 1.466,
+          "p2728": 1.626,
+          "p2829": 1.81
+        },
+        {
+          "name": "Refugees’ management services",
+          "actual2425": 0.322,
+          "be2526": 0.33,
+          "be2627": 0.341,
+          "p2728": 0.378,
+          "p2829": 0.421
+        },
+        {
+          "name": "Provision of food subsidies Gilgit Baltistan (wheat)",
+          "actual2425": 15.331,
+          "be2526": 20,
+          "be2627": 15,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Provision of social, infrastructure, and other services (lump) in Azad Jammu and Kashmir",
+          "actual2425": 143.331,
+          "be2526": 141.6,
+          "be2627": 146,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Provision of social, infrastructure, and other services (lump) in Gilgit Baltistan",
+          "actual2425": 100.971,
+          "be2526": 80.5,
+          "be2627": 88,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Allowance for Ex-Rulers of Merged/FATA Acceded States",
+          "actual2425": null,
+          "be2526": 0.02,
+          "be2627": 0.02,
+          "p2728": 0.022,
+          "p2829": 0.025
+        },
+        {
+          "name": "Maintenance of Afghan Refugees Camps",
+          "actual2425": null,
+          "be2526": 2.55,
+          "be2627": 0.73,
+          "p2728": 0.81,
+          "p2829": 0.901
+        },
+        {
+          "name": "Development",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 0.623,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Special Areas (Development)",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 89.023,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Merged District of KP (Development)",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 56.076,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 261.124,
+        "be2526": 246.353,
+        "be2627": 397.279,
+        "p2728": 2.836,
+        "p2829": 3.156
+      },
+      "reconciled": true,
+      "demands": [
+        {
+          "no": 67,
+          "name": "Kashmir Affairs, Gilgit-Baltistan and States and Frontier",
+          "docId": "dfg2",
+          "page": 913,
+          "kind": "current",
+          "voted": 2.5571,
+          "charged": null,
+          "total": {
+            "be2526": 2.4526,
+            "re2526": 2.407,
+            "be2627": 2.5571
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 1.8394,
+              "re2526": 1.8236,
+              "be2627": 1.9145
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.2406,
+              "re2526": 0.2546,
+              "be2627": 0.2813
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.0335,
+              "re2526": 0.031,
+              "be2627": 0.012
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.3173,
+              "re2526": 0.2749,
+              "be2627": 0.3141
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0006,
+              "re2526": 0.002,
+              "be2627": 0.0006
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.0086,
+              "re2526": 0.0016,
+              "be2627": 0.0096
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.0126,
+              "re2526": 0.0193,
+              "be2627": 0.0249
+            }
+          ]
+        },
+        {
+          "no": 115,
+          "name": "Development Expenditure of Kashmir Affairs, Gilgit Baltistan",
+          "docId": "dfg4",
+          "page": 261,
+          "kind": "development",
+          "voted": 0.623,
+          "charged": null,
+          "total": {
+            "be2526": 1.8,
+            "re2526": 0.1743,
+            "be2627": 0.623
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 0.1113,
+              "re2526": 0.0452,
+              "be2627": 0.0214
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.6148,
+              "re2526": 0.0924,
+              "be2627": 0.1075
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0146,
+              "re2526": 0.0012,
+              "be2627": null
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.9821,
+              "re2526": 0.0183,
+              "be2627": 0.4446
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.0772,
+              "re2526": 0.0171,
+              "be2627": 0.0495
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "law-and-justice-division",
+      "name": "Law and Justice Division",
+      "pao": "Secretary",
+      "page": 147,
+      "goal": "To fulfill development needs of Ministry of Law and Justice and allied organizations by FY-2026-27.",
+      "outcomes": "Improved access to Justice for all.",
+      "outputs": [
+        {
+          "name": "Advocacy and representation of government in law suits",
+          "actual2425": 1.46,
+          "be2526": 1.576,
+          "be2627": 1.816,
+          "p2728": 2.014,
+          "p2829": 2.242
+        },
+        {
+          "name": "Legal advisory to government entities, admin support services and vetting of approved draft of law before presentation to parliament.",
+          "actual2425": 1.756,
+          "be2526": 2.613,
+          "be2627": 2.666,
+          "p2728": 2.957,
+          "p2829": 3.291
+        },
+        {
+          "name": "Provision of justice to appellants regarding banking, foreign exchange and insurance matters",
+          "actual2425": 2.133,
+          "be2526": 1.868,
+          "be2627": 2.083,
+          "p2728": 2.31,
+          "p2829": 2.571
+        },
+        {
+          "name": "Promotion of Alternate dispute resolution system in Income Tax conflicts",
+          "actual2425": 1.247,
+          "be2526": 1.735,
+          "be2627": 1.778,
+          "p2728": 1.972,
+          "p2829": 2.195
+        },
+        {
+          "name": "Promotion of Alternate dispute resolution system in Customs, Excise & Sale tax conflicts",
+          "actual2425": 0.614,
+          "be2526": 0.534,
+          "be2627": 0.584,
+          "p2728": 0.647,
+          "p2829": 0.72
+        },
+        {
+          "name": "Provision of justice to appellate on specified areas (Accountability, service matters of federal govt. employees, Environment protection, Narcotics control)",
+          "actual2425": 2.442,
+          "be2526": 2.265,
+          "be2627": 2.736,
+          "p2728": 3.034,
+          "p2829": 3.377
+        },
+        {
+          "name": "Access to Justice Fund",
+          "actual2425": null,
+          "be2526": 2,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Infrastructure Development & Legislative, Judicial, Administrative Reforms Services for Judiciary",
+          "actual2425": 0.923,
+          "be2526": 1.912,
+          "be2627": 24.03,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 10.574,
+        "be2526": 14.504,
+        "be2627": 35.693,
+        "p2728": 12.934,
+        "p2829": 14.396
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "supreme-court-of-pakistan",
+      "name": "Supreme Court of Pakistan",
+      "pao": "Registrar",
+      "page": 150,
+      "goal": "Maintaining harmony and balance among three pillars of the state, namely, legislature, executive and judiciary.",
+      "outcomes": "Maintenance of effective Judicial System in the country as appex judicial institution.",
+      "outputs": [
+        {
+          "name": "Provision of Justice to appellants on constitutional matters, Human Right issues and Sue motto actions. Provision of justice to appellants against the decision of High Courts, Federal Shariat Court, Provincial/Federal Service Tribunals. Fulfilling of Any Judicial advice/ interpretation requested by the government.",
+          "actual2425": 4.448,
+          "be2526": 6.005,
+          "be2627": 7.441,
+          "p2728": 8.252,
+          "p2829": 9.184
+        },
+        {
+          "name": "Provision for Judicial Commission",
+          "actual2425": null,
+          "be2526": 0.64,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 4.448,
+        "be2526": 6.645,
+        "be2627": 7.441,
+        "p2728": 8.252,
+        "p2829": 9.184
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "islamabad-high-court",
+      "name": "Islamabad High Court",
+      "pao": "Registrar",
+      "page": 151,
+      "goal": "Provision of Justice and protection of Human Rights as defined in the Constitution of Islamic Republic of Pakistan.",
+      "outcomes": "Impact on Target Population",
+      "outputs": null,
+      "total": {
+        "actual2425": 3.081,
+        "be2526": 3.939,
+        "be2627": 4.215,
+        "p2728": 4.674,
+        "p2829": 5.202
+      },
+      "reconciled": false
+    },
+    {
+      "slug": "federal-shariat-court",
+      "name": "Federal Shariat Court",
+      "pao": "Registrar",
+      "page": 152,
+      "goal": "Apart from criminal revision petitions this Court while exercising its original jurisdiction under Article 203D, has adjudicated and continues to adjudication on various counts having far deeper social macro level impact in the Islamic world and particularly in Pakistan such as the cases mentioned in S.No. 5 of the Form under key particularly indicators.",
+      "outcomes": "The disposal of cases and judgments rendered by the Federal Shariat Court have far reaching socio-economic impact on all Strata of the society particularly, on the underprivileged Sections of the society (Transgender rights, Women rights including their protection against violence and their property rights, rights of children, custody cases, the right of inheritance, environmental protection and rights of other weaker segments of the society) by ensuring the safeguard of their fundamental rights",
+      "outputs": [
+        {
+          "name": "Administration of Justice to the citizens through matters shown in original jurisdiction and disposal of criminal appeals filed under Hudood Ordinance",
+          "actual2425": 0.905,
+          "be2526": 1.059,
+          "be2627": 1.127,
+          "p2728": 1.25,
+          "p2829": 1.391
+        }
+      ],
+      "total": {
+        "actual2425": 0.905,
+        "be2526": 1.059,
+        "be2627": 1.127,
+        "p2728": 1.25,
+        "p2829": 1.391
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-accountability-bureau",
+      "name": "National Accountability Bureau",
+      "pao": "Chairman",
+      "page": 154,
+      "goal": "Elimination of corruption through comprehensive approach encompassing awareness, prevention and enforcement .",
+      "outcomes": "Elimination of corruption at all levels and ensuring accountability in public sector. To ensure a corruption free public sector environment where accountability is important.",
+      "outputs": [
+        {
+          "name": "Administration and support function including finance & training",
+          "actual2425": 7.057,
+          "be2526": 7.412,
+          "be2627": 7.74,
+          "p2728": 8.583,
+          "p2829": 9.553
+        }
+      ],
+      "total": {
+        "actual2425": 7.057,
+        "be2526": 7.412,
+        "be2627": 7.74,
+        "p2728": 8.583,
+        "p2829": 9.553
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "federal-ombudsman-secretariat-for-protection-against-harassment",
+      "name": "Federal Ombudsman Secretariat for Protection Against Harassment",
+      "pao": "Federal Ombudsman",
+      "page": 156,
+      "goal": "Protection against Harassment at Workplace and Enforcement of Women’s property rights",
+      "outcomes": null,
+      "outputs": [
+        {
+          "name": "Investigation, Federal Ombudsman redressal and review of cases in public/private Sector organizations",
+          "actual2425": 0.184,
+          "be2526": 0.235,
+          "be2627": 0.259,
+          "p2728": 0.287,
+          "p2829": 0.319
+        }
+      ],
+      "total": {
+        "actual2425": 0.184,
+        "be2526": 0.235,
+        "be2627": 0.259,
+        "p2728": 0.287,
+        "p2829": 0.319
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "election-commission-of-pakistan",
+      "name": "Election Commission of Pakistan",
+      "pao": "Secretary",
+      "page": 157,
+      "goal": "To Organize free, fair, transparent and impartial elections in Pakistan",
+      "outcomes": null,
+      "outputs": null,
+      "total": {
+        "actual2425": 9.206,
+        "be2526": 9.635,
+        "be2627": 10.578,
+        "p2728": 11.731,
+        "p2829": 13.056
+      },
+      "reconciled": false
+    },
+    {
+      "slug": "federal-judicial-academy",
+      "name": "Federal Judicial Academy",
+      "pao": "Director General",
+      "page": 159,
+      "goal": "80 training activities to be conducted in the FY 2023-24",
+      "outcomes": "Impact on Target Population. Easy access of a common man to justice system for timely settlement of court cases",
+      "outputs": [
+        {
+          "name": "Capacity enhancement of Judicial Officers through continuing judicial education and skills development for improved service delivery by ensuring (i) Accessibility (ii)Transparency (iii)Predictability Ensuring Gender responsive justice, fostering Gender mainstreaming, Sensitization about ADR mechanisms, Human resource management of support staff and Leadership & management.",
+          "actual2425": 0.313,
+          "be2526": 0.325,
+          "be2627": 0.355,
+          "p2728": 0.393,
+          "p2829": 0.438
+        }
+      ],
+      "total": {
+        "actual2425": 0.313,
+        "be2526": 0.325,
+        "be2627": 0.355,
+        "p2728": 0.393,
+        "p2829": 0.438
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "federal-tax-ombudsman-secretariat",
+      "name": "Federal Tax Ombudsman Secretariat",
+      "pao": "Federal Tax Ombudsman",
+      "page": 163,
+      "goal": "To create confidence of taxpayers in holding the taxation authorities of Pakistan accountable through an independent institution, promoting good governance and redressing taxpayer’s complaints. Increase number of complaints and reduce average time taken and increase the ratio of implemented cases.",
+      "outcomes": "Confidence on tax collection department will be improved to increase the number of tax payers for mobilizing government revenue.",
+      "outputs": [
+        {
+          "name": "Diagnosis, investigation, Federal Tax redressal and rectification Ombudsman of injustices done to a taxpayer through maladministration by functionaries administrating tax laws.",
+          "actual2425": 0.512,
+          "be2526": 0.604,
+          "be2627": 0.646,
+          "p2728": 0.716,
+          "p2829": 0.797
+        }
+      ],
+      "total": {
+        "actual2425": 0.512,
+        "be2526": 0.604,
+        "be2627": 0.646,
+        "p2728": 0.716,
+        "p2829": 0.797
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "wafaqi-mohtasib-secretariat",
+      "name": "Wafaqi Mohtasib Secretariat",
+      "pao": "Secretary",
+      "page": 164,
+      "goal": "To Provide justice and relief to the citizens in 60 days particularly to aggrieved families at their door step",
+      "outcomes": "Speedy and effective redressal of public grievance will increase the efficiency & effectiveness of WMS.",
+      "outputs": [
+        {
+          "name": "Diagnosis, Wafaqi Mohtasib investigation, Secretariat redressal and rectification of injustice done to a citizen through mal- administration",
+          "actual2425": 1.522,
+          "be2526": 1.644,
+          "be2627": 2.124,
+          "p2728": 2.335,
+          "p2829": 2.621
+        }
+      ],
+      "total": {
+        "actual2425": 1.522,
+        "be2526": 1.644,
+        "be2627": 2.124,
+        "p2728": 2.335,
+        "p2829": 2.621
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "maritimes-affair-division",
+      "name": "Maritimes Affair Division",
+      "pao": "Secretary",
+      "page": 165,
+      "goal": "Facilitation in Maritime Administration and smooth dispensation of activities related to seafarers operating under the Standard in Training, Certification and Watch keeping Convention (STCW) and the International Maritime Organization (IMO).",
+      "outcomes": "I. Compliance and adherence with STCW and IMO conventions. II.Efforts on setting up fish Processing Plants (FPP) in clusters to boost up fish export as per international standard. Generation of 5000 jobs directly and 10,000 indirectly, and thereby generating foreign exchange earnings of around USD 70 million. III. Gwadar Port is in process to acquire land for construction of terminals for Petroleum, LNG, Iron Ore / mineral / Coal Handling, chemical & Edible Oil Terminal, dry bulk, dirty dry bulk, and for establishment of Chemical processing zone and Business & Commercial zone in near future. Efforts on setting up fish Processing Plants (FPP) in clusters to boost up fish export as per international standard.",
+      "outputs": [
+        {
+          "name": "Fisheries management and Fish Harbor navigation facilities",
+          "actual2425": 0.313,
+          "be2526": 0.32,
+          "be2627": 0.336,
+          "p2728": 0.373,
+          "p2829": 0.415
+        },
+        {
+          "name": "Modernization of Ports Port Authority facilities",
+          "actual2425": 1.113,
+          "be2526": 3.465,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Gwadar Port Development & Gwadar Port Allied Services Authority",
+          "actual2425": 0.702,
+          "be2526": 0.787,
+          "be2627": 0.827,
+          "p2728": 0.917,
+          "p2829": 1.021
+        },
+        {
+          "name": "Policy, coordination and Main Ministry administration",
+          "actual2425": 0.373,
+          "be2526": 0.548,
+          "be2627": 0.567,
+          "p2728": 0.629,
+          "p2829": 0.7
+        },
+        {
+          "name": "Surveys, inspections & Marine safety management department, Shipping office",
+          "actual2425": 0.604,
+          "be2526": 0.591,
+          "be2627": 0.613,
+          "p2728": 0.68,
+          "p2829": 0.757
+        },
+        {
+          "name": "Development",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 1.78,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 3.104,
+        "be2526": 5.711,
+        "be2627": 4.124,
+        "p2728": 2.599,
+        "p2829": 2.893
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-food-security-and-research-division-islamabad",
+      "name": "National Food Security and Research Division, Islamabad",
+      "pao": "Secretary",
+      "page": 167,
+      "goal": "Purchase, Storage and provision of food commodities especially Wheat to deficient provinces/agencies as per target and price fixed by the Federal Government.",
+      "outcomes": "Facilitate the Federal Government in the quest to ensure national food security by maintaining wheat strategic reserves; extending state welfare to farmers by procuring wheat at support price per target fixed by the Federal Government and constructing storage facilities for good grains.",
+      "outputs": [
+        {
+          "name": "Import/Export Animal Quarantine regulation of Animals Department, National and Allied Services Veterinary Laboratory",
+          "actual2425": 0.289,
+          "be2526": 0.334,
+          "be2627": 0.276,
+          "p2728": 0.307,
+          "p2829": 0.341
+        },
+        {
+          "name": "Instrumental grading Pakistan Cotton of cotton for Standard Institute and enhancement of Pakistan Central cotton productivity Cotton Committee",
+          "actual2425": 0.13,
+          "be2526": 0.264,
+          "be2627": 0.266,
+          "p2728": 0.295,
+          "p2829": 0.328
+        },
+        {
+          "name": "Research and Pakistan Agricultural Development in Agri. Research Council, including technology Pakistan Central transfer, surveillance Cotton Committee programs and coordination among provinces",
+          "actual2425": null,
+          "be2526": 0.907,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Import/Export Department of Plant regulation of Plants, Protection pesticides registration and allied services",
+          "actual2425": 1.566,
+          "be2526": 0.609,
+          "be2627": 0.529,
+          "p2728": 0.587,
+          "p2829": 0.653
+        },
+        {
+          "name": "Provision of certified Federal Seed seeds and ensuring Certification & plant breeders rights Registration Department, Plant Breeders Rights Registry",
+          "actual2425": 0.501,
+          "be2526": 0.636,
+          "be2627": 0.495,
+          "p2728": 0.549,
+          "p2829": 0.611
+        },
+        {
+          "name": "Water Management Federal Water coordination among Management Cell provinces",
+          "actual2425": 0.047,
+          "be2526": 0.64,
+          "be2627": 0.016,
+          "p2728": 0.018,
+          "p2829": 0.02
+        },
+        {
+          "name": "Public Policy Main Ministry, Management and Agriculture Policy Secretariat services Institute, National Fertilizers Development Cell, Agriculture Minister’s Office Rome, SUPARCO",
+          "actual2425": 2.165,
+          "be2526": 2.533,
+          "be2627": 1.256,
+          "p2728": 1.393,
+          "p2829": 1.55
+        },
+        {
+          "name": "Development of Pakistan Oilseed Oilseed, Livestock and Department, Livestock Fisheries sectors & Dairy Development Board (LDDB), Fisheries Development Board (FDB)",
+          "actual2425": 0.138,
+          "be2526": 1.099,
+          "be2627": 0.244,
+          "p2728": 0.27,
+          "p2829": 0.301
+        },
+        {
+          "name": "Provision of subsidies Finance Division to reduce food prices Prime Minister’s PSDP Solarization Programme TVET and Horticulture PSDP support program",
+          "actual2425": 8.4,
+          "be2526": 20,
+          "be2627": 19,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "National Seeds Development Services",
+          "actual2425": null,
+          "be2526": 0.2,
+          "be2627": 0.15,
+          "p2728": 0.166,
+          "p2829": 0.185
+        },
+        {
+          "name": "Development",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 4.183,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 13.236,
+        "be2526": 27.222,
+        "be2627": 26.415,
+        "p2728": 3.584,
+        "p2829": 3.989
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "national-health-services-regulations-and-coordination-islamabad",
+      "name": "National Health Services, Regulations and Coordination, Islamabad",
+      "pao": "Secretary",
+      "page": 170,
+      "goal": "To facilitate a health system encompasses efficient, and equitable health services that are acceptable, assessable and affordable particularly to the marginalized and vulnerable population of Pakistan.",
+      "outcomes": "Impact on Target Population",
+      "outputs": null,
+      "total": {
+        "actual2425": 73.781,
+        "be2526": 46.097,
+        "be2627": 58.287,
+        "p2728": 41.279,
+        "p2829": 45.943
+      },
+      "reconciled": false
+    },
+    {
+      "slug": "overseas-pakistanis-and-humans-resources-development-islamabad",
+      "name": "Overseas Pakistanis and Humans Resources Development, Islamabad",
+      "pao": "Secretary",
+      "page": 176,
+      "goal": "Enhancement of overseas employment opportunities, redressal of problems and extending welfare facilities to overseas Pakistanis abroad and their families in Pakistan. Elevate the living conditions of working class in foreign countries through better protection and decent working conditions for them, resolution of industrial disputes and trade union matters.",
+      "outcomes": "After approval of the policy, its implementation process will be started, in collaboration with Stakeholders, which will increase the employment promotion abroad and improve the mechanism of complaints redressal including welfare of Overseas Pakistanis. Consequently, this will lead to increase in the foreign remittances.",
+      "outputs": [
+        {
+          "name": "Promotion of Overseas employment through safe and orderly emigration of labor to existing and new countries of destinations",
+          "actual2425": 1.644,
+          "be2526": 1.713,
+          "be2627": 1.7,
+          "p2728": 1.885,
+          "p2829": 2.098
+        },
+        {
+          "name": "Resolution of Industrial Disputes between employers and employees. Redressal of individual grievance of workers",
+          "actual2425": 0.269,
+          "be2526": 0.256,
+          "be2627": 0.383,
+          "p2728": 0.424,
+          "p2829": 0.472
+        },
+        {
+          "name": "Regulatory services for emigration & Overseas Employment",
+          "actual2425": 0.205,
+          "be2526": 0.015,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Monitoring and supervision of regulatory services for emigration & overseas employment",
+          "actual2425": 0.334,
+          "be2526": 0.359,
+          "be2627": 0.379,
+          "p2728": 0.421,
+          "p2829": 0.468
+        },
+        {
+          "name": "Policy Interventions, Administrative support and international coordination",
+          "actual2425": 0.729,
+          "be2526": 0.1,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Training & Education Services. Predeparture training of emigrant workers. Training of industrial workers and labor union officials",
+          "actual2425": 0.067,
+          "be2526": 0.083,
+          "be2627": 0.077,
+          "p2728": 0.085,
+          "p2829": 0.095
+        },
+        {
+          "name": "Administrative Support to Policy Making & Implementation",
+          "actual2425": null,
+          "be2526": 1.471,
+          "be2627": 1.012,
+          "p2728": 1.122,
+          "p2829": 1.249
+        },
+        {
+          "name": "Overseas Employment Promotion and Regulations of Overseas Employment Promoter",
+          "actual2425": null,
+          "be2526": 0.193,
+          "be2627": 0.185,
+          "p2728": 0.205,
+          "p2829": 0.229
+        }
+      ],
+      "total": {
+        "actual2425": 3.249,
+        "be2526": 4.191,
+        "be2627": 3.735,
+        "p2728": 4.143,
+        "p2829": 4.611
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "parliamentary-affairs-islamabad",
+      "name": "Parliamentary Affairs, Islamabad",
+      "pao": "Secretary",
+      "page": 178,
+      "goal": "Efficient liaison between the Federal Government and the Parliament.",
+      "outcomes": "Maintenance of liaison between the Federal Government, Parliament and Election Commission of Pakistan. Maintenance of liaison between Federal Government and Provincial Government Departments for redressal of complaints/Grievances of the people.",
+      "outputs": [
+        {
+          "name": "Liaison between legislature and executive",
+          "actual2425": 0.35,
+          "be2526": 0.303,
+          "be2627": 0.573,
+          "p2728": 0.635,
+          "p2829": 0.707
+        },
+        {
+          "name": "Redressal of public grievances",
+          "actual2425": 0.117,
+          "be2526": null,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Administrative support services",
+          "actual2425": 0.259,
+          "be2526": 0.527,
+          "be2627": 0.636,
+          "p2728": 0.705,
+          "p2829": 0.785
+        },
+        {
+          "name": "Provision of Parliament Lodges Development",
+          "actual2425": 0.05,
+          "be2526": 2.5,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 0.775,
+        "be2526": 3.329,
+        "be2627": 1.209,
+        "p2728": 1.341,
+        "p2829": 1.492
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "planning-development-and-special-initiatives-division-islamabad",
+      "name": "Planning Development and Special Initiatives Division, Islamabad",
+      "pao": "Secretary",
+      "page": 179,
+      "goal": "To help create knowledge led, well governed, enterprising and prosperous Pakistan through realistic and innovative policies so that programmes are delivered in the most cost-effective fashion.",
+      "outcomes": null,
+      "outputs": [
+        {
+          "name": "Development and Ministry of implementation of national Planning, level sustainable policy plans Development & and, appraisal of Special Initiative development projects (PC- I's)and their monitoring",
+          "actual2425": 3.352,
+          "be2526": 4.594,
+          "be2627": 3.113,
+          "p2728": 3.453,
+          "p2829": 3.843
+        },
+        {
+          "name": "Capacity building and PIDE research & development Ph.D at PIDE regarding economic and PPMI development activities",
+          "actual2425": 0.774,
+          "be2526": 1.21,
+          "be2627": 0.81,
+          "p2728": 0.898,
+          "p2829": 1
+        },
+        {
+          "name": "Provision for development Public initiatives Investment Programme",
+          "actual2425": 8.523,
+          "be2526": 21.1,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Collection and compilation of Pakistan Bureau socio-economic statistical of Statistics data through primary and secondary sources including census",
+          "actual2425": 4.373,
+          "be2526": 4.895,
+          "be2627": 5.551,
+          "p2728": 6.156,
+          "p2829": 6.852
+        },
+        {
+          "name": "Public Private PPP Authority Partnership Development Services",
+          "actual2425": 0.18,
+          "be2526": 0.23,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Provision of Emergency Funds for National Disaster Risk Management",
+          "actual2425": 1.822,
+          "be2526": 1.1,
+          "be2627": 0.11,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Development",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 22.626,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 19.022,
+        "be2526": 33.129,
+        "be2627": 32.21,
+        "p2728": 10.507,
+        "p2829": 11.694
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "pakistan-agriculture-research-council",
+      "name": "Pakistan Agriculture Research Council",
+      "pao": "Chairman",
+      "page": 192,
+      "goal": "To ensure food for all citizens of Pakistan through efficient research and management of resources to enhance food production and to improve socio-economic wellbeing of the public.",
+      "outcomes": "I. Provision of Food Security through introduction of Climate Change resilience Crops, Seed etc II. Promotion and inclusion of Private Sector",
+      "outputs": [
+        {
+          "name": "Research & Development in PARC - Recurrent Agriculture including technology transfers, surveillance programs and coordination among provinces.",
+          "actual2425": 6.57,
+          "be2526": 6.725,
+          "be2627": 7.291,
+          "p2728": 8.086,
+          "p2829": 9
+        }
+      ],
+      "total": {
+        "actual2425": 6.57,
+        "be2526": 6.725,
+        "be2627": 7.291,
+        "p2728": 8.086,
+        "p2829": 9
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "poverty-alleviation-social-safety-division",
+      "name": "Poverty Alleviation & Social Safety Division",
+      "pao": "Secretary",
+      "page": 193,
+      "goal": "Sehat Tahafuz programme, Monitoring & Evaluation Unit for BISP& National Poverty Graduation Programme",
+      "outcomes": "Health wise 38000 number of poor patients will get the coverage of catastrophic health at targeted poor areas. Thus, saving 38000 families from falling in the vicious circle of Poverty. Successful implementation of 292 social protection policies, activities and initiatives.",
+      "outputs": [
+        {
+          "name": "Mainstreaming the Poverty Alleviation and Social Protection Services through various programs",
+          "actual2425": 2.985,
+          "be2526": 10.232,
+          "be2627": 0.806,
+          "p2728": 0.34,
+          "p2829": 0.378
+        }
+      ],
+      "total": {
+        "actual2425": 2.985,
+        "be2526": 10.232,
+        "be2627": 0.806,
+        "p2728": 0.34,
+        "p2829": 0.378
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "pakistan-bait-ul-mal",
+      "name": "Pakistan Bait ul Mal",
+      "pao": "Managing Director",
+      "page": 197,
+      "goal": "Pakistan Bait-ul-Mal (PBM) is providing assistance to destitute, widows, orphans, invalid, infirm, and other needy persons irrespective of their gender, caste, creed and religion.",
+      "outcomes": "For the wellbeing of the poorest of the poor segment of the society and for for better impact on target population, Pakistan Bait-ul-Mal provides quality service delivery to destitute, widows, orphans, invalid, infirm, and other needy persons by taking care of multiple aspects irrespective of their gender, caste, creed and religion through its ongoing core projects. Schemes with an infrastructure at district level.",
+      "outputs": [
+        {
+          "name": "Pakistan Bait-ul-Mal (PBM) is the largest social safety network of the Federal Government established through PBM Act 1991 (amended). The mandate of PBM ,provides financial assistance to the poorest of the poor i.e. rehabilitation, institutional care, shelter, medical treatment to destitute poor patients suffering from the life threatening maladies of cancer, heart & kidney issues, medical treatment/surgeries of cochlear implant patients, financial assistance of needy widows, orphans, invalid, and infirm irrespective of their gender, sex, caste, creed and religion. PBM has one Head Office, 07 Provincial/Regional Offices and District offices throughout Pakistan including AJK. These field offices have been established to provide relief to the poorest segment of the society at their door step. PBM runs different projects/Schemes like 162 Schools for Rehabilitation of Child Labour,165 Women Empowerment Centres,42 Sweet Homes for orphanage Children,18 Shelter Homes, 26 Khana Sab Ke Leay and 1 Great Home (for old shelter less people) across the country including Gilgit Baltistan and AJK.",
+          "actual2425": 14.006,
+          "be2526": 14.372,
+          "be2627": 30.003,
+          "p2728": 31.503,
+          "p2829": 33.078
+        }
+      ],
+      "total": {
+        "actual2425": 14.006,
+        "be2526": 14.372,
+        "be2627": 30.003,
+        "p2728": 31.503,
+        "p2829": 33.078
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "privatization-division",
+      "name": "Privatization Division",
+      "pao": "Secretary",
+      "page": 199,
+      "goal": "To complete privatization of entities entrusted to the Commission in an efficient and transparent manner within given time frame.",
+      "outcomes": "To establish a Comprehensive Regulatory Framework for conducting transparent and efficient privatization process with a view to improve corporate governance to achieve the objective of socio-economic development of the Country",
+      "outputs": [
+        {
+          "name": "Policy Formulation for the privatization of State-Owned Enterprises (SOE’s) and the process of monitoring & evaluation",
+          "actual2425": 0.308,
+          "be2526": 0.374,
+          "be2627": 1.33,
+          "p2728": 1.475,
+          "p2829": 1.642
+        },
+        {
+          "name": "Development",
+          "actual2425": null,
+          "be2526": null,
+          "be2627": 0.41,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 0.308,
+        "be2526": 0.374,
+        "be2627": 1.74,
+        "p2728": 1.475,
+        "p2829": 1.642
+      },
+      "reconciled": true
+    },
+    {
+      "slug": "railways-division",
+      "name": "Railways Division",
+      "pao": "Secretary",
+      "page": 206,
+      "goal": "To contribute towards provision of safe, reliable, affordable, environment friendly and competitive passenger and freight services.",
+      "outcomes": "Improved safety, reliability and affordability of railway system in services.",
+      "outputs": [
+        {
+          "name": "Railways Policies Formulation and Implementation",
+          "actual2425": 0.391,
+          "be2526": 0.458,
+          "be2627": 0.478,
+          "p2728": 0.53,
+          "p2829": 0.59
+        },
+        {
+          "name": "Railways Services",
+          "actual2425": 64.038,
+          "be2526": 70,
+          "be2627": 70,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Pak railways infrastructure & equipment development services - Other Infrastructure",
+          "actual2425": 6.866,
+          "be2526": 7.66,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Pak railways infrastructure & equipment development services - Signaling",
+          "actual2425": 0.384,
+          "be2526": 0.08,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Pak railways infrastructure & equipment development services - Track",
+          "actual2425": 15.415,
+          "be2526": 10.175,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Governance",
+          "actual2425": 0.16,
+          "be2526": 0.12,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Pak railways infrastructure & equipment development services - Regional Development",
+          "actual2425": 0.049,
+          "be2526": null,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Business Development",
+          "actual2425": 0.3,
+          "be2526": 3.16,
+          "be2627": null,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "Pak railways infrastructure & equipment development services - Rolling Stock Development",
+          "actual2425": 10.29,
+          "be2526": 1.22,
+          "be2627": 40.658,
+          "p2728": null,
+          "p2829": null
+        }
+      ],
+      "total": {
+        "actual2425": 97.892,
+        "be2526": 92.873,
+        "be2627": 111.136,
+        "p2728": 0.53,
+        "p2829": 0.59
+      },
+      "reconciled": true,
+      "demands": [
+        {
+          "no": 87,
+          "name": "Railways Division",
+          "docId": "dfg3",
+          "page": 543,
+          "kind": "current",
+          "voted": 70.4782,
+          "charged": null,
+          "total": {
+            "be2526": 70.4578,
+            "re2526": 70.4432,
+            "be2627": 70.4782
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 0.3553,
+              "re2526": 0.3475,
+              "be2627": 0.3713
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.0711,
+              "re2526": 0.0723,
+              "be2627": 0.0686
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.0096,
+              "re2526": 0.0125,
+              "be2627": 0.011
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 70.0101,
+              "re2526": 70.0026,
+              "be2627": 70.0088
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0001,
+              "re2526": null,
+              "be2627": null
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": null,
+              "re2526": null,
+              "be2627": 0.0005
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.0116,
+              "re2526": 0.0082,
+              "be2627": 0.0179
+            }
+          ]
+        },
+        {
+          "no": 134,
+          "name": "Capital Outlay On Railways Division",
+          "docId": "dfg4",
+          "page": 493,
+          "kind": "development",
+          "voted": 40.6579,
+          "charged": null,
+          "total": {
+            "be2526": 22.415,
+            "re2526": 25.1687,
+            "be2627": 40.6579
+          },
+          "objects": [
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 0.1,
+              "re2526": null,
+              "be2627": null
+            },
+            {
+              "code": "A11",
+              "label": "Investments",
+              "be2526": 22.315,
+              "re2526": 25.1687,
+              "be2627": 40.6579
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "water-resources-division",
+      "name": "Water Resources Division",
+      "pao": "Secretary",
+      "page": 218,
+      "goal": "By 2050, make Pakistan water secure while preserving the ecosystem",
+      "outcomes": "As a sole research organization on water, provide solutions to key water resource issues through action and adaptive research I n collaboration with sectoral stakeholders",
+      "outputs": [
+        {
+          "name": "Admin support / Main Secretariat Policy development and approval / technical support",
+          "actual2425": 0.516,
+          "be2526": 0.641,
+          "be2627": 0.666,
+          "p2728": 0.738,
+          "p2829": 0.822
+        },
+        {
+          "name": "Climate resilient WAPDA and Water infrastructure Provincial development Irrigation departments for federally funded",
+          "actual2425": 110.377,
+          "be2526": 59.63,
+          "be2627": 103.086,
+          "p2728": null,
+          "p2829": null
+        },
+        {
+          "name": "projects Research & PCIW and development / Research capacity building Institute",
+          "actual2425": 0.021,
+          "be2526": 0.051,
+          "be2627": 0.064,
+          "p2728": 0.071,
+          "p2829": 0.08
+        },
+        {
+          "name": "Sustainable water IRSA and WAPDA resource for the purposes of management, water monitoring & flood management and mitigation services CEA/CFFC coordination of Flood services",
+          "actual2425": 106.646,
+          "be2526": 76.21,
+          "be2627": 2.493,
+          "p2728": 2.765,
+          "p2829": 3.078
+        },
+        {
+          "name": "Promotion of Pakistan Council energy and of Research in Water Water Conservation Resources and Water Quality (Research)",
+          "actual2425": 0.803,
+          "be2526": 0.96,
+          "be2627": 1.018,
+          "p2728": 1.129,
+          "p2829": 1.257
+        }
+      ],
+      "total": {
+        "actual2425": 218.363,
+        "be2526": 137.491,
+        "be2627": 107.327,
+        "p2728": 4.704,
+        "p2829": 5.235
+      },
+      "reconciled": true,
+      "demands": [
+        {
+          "no": 90,
+          "name": "Water Resources Division",
+          "docId": "dfg3",
+          "page": 581,
+          "kind": "current",
+          "voted": 4.2415,
+          "charged": null,
+          "total": {
+            "be2526": 4.067,
+            "re2526": 3.8471,
+            "be2627": 4.2415
+          },
+          "objects": [
+            {
+              "code": "A01",
+              "label": "Employees Related Expenses (salaries)",
+              "be2526": 0.9546,
+              "re2526": 0.9556,
+              "be2627": 0.9986
+            },
+            {
+              "code": "A02",
+              "label": "Project Pre-investment Analysis",
+              "be2526": 0.196,
+              "re2526": 0.1791,
+              "be2627": 0.1728
+            },
+            {
+              "code": "A03",
+              "label": "Operating Expenses",
+              "be2526": 2.8075,
+              "re2526": 2.6081,
+              "be2627": 2.9633
+            },
+            {
+              "code": "A04",
+              "label": "Employees Retirement Benefits (pensions)",
+              "be2526": 0.0133,
+              "re2526": 0.0125,
+              "be2627": 0.0157
+            },
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 0.0041,
+              "re2526": 0.0135,
+              "be2627": 0.004
+            },
+            {
+              "code": "A06",
+              "label": "Transfers",
+              "be2526": 0.0002,
+              "re2526": 0.0002,
+              "be2627": 0.0007
+            },
+            {
+              "code": "A09",
+              "label": "Physical Assets",
+              "be2526": 0.0515,
+              "re2526": 0.0155,
+              "be2627": 0.0295
+            },
+            {
+              "code": "A13",
+              "label": "Repairs and Maintenance",
+              "be2526": 0.0398,
+              "re2526": 0.0626,
+              "be2627": 0.0569
+            }
+          ]
+        },
+        {
+          "no": 123,
+          "name": "Development Expenditure of Water Resources Division",
+          "docId": "dfg4",
+          "page": 379,
+          "kind": "development",
+          "voted": 55.2511,
+          "charged": null,
+          "total": {
+            "be2526": 82.7794,
+            "re2526": 82.7794,
+            "be2627": 55.2511
+          },
+          "objects": [
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 82.7794,
+              "re2526": 82.7794,
+              "be2627": 55.2511
+            }
+          ]
+        },
+        {
+          "no": 135,
+          "name": "External Development Loans and Advances of Water",
+          "docId": "dfg4",
+          "page": 509,
+          "kind": "development",
+          "voted": 47.8354,
+          "charged": null,
+          "total": {
+            "be2526": 50.645,
+            "re2526": 50.645,
+            "be2627": 47.8354
+          },
+          "objects": [
+            {
+              "code": "A05",
+              "label": "Grants, Subsidies & Write-off of Loans",
+              "be2526": 4.063,
+              "re2526": 4.063,
+              "be2627": 1.043
+            },
+            {
+              "code": "A08",
+              "label": "Loans and Advances",
+              "be2526": 46.582,
+              "re2526": 46.582,
+              "be2627": 46.7924
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "national-assembly",
+      "name": "National Assembly",
+      "pao": "Secretary",
+      "page": 220,
+      "goal": "Smooth functioning of legislation",
+      "outcomes": null,
+      "outputs": null,
+      "total": {
+        "actual2425": 9.45,
+        "be2526": 12.737,
+        "be2627": 17.005,
+        "p2728": 18.858,
+        "p2829": 20.989
+      },
+      "reconciled": false
+    }
+  ]
+}

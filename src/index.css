@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Design tokens. The chrome/surface values derive from the validated dataviz
+ * reference palette; the role colors are the CVD-safe categorical slots
+ * validated for both surfaces (see CLAUDE.md §8). Theme switches via
+ * data-theme="light|dark" on <html>.
+ */
+@layer base {
+  :root,
+  :root[data-theme='light'] {
+    --background: 60 14% 97%; /* page plane  #f9f9f7 */
+    --foreground: 0 0% 4%; /* primary ink #0b0b0b */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 4%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 60 5% 94%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 60 5% 93%;
+    --muted-foreground: 45 3% 38%; /* secondary ink */
+    --accent: 60 5% 93%;
+    --accent-foreground: 0 0% 9%;
+    --border: 53 12% 87%; /* hairline #e1e0d9 */
+    --input: 53 12% 87%;
+    --ring: 0 0% 45%;
+    --radius: 0.625rem;
+
+    /* chart surface + validated role colors (light steps) */
+    --surface: #fcfcfb;
+    --role-receipt: #1baf7a;
+    --role-expenditure: #eb6834;
+    --role-transfer: #4a3aa7;
+    --role-hub: #64748b;
+  }
+
+  :root[data-theme='dark'] {
+    --background: 0 0% 5%; /* page plane  #0d0d0d */
+    --foreground: 0 0% 100%;
+    --card: 60 2% 11%;
+    --card-foreground: 0 0% 100%;
+    --popover: 60 2% 11%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 60 2% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 60 2% 15%;
+    --muted-foreground: 55 9% 74%; /* secondary ink #c3c2b7 */
+    --accent: 60 2% 16%;
+    --accent-foreground: 0 0% 98%;
+    --border: 60 2% 17%; /* hairline #2c2c2a */
+    --input: 60 2% 17%;
+    --ring: 0 0% 60%;
+
+    /* chart surface + validated role colors (dark steps) */
+    --surface: #1a1a19;
+    --role-receipt: #199e70;
+    --role-expenditure: #d95926;
+    --role-transfer: #9085e9;
+    --role-hub: #94a3b8;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+/* SVG node labels — halo against the chart surface keeps them legible on top
+   of flows in both themes (also the contrast-relief for the aqua slot). */
+.node-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  fill: hsl(var(--foreground));
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.node-value {
+  font-size: 11px;
+  fill: hsl(var(--muted-foreground));
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
+  font-variant-numeric: tabular-nums;
+}
