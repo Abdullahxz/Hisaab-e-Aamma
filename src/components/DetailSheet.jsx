@@ -1,11 +1,38 @@
-import { Shrink, Expand } from 'lucide-react'
+import { useState } from 'react'
+import { Shrink, Expand, Link as LinkIcon, Check } from 'lucide-react'
 import { Sheet, SheetContent, SheetTitle, SheetDescription } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { DeltaBadge, SourceLine, SourceCard } from './bits.jsx'
+import { trackEvent } from '../lib/usage.js'
 import { formatPKR, formatCompact, formatPct } from '../lib/format.js'
 import { ROLE_LABELS } from '../lib/palette.js'
 import { cn } from '@/lib/utils'
+
+// The address bar always holds a deep link to the current chart state — this
+// just puts it on the clipboard.
+function CopyLinkButton() {
+  const [copied, setCopied] = useState(false)
+  return (
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={async () => {
+        try {
+          await navigator.clipboard.writeText(window.location.href)
+          trackEvent('copy-link')
+          setCopied(true)
+          setTimeout(() => setCopied(false), 1600)
+        } catch {
+          // clipboard unavailable (e.g. http) — the URL bar still has the link
+        }
+      }}
+    >
+      {copied ? <Check className="h-3.5 w-3.5" /> : <LinkIcon className="h-3.5 w-3.5" />}
+      {copied ? 'Copied' : 'Copy link'}
+    </Button>
+  )
+}
 
 const ROLE_TEXT = {
   receipt: 'text-receipt',
@@ -163,17 +190,15 @@ export default function DetailSheet({
               </>
             )}
           </SheetDescription>
-          {node.hasChildren && (
-            <Button
-              variant="outline"
-              size="sm"
-              className="mt-3"
-              onClick={() => onToggleExpand(node.id)}
-            >
-              {node.expanded ? <Shrink className="h-3.5 w-3.5" /> : <Expand className="h-3.5 w-3.5" />}
-              {node.expanded ? 'Collapse in chart' : 'Expand in chart'}
-            </Button>
-          )}
+          <div className="mt-3 flex flex-wrap gap-2">
+            {node.hasChildren && (
+              <Button variant="outline" size="sm" onClick={() => onToggleExpand(node.id)}>
+                {node.expanded ? <Shrink className="h-3.5 w-3.5" /> : <Expand className="h-3.5 w-3.5" />}
+                {node.expanded ? 'Collapse in chart' : 'Expand in chart'}
+              </Button>
+            )}
+            <CopyLinkButton />
+          </div>
         </div>
 
         <div className="space-y-5 px-5 pb-6 pt-4">
@@ -204,7 +229,10 @@ export default function DetailSheet({
                 title={ab.title}
                 note={ab.note}
                 items={ab.items}
-                parentValue={node.value}
+                // alt breakdowns can be a different frame than the node (e.g.
+                // customs GROSS collection vs the NET node value) — percentages
+                // must be shares of the breakdown's own total
+                parentValue={ab.items.reduce((a, i) => a + (i.value ?? 0), 0)}
                 docsById={docsById}
                 source={ab.source}
               />

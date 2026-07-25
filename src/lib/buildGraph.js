@@ -36,8 +36,9 @@ const REVENUE_ROOTS = new Set([
 
 function isRevenueSide(node, byId) {
   let cur = node
-  while (cur.parent) cur = byId.get(cur.parent)
-  return REVENUE_ROOTS.has(cur.id)
+  // guard against a dangling parent id in the data (validateData only warns)
+  while (cur?.parent && byId.has(cur.parent)) cur = byId.get(cur.parent)
+  return cur ? REVENUE_ROOTS.has(cur.id) : false
 }
 
 function percentInfo(value, revenueSide, meta) {
@@ -80,28 +81,33 @@ export function buildGraph(data, expandedIds) {
   const meta = data.meta
   const links = []
 
-  // A link's percentage basis follows its role: revenue and transfer flows are a
-  // share of gross revenue, spending flows a share of the budget.
-  const pushLink = (source, target, value, role) => {
-    const info = percentInfo(value, role !== 'expenditure', meta)
+  // A link's percentage uses the same basis as its SUBJECT node (the node whose
+  // amount the flow carries) so a flow and its node never show two different
+  // percentages for the same rupee amount.
+  const PASS_THROUGH = new Set(['gross_revenue', 'total_resources'])
+  const pushLink = (source, target, value, role, subject) => {
+    const info = percentInfo(value, isRevenueSide(subject, byId), meta)
     links.push({ source, target, value, role, ...info })
   }
 
-  // 1. Backbone links between always-visible root/hub nodes.
+  // 1. Backbone links between always-visible root/hub nodes. The subject is the
+  //    informative (non-pass-through) endpoint — same rule as handleLinkClick.
   for (const l of data.structuralLinks) {
     if (!visibleIds.has(l.source) || !visibleIds.has(l.target)) continue
     const src = byId.get(l.source)
     const tgt = byId.get(l.target)
-    pushLink(l.source, l.target, l.value, linkRole(src.side, tgt.side))
+    const subject = [src, tgt].find((n) => !PASS_THROUGH.has(n.id)) ?? src
+    pushLink(l.source, l.target, l.value, linkRole(src.side, tgt.side), subject)
   }
 
-  // 2. Parent <-> child flow links for every visible non-root node.
+  // 2. Parent <-> child flow links for every visible non-root node; the flow
+  //    carries the child's amount, so the child is the subject.
   for (const n of visibleNodes) {
     if (!n.parent) continue
     const parent = byId.get(n.parent)
     const from = n.side === 'receipt' ? n.id : parent.id
     const to = n.side === 'receipt' ? parent.id : n.id
-    pushLink(from, to, n.value, linkRole(byId.get(from).side, byId.get(to).side))
+    pushLink(from, to, n.value, linkRole(byId.get(from).side, byId.get(to).side), n)
   }
 
   const nodes = visibleNodes.map((n) => {

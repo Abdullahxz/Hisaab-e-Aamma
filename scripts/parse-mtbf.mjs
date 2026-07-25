@@ -252,8 +252,9 @@ function parseSection(sec) {
       } else {
         const values = [null, null, null, null, null]
         for (const t of assigned) if (t.col != null && values[t.col] == null) values[t.col] = t.v
-        // a full line (all columns present) is closed — later fragments are a new row
-        rows.push({ name: nameCell, values, closed: false })
+        // a full line (every year column present) is closed — later token
+        // lines must start a NEW row, never merge into this one
+        rows.push({ name: nameCell, values, closed: tokens.length >= Object.keys(anchors).length })
       }
     } else if (nameCell && !/^\d+$/.test(nameCell)) {
       if (/^Total\b/i.test(nameCell)) {
@@ -325,7 +326,7 @@ for (const sec of sections) {
   const parsed = parseSection(sec)
   if (!parsed.total) continue
   let slug = slugify(sec.title)
-  while (seen.has(slug)) slug += '-2'
+  for (let i = 2; seen.has(slug); i++) slug = `${slugify(sec.title)}-${i}`
   seen.add(slug)
   ministries.push({
     slug,
@@ -349,7 +350,8 @@ const OBJECT_WISE = {
   title: 'What the money buys — object classification (federal government)',
   note:
     'Gross Federal Consolidated Fund frame: the total (Rs 51,156 bn) includes Rs 31,959 bn of principal debt repayments (refinancing of maturing debt, not expenditure in the Rs 18,771 bn budget frame). Per-ministry object splits are published in the separate Demands for Grants volumes.',
-  source: { docId: 'abs', page: 37, table: 'Schedule III — Object Classification Wise Expenditure (printed p. 31)' },
+  // printed page (abs pageOffset in budget.json maps it to the physical PDF page)
+  source: { docId: 'abs', page: 31, table: 'Schedule III — Object Classification Wise Expenditure' },
   total: { be2627: 51156.209, prior: 37855.301 },
   items: [
     { code: 'A01', label: 'Employees Related Expenses (salaries)', value: 1608.289, prior: 1438.843,

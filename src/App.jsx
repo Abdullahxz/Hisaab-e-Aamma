@@ -6,25 +6,56 @@ import TopBar from './components/TopBar.jsx'
 import ChartTooltip from './components/ChartTooltip.jsx'
 import MinistriesPage from './components/MinistriesPage.jsx'
 import MinistryPage from './components/MinistryPage.jsx'
+import TaxReceiptPage from './components/TaxReceiptPage.jsx'
+import BasicsPage from './components/BasicsPage.jsx'
 import { buildGraph } from './lib/buildGraph.js'
 import { validateData } from './lib/validateData.js'
+import { OFFICIAL_BUDGET_URL, REPORT_ERROR_URL } from './lib/site.js'
+import { trackPageview, trackEvent } from './lib/usage.js'
 
 const BASE = import.meta.env.BASE_URL
 
+// Light is the default; the toggle switches to dark on demand.
 function initialMode() {
-  if (typeof window !== 'undefined' && window.matchMedia) {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  }
   return 'light'
 }
 
-// Tiny hash router: '#/'-> flow, '#/ministries' -> list, '#/ministry/<slug>' -> detail.
+// Tiny hash router:
+//   '#/'                    -> flow (optionally '#/?e=<ids>&s=<id>' — shareable
+//                              deep link carrying expanded nodes + selection)
+//   '#/ministries'          -> ministry list
+//   '#/ministry/<slug>'     -> ministry detail
+//   '#/receipt'             -> personal tax receipt
+//   '#/basics'              -> budget basics / glossary
 function parseHash() {
   const h = window.location.hash.replace(/^#\/?/, '')
   if (h === 'ministries') return { page: 'ministries' }
+  if (h === 'receipt') return { page: 'receipt' }
+  if (h === 'basics') return { page: 'basics' }
   const m = h.match(/^ministry\/(.+)$/)
-  if (m) return { page: 'ministry', slug: decodeURIComponent(m[1]) }
-  return { page: 'flow' }
+  if (m) {
+    // a truncated/mangled shared link must not white-screen the app
+    try {
+      return { page: 'ministry', slug: decodeURIComponent(m[1]) }
+    } catch {
+      return { page: 'ministries' }
+    }
+  }
+  // flow, with optional chart state in the query part of the hash
+  const q = h.match(/^\??(.*)$/)?.[1] ?? ''
+  const params = new URLSearchParams(q)
+  const expanded = (params.get('e') ?? '').split(',').filter(Boolean)
+  const selected = params.get('s') || null
+  return { page: 'flow', expanded, selected }
+}
+
+// Serialize flow state into a shareable hash. Node ids are [a-z0-9_] and
+// commas are legal in a fragment, so the link stays human-readable.
+function flowHash(expandedIds, selectedNodeId) {
+  const parts = []
+  if (expandedIds.size > 0) parts.push(`e=${[...expandedIds].sort().join(',')}`)
+  if (selectedNodeId) parts.push(`s=${selectedNodeId}`)
+  return parts.length ? `#/?${parts.join('&')}` : '#/'
 }
 
 function useHashRoute() {
@@ -42,7 +73,8 @@ function useHashRoute() {
 
 export default function App() {
   const [data, setData] = useState(null)
-  const [mdata, setMdata] = useState(null)
+  // undefined = loading, null = failed to load, object = ready
+  const [mdata, setMdata] = useState(undefined)
   const [error, setError] = useState(null)
   const [mode, setMode] = useState(initialMode)
   const [expandedIds, setExpandedIds] = useState(() => new Set())
@@ -74,7 +106,64 @@ export default function App() {
     document.documentElement.dataset.theme = mode
   }, [mode])
 
+  // Route-aware page title (deep links, tabs, history entries).
+  useEffect(() => {
+    const base = 'Pakistan Federal Budget 2026–27'
+    document.title =
+      route.page === 'ministries'
+        ? `Ministries · ${base}`
+        : route.page === 'ministry'
+          ? `${mdata?.ministries.find((m) => m.slug === route.slug)?.name ?? 'Ministry'} · ${base}`
+          : route.page === 'receipt'
+            ? `Your tax receipt · ${base}`
+            : route.page === 'basics'
+              ? `Budget basics · ${base}`
+              : base
+  }, [route, mdata])
+
+  // --- shareable deep links -------------------------------------------------
+  // Apply chart state FROM the hash whenever navigation happens (initial load,
+  // back/forward, pasted link, tab click). Our own state changes go through
+  // history.replaceState, which fires no hashchange, so this cannot loop.
+  useEffect(() => {
+    if (route.page !== 'flow' || !data) return
+    const byId = new Map(data.nodes.map((n) => [n.id, n]))
+    const next = new Set((route.expanded ?? []).filter((id) => byId.has(id)))
+    let selected = route.selected && byId.has(route.selected) ? route.selected : null
+    // a selected node must be visible: expand its ancestors
+    for (let cur = selected ? byId.get(selected) : null; cur?.parent; cur = byId.get(cur.parent)) {
+      next.add(cur.parent)
+    }
+    setExpandedIds((prev) =>
+      prev.size === next.size && [...next].every((id) => prev.has(id)) ? prev : next
+    )
+    setSelectedNodeId(selected)
+  }, [route, data])
+
+  // Reflect chart state INTO the URL so the address bar is always a shareable
+  // link. Uses the pre-tracker replaceState (see index.html) so these updates
+  // are not counted as page navigations.
+  useEffect(() => {
+    if (route.page !== 'flow' || !data) return
+    const h = flowHash(expandedIds, selectedNodeId)
+    if (window.location.hash === h) return
+    const replaceState = window.__replaceState ?? window.history.replaceState.bind(window.history)
+    replaceState(null, '', h)
+  }, [expandedIds, selectedNodeId, route.page, data])
+
+  // One pageview per logical page. Keyed on page/slug rather than the whole
+  // route object so that mirroring chart state into the URL never counts as a
+  // navigation (see src/lib/usage.js).
+  useEffect(() => {
+    trackPageview(route)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [route.page, route.slug])
+
   const graph = useMemo(() => (data ? buildGraph(data, expandedIds) : null), [data, expandedIds])
+
+  // A collapse can remove the hovered element without a mouseleave firing —
+  // drop the tooltip whenever the visible graph changes.
+  useEffect(() => setHover(null), [graph])
 
   // Descendant ids of a node (for collapsing a whole subtree).
   const descendantsOf = useCallback(
@@ -123,6 +212,7 @@ export default function App() {
   const handleNodeClick = useCallback(
     (node) => {
       setSelectedNodeId(node.id)
+      trackEvent('node-open', { node: node.id })
       if (node.hasChildren && !expandedIds.has(node.id)) expand(node.id)
     },
     [expandedIds, expand]
@@ -132,6 +222,7 @@ export default function App() {
   const handleSelectById = useCallback(
     (id) => {
       setSelectedNodeId(id)
+      trackEvent('node-open', { node: id })
       const hasChildren = data?.nodes.some((n) => n.parent === id)
       if (hasChildren && !expandedIds.has(id)) expand(id)
     },
@@ -205,7 +296,7 @@ export default function App() {
         onToggleMode={() => setMode((m) => (m === 'dark' ? 'light' : 'dark'))}
         route={route}
         onNavigate={navigate}
-        hasMinistries={!!mdata}
+        hasMinistries={mdata !== null}
       />
 
       {route.page === 'flow' && (
@@ -246,19 +337,38 @@ export default function App() {
         </>
       )}
 
-      {route.page === 'ministries' && mdata && (
+      {route.page === 'receipt' && (
         <main className="min-h-0 flex-1 overflow-y-auto">
-          <MinistriesPage
-            mdata={mdata}
-            docsById={docsById}
-            onOpenMinistry={(slug) => navigate(`#/ministry/${encodeURIComponent(slug)}`)}
-          />
+          <TaxReceiptPage data={data} docsById={docsById} />
         </main>
       )}
 
-      {route.page === 'ministry' && mdata && (
+      {route.page === 'basics' && (
         <main className="min-h-0 flex-1 overflow-y-auto">
-          {currentMinistry ? (
+          <BasicsPage data={data} docsById={docsById} />
+        </main>
+      )}
+
+      {(route.page === 'ministries' || route.page === 'ministry') && (
+        <main className="min-h-0 flex-1 overflow-y-auto">
+          {mdata === undefined ? (
+            <div className="p-10 text-center text-sm text-muted-foreground">
+              Loading ministries…
+            </div>
+          ) : mdata === null ? (
+            <div className="p-10 text-center text-sm text-muted-foreground">
+              The ministry dataset could not be loaded. Try reloading the page.
+            </div>
+          ) : route.page === 'ministries' ? (
+            <MinistriesPage
+              mdata={mdata}
+              docsById={docsById}
+              onOpenMinistry={(slug) => {
+                trackEvent('ministry-open', { ministry: slug })
+                navigate(`#/ministry/${encodeURIComponent(slug)}`)
+              }}
+            />
+          ) : currentMinistry ? (
             <MinistryPage
               ministry={currentMinistry}
               mdata={mdata}
@@ -275,12 +385,21 @@ export default function App() {
         <span>
           All figures in Rs. billion, FY {data.meta.fiscalYear} · every number links to its official{' '}
           <a
-            href="https://www.finance.gov.pk/fb_2026_27.html"
+            href={OFFICIAL_BUDGET_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium underline underline-offset-2 hover:text-foreground"
           >
             Finance Division source
+          </a>{' '}
+          ·{' '}
+          <a
+            href={REPORT_ERROR_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium underline underline-offset-2 hover:text-foreground"
+          >
+            Report an error
           </a>
         </span>
         <span className="text-muted-foreground/70">

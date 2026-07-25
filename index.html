@@ -4,11 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <title>Pakistan Federal Budget 2026–27 · Interactive Sankey</title>
+
+    <title>Pakistan Federal Budget 2026–27 · Where the money comes from and goes</title>
     <meta
       name="description"
-      content="An interactive Sankey diagram of how Pakistan's federal government earns and spends money in FY 2026-27. Every figure is sourced from official Finance Division budget documents."
+      content="An interactive, source-linked visualisation of Pakistan's federal budget 2026-27. Explore every rupee — taxes, borrowing, the NFC transfer to provinces, and what each ministry spends — with every figure traced to an official Finance Division document."
     />
+    <meta name="author" content="Independent — data from Finance Division, Government of Pakistan" />
+    <meta name="theme-color" content="#f9f9f7" />
+
+    <!--
+      Social preview (Open Graph / Twitter). Link-preview crawlers don't run
+      JavaScript, so the absolute URLs below are injected at BUILD time from
+      the SITE_URL env var — see vite.config.js and CONTRIBUTING.md:
+          SITE_URL=https://your.domain npm run build
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pakistan Federal Budget 2026–27" />
+    <meta
+      property="og:title"
+      content="Pakistan Federal Budget 2026–27 — where the money comes from and goes"
+    />
+    <meta
+      property="og:description"
+      content="Rs 18.77 trillion, explorable. Taxes, borrowing, the NFC provincial transfer and every ministry's spending — each figure linked to its official source document."
+    />
+    <meta property="og:url" content="__SITE_URL__/" />
+    <meta property="og:image" content="__SITE_URL__/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Pakistan Federal Budget 2026-27: total outlay Rs 18.77 trillion, Rs 8.85 trillion to provinces, Rs 8.05 trillion debt interest."
+    />
+    <meta property="og:locale" content="en_PK" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Pakistan Federal Budget 2026–27 — where the money comes from and goes"
+    />
+    <meta
+      name="twitter:description"
+      content="Rs 18.77 trillion, explorable. Every figure linked to its official source document."
+    />
+    <meta name="twitter:image" content="__SITE_URL__/og-image.png" />
+
+    <!-- Must run before the tracker patches replaceState: the chart mirrors its
+         state into the URL on every click, which would otherwise be counted as
+         a page navigation. See src/lib/usage.js -->
+    <script>
+      window.__replaceState = history.replaceState.bind(history)
+    </script>
+    <!--__ANALYTICS__-->
   </head>
   <body>
     <div id="root"></div>

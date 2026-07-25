@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react'
 import { Search, ChevronRight } from 'lucide-react'
-import { DeltaBadge, SourceLine } from './bits.jsx'
-import { formatBn, formatPKR, formatPct } from '../lib/format.js'
+import { DeltaBadge, SourceLine, ObjectInfo } from './bits.jsx'
+import { Separator } from '@/components/ui/separator'
+import { formatBn, formatPKR } from '../lib/format.js'
 import { cn } from '@/lib/utils'
 
 // Landing page of the ministry explorer: the federal-wide object classification
@@ -27,7 +28,13 @@ export default function MinistriesPage({ mdata, docsById, onOpenMinistry }) {
   }, [ministries, query])
 
   const ow = mdata.objectWise
-  const owMax = Math.max(...ow.items.map((i) => i.value))
+  // A10 (principal repayments) is debt rollover, not expenditure — it is shown
+  // below a divider as a memo item so the bars reflect the true scale of the
+  // real expenses.
+  const expenses = ow.items.filter((i) => i.code !== 'A10')
+  const memo = ow.items.find((i) => i.code === 'A10')
+  const owMax = Math.max(...expenses.map((i) => i.value))
+  const expensesTotal = expenses.reduce((a, i) => a + i.value, 0)
 
   return (
     <div className="mx-auto w-full max-w-5xl space-y-8 px-4 py-6 sm:px-6">
@@ -44,15 +51,20 @@ export default function MinistriesPage({ mdata, docsById, onOpenMinistry }) {
       {/* Federal-wide object classification: the salaries / pensions / line-item view */}
       <section className="rounded-xl border bg-card p-4 sm:p-5">
         <h3 className="text-sm font-bold">{ow.title}</h3>
-        <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{ow.note}</p>
+        <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+          What the federal government's money actually buys, across all ministries. Tap ⓘ on any
+          line for what it means. Debt <em>refinancing</em> is shown separately below the line — it
+          is not expenditure.
+        </p>
         <ul className="mt-4 space-y-1">
-          {ow.items.map((it) => (
+          {expenses.map((it) => (
             <li key={it.code} className="rounded-md px-2 py-1.5">
               <div className="flex items-baseline justify-between gap-3">
                 <span className="text-[13px] font-medium">
                   {it.label}
+                  <ObjectInfo code={it.code} label={it.label} />
                   {it.detail && (
-                    <span className="ml-1.5 hidden text-[11px] font-normal text-muted-foreground sm:inline">
+                    <span className="ml-1 hidden text-[11px] font-normal text-muted-foreground lg:inline">
                       — {it.detail}
                     </span>
                   )}
@@ -66,22 +78,51 @@ export default function MinistriesPage({ mdata, docsById, onOpenMinistry }) {
               </div>
               <div className="mt-1 h-1 overflow-hidden rounded-full bg-muted">
                 <div
-                  className={cn(
-                    'h-full rounded-full',
-                    it.code === 'A10' ? 'bg-muted-foreground/40' : 'bg-expenditure'
-                  )}
+                  className="h-full rounded-full bg-expenditure"
                   style={{ width: `${(it.value / owMax) * 100}%` }}
                 />
               </div>
             </li>
           ))}
         </ul>
-        <div className="mt-3 flex items-center justify-between px-2">
-          <span className="text-xs font-semibold">
-            Total (gross frame): {formatPKR(ow.total.be2627)}
-          </span>
-          <SourceLine source={ow.source} docsById={docsById} />
+        <div className="mt-2 flex items-center justify-between px-2 text-xs font-semibold">
+          <span>Total expenditure &amp; lending (gross)</span>
+          <span className="tabular-nums">{formatPKR(expensesTotal)}</span>
         </div>
+
+        {memo && (
+          <>
+            <Separator className="my-3" />
+            <div className="rounded-md bg-muted/40 px-2 py-2">
+              <div className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+                Below the line — debt rollover, not expenditure
+              </div>
+              <div className="mt-1.5 flex items-baseline justify-between gap-3">
+                <span className="text-[13px] font-medium text-muted-foreground">
+                  {memo.label}
+                  <ObjectInfo code={memo.code} label={memo.label} />
+                </span>
+                <span className="flex shrink-0 items-center gap-2">
+                  <DeltaBadge value={memo.value} prior={memo.prior} className="hidden sm:inline-flex" />
+                  <span className="w-24 text-right text-xs font-semibold tabular-nums text-muted-foreground">
+                    {formatBn(memo.value)}
+                  </span>
+                </span>
+              </div>
+              <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">
+                Maturing debt paid off by issuing new debt — matched by equally large borrowing on
+                the receipts side, so it funds no services and sits outside the Rs 18,771 bn budget
+                frame. Included here because the official schedule reports it.
+              </p>
+            </div>
+            <div className="mt-2 flex items-center justify-between px-2">
+              <span className="text-xs text-muted-foreground">
+                Schedule total incl. refinancing: {formatPKR(ow.total.be2627)}
+              </span>
+              <SourceLine source={ow.source} docsById={docsById} />
+            </div>
+          </>
+        )}
       </section>
 
       {/* Ministry list */}
@@ -97,6 +138,11 @@ export default function MinistriesPage({ mdata, docsById, onOpenMinistry }) {
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+              autoComplete="off"
+              data-1p-ignore
+              data-lpignore="true"
+              data-bwignore
+              aria-label="Search ministries"
               placeholder="Search ministries…"
               className="h-9 w-64 rounded-md border bg-card pl-8 pr-3 text-sm outline-none ring-ring placeholder:text-muted-foreground focus:ring-2"
             />

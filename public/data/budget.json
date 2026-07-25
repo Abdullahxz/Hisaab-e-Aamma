@@ -23,7 +23,8 @@
       "publisher": "Finance Division, Government of Pakistan",
       "file": "docs/Budget_in_Brief.pdf",
       "url": "https://www.finance.gov.pk/fb_2026_27.html",
-      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Budget_in_Brief.pdf"
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Budget_in_Brief.pdf",
+      "pageOffset": 6
     },
     {
       "id": "emfr",
@@ -31,7 +32,8 @@
       "publisher": "Finance Division, Government of Pakistan",
       "file": "docs/Explanatory_Memorandum_on_Federal_Receipts.pdf",
       "url": "https://www.finance.gov.pk/fb_2026_27.html",
-      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Explanatory_Memorandum_on_Federal_Receipts.pdf"
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Explanatory_Memorandum_on_Federal_Receipts.pdf",
+      "pageOffset": 6
     },
     {
       "id": "abs",
@@ -39,7 +41,8 @@
       "publisher": "Finance Division, Government of Pakistan",
       "file": "docs/Annual_Budget_Statement.pdf",
       "url": "https://www.finance.gov.pk/fb_2026_27.html",
-      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Annual_Budget_Statement.pdf"
+      "officialPdf": "https://www.finance.gov.pk/budget/budget_2026_27/Annual_Budget_Statement.pdf",
+      "pageOffset": 6
     },
     {
       "id": "grants",

@@ -1,16 +1,18 @@
 {
-  "name": "pakistan-federal-budget-2026-27",
+  "name": "hisaab-e-aamma",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Interactive Sankey diagram of Pakistan's Federal Budget 2026-27, sourced from official Finance Division documents.",
+  "description": "Hisaab-e-Aamma — an interactive, source-linked visualisation of Pakistan's Federal Budget 2026-27.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check": "node scripts/check-data.mjs"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.18",
+    "@radix-ui/react-popover": "^1.1.23",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "d3-sankey": "^0.12.3",
@@ -29,5 +31,14 @@
     "tailwindcss": "^3.4.19",
     "tailwindcss-animate": "^1.0.7",
     "vite": "^5.4.11"
-  }
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abdullahxz/Hisaab-e-Aamma.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Abdullahxz/Hisaab-e-Aamma/issues"
+  },
+  "homepage": "https://github.com/Abdullahxz/Hisaab-e-Aamma#readme"
 }

@@ -5,7 +5,8 @@
 // Large numbers read more naturally in trillions.
 export function formatPKR(billion) {
   if (billion == null || Number.isNaN(billion)) return '—'
-  if (billion >= 1000) {
+  // round before comparing so 999.6 -> "Rs 1.00 tn", not "Rs 1,000 bn"
+  if (Math.round(billion) >= 1000) {
     const tn = billion / 1000
     return `Rs ${tn.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} tn`
   }

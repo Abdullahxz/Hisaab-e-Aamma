@@ -32,6 +32,10 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        popover: {
+          DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))',
+        },
         // validated data-viz role colors (see CLAUDE.md §8) — resolved per theme
         receipt: 'var(--role-receipt)',
         expenditure: 'var(--role-expenditure)',

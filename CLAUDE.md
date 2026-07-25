@@ -38,6 +38,35 @@ Book" (goal, outcomes, service-level budgets across a 5-year horizon), plus the
 federal-wide **object classification** (salaries/pensions/operating…) from ABS
 Schedule III. See §12.
 
+Also shipped: a **tax receipt** page (`#/receipt`), a **budget basics**
+primer + glossary (`#/basics`), **shareable deep links** for chart state
+(`#/?e=<expanded-ids>&s=<selected-id>`, mirrored via `history.replaceState`),
+and **Open Graph/Twitter social cards** (`public/og-image.png`). The top-left
+title is a "home" button back to `#/`.
+
+Social tags need ABSOLUTE urls and crawlers don't run JS, so the origin is
+injected at build time by the `socialMeta` plugin in `vite.config.js` from the
+`SITE_URL` env var (`.env` or shell), replacing the `__SITE_URL__/` token in
+index.html. Without it: relative image + `og:url` dropped, plus a build
+warning. Never hardcode a domain in index.html. Everything else is
+path-agnostic (`base: './'`).
+
+**ⓘ explainer popovers** (`ObjectInfo` in `bits.jsx`, text in
+`src/lib/objectInfo.js`) — two traps, both already hit once:
+1. Never put `stopPropagation()` on the trigger's `onClick`. React's synthetic
+   `stopPropagation` calls `nativeEvent.stopPropagation()` at the React root,
+   which is *below* `document`, so Radix's outside-dismiss listeners never see
+   the click. Radix registers its deferred dismiss `{once:true}`, so the
+   swallowed click leaves it armed and it fires on the NEXT click — closing the
+   popover that just opened (symptom: "both popovers close").
+2. Don't give each instance its own open state and coordinate between them
+   (event broadcast, "last closer" singleton, …). The dismissal of the old
+   popover (document `pointerdown`) and the opening of the new one (trigger
+   `click`) arrive in an order we don't control. The working design is a single
+   shared `openId` (`infoStore` + `useSyncExternalStore`) where a close request
+   only clears the slot if the requester still owns it — correct in either
+   order.
+
 ---
 
 ## 3. Tech stack
@@ -97,6 +126,17 @@ Those URLs were verified: HTTP 200, `content-type: application/pdf` served
 inline (so `#page=` works), byte-identical to the local copies. If the ministry
 ever moves them, `sourceHref` in `src/components/bits.jsx` falls back to
 `doc.file` — restore local hosting by copying the PDFs to `public/docs/` again.
+
+**Page-number convention (⚠️ two systems):** citations in budget.json for
+`bib`/`emfr`/`abs` use the documents' **printed** page numbers (what the UI
+displays); each of those sources carries `pageOffset` (all 6 — cover, preface,
+contents), which `sourceHref` adds to build the physical `#page=` deep link.
+The `mtbf`/`dfg*` pages were derived by counting `\f` page breaks, so they are
+**physical** PDF pages already (`pageOffset` 0/omitted) and display = link.
+Any new citation must follow the convention of the doc it cites; verify an
+offset by probing printed-number marker lines in the pdftotext dump. Light is
+the default theme (`initialMode` in App.jsx); dark stays fully supported via
+the toggle.
 
 | id | Document | Role |
 |----|----------|------|

@@ -1,8 +1,7 @@
 import { ArrowLeft, Info } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
 import { Badge } from '@/components/ui/badge'
-import { DeltaBadge, SourceCard, SourceLine } from './bits.jsx'
+import { DeltaBadge, SourceCard, SourceLine, ObjectInfo } from './bits.jsx'
 import { formatPKR, formatBn, formatPct } from '../lib/format.js'
 import { cn } from '@/lib/utils'
 
@@ -56,7 +55,10 @@ function DemandCard({ demand, docsById }) {
         {objects.map((o) => (
           <li key={o.code} className="px-1">
             <div className="flex items-baseline justify-between gap-3">
-              <span className="text-[13px]">{o.label}</span>
+              <span className="text-[13px]">
+                {o.label}
+                <ObjectInfo code={o.code} label={o.label} />
+              </span>
               <span className="shrink-0 text-xs tabular-nums text-muted-foreground">
                 {formatBn(o.be2627)}
                 <span className="ml-1.5 text-[10px] text-muted-foreground/70">

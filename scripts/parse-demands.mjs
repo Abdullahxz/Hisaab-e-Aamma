@@ -10,9 +10,12 @@
 //
 // Run AFTER parse-mtbf.mjs (this script patches ministries.json in place):
 //   pdftotext -layout Detail_of_Demands_for_Grants_Vol-I.pdf   /tmp/dfg1.txt
+//   pdftotext -layout Detail_of_Demands_for_Grants_Vol-II.pdf  /tmp/dfg2.txt
 //   pdftotext -layout Detail_of_Demands_for_Grants_Vol-III.pdf /tmp/dfg3.txt
 //   pdftotext -layout Detail_of_Demands_for_Grants_Vol-IV.pdf  /tmp/dfg4.txt
-//   node scripts/parse-demands.mjs /tmp/dfg1.txt /tmp/dfg3.txt /tmp/dfg4.txt
+//   node scripts/parse-demands.mjs /tmp/dfg1.txt /tmp/dfg2.txt /tmp/dfg3.txt /tmp/dfg4.txt
+// (Vol-II covers demands 43–67 — Finance, FBR, Foreign Affairs, Kashmir Affairs;
+//  omitting it silently drops those ministries' current-expenditure demands.)
 import { readFileSync, writeFileSync } from 'fs'
 
 const [, , ...TXT_PATHS] = process.argv
@@ -75,6 +78,46 @@ function parseNum(tok) {
   const t = tok.replace(/,/g, '')
   if (!/^\d+$/.test(t)) return null
   return Number(t)
+}
+
+// Monotone min-cost assignment of ordered tokens to ordered column anchors
+// (anchor = end index of the year header). Returns a values array or null if
+// there are more tokens than columns.
+function alignToColumns(tokens, anchors) {
+  const n = tokens.length
+  const m = anchors.length
+  if (n === 0 || n > m) return null
+  const INF = Infinity
+  const dp = Array.from({ length: n + 1 }, () => Array(m + 1).fill(INF))
+  const from = Array.from({ length: n + 1 }, () => Array(m + 1).fill(null))
+  for (let j = 0; j <= m; j++) dp[0][j] = 0
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= m; j++) {
+      if (dp[i][j - 1] < dp[i][j]) {
+        dp[i][j] = dp[i][j - 1]
+        from[i][j] = 'skip'
+      }
+      const c = dp[i - 1][j - 1] + Math.abs(tokens[i - 1].end - anchors[j - 1])
+      if (c < dp[i][j]) {
+        dp[i][j] = c
+        from[i][j] = 'take'
+      }
+    }
+  }
+  if (!Number.isFinite(dp[n][m])) return null
+  const values = Array(m).fill(null)
+  let i = n
+  let j = m
+  while (i > 0 && j > 0) {
+    if (from[i][j] === 'take') {
+      values[j - 1] = tokens[i - 1].v
+      i--
+      j--
+    } else {
+      j--
+    }
+  }
+  return values
 }
 const toBn = (v) => (v == null ? null : Math.round(v / 1e5) / 1e4) // full Rs -> Rs bn (4dp)
 
@@ -153,10 +196,11 @@ for (const path of TXT_PATHS) {
       }
       if (!inObjects || !anchors) continue
 
-      // stop at the first Total row of the object section
-      const isTotalLine = /^\s*Total\b/.test(text.replace(/^\s*/, ''))
+      // the object section ends at its grand Total row — anchored at line
+      // start so a stray "…Total…" inside a label can never terminate it
+      const isTotal = /^\s*Total\b/.test(text)
       const om = text.match(/^\s*(A\d{2})\s+(.+)$/)
-      if (!om && !/Total/.test(text)) continue
+      if (!om && !isTotal) continue
 
       // numeric tokens (skip parenthesized sub-detail values)
       const tokens = []
@@ -170,22 +214,15 @@ for (const path of TXT_PATHS) {
       }
       if (tokens.length === 0) continue
 
-      // assign to the 3 year columns: order-preserving nearest fit
-      const values = [null, null, null]
-      for (const tok of tokens) {
-        let best = 0
-        let bestD = Infinity
-        anchors.forEach((a, ci) => {
-          const d = Math.abs(tok.end - a)
-          if (d < bestD) {
-            bestD = d
-            best = ci
-          }
-        })
-        if (values[best] == null) values[best] = tok.v
-      }
+      // order-preserving minimum-cost assignment of tokens to the 3 year
+      // columns (same approach as parse-mtbf's alignTokens): tokens and
+      // columns are both left-to-right, so the mapping must be monotone —
+      // immune to uniform column shifts, and a token can never leapfrog an
+      // earlier column that a later token then silently overwrites.
+      const values = alignToColumns(tokens, anchors)
+      if (!values) continue // more tokens than columns: unparseable row
 
-      if (/^\s*Total\b/.test(text) || (/Total/.test(text) && !om)) {
+      if (isTotal) {
         total = values
         break
       }
