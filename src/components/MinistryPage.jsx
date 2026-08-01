@@ -21,7 +21,7 @@ function Cell({ v, primary }) {
         primary ? 'font-bold' : 'text-muted-foreground'
       )}
     >
-      {v != null ? formatBn(v) : '—'}
+      {v != null ? formatBn(v) : 'n/a'}
     </td>
   )
 }
@@ -98,7 +98,7 @@ export default function MinistryPage({ ministry, mdata, docsById, onBack }) {
   const source = {
     docId: mdata.meta.sourceDoc,
     page: m.page,
-    table: `${m.name} — Budget by Outputs`,
+    table: `${m.name}, Budget by Outputs`,
   }
 
   return (
@@ -183,7 +183,7 @@ export default function MinistryPage({ ministry, mdata, docsById, onBack }) {
                         <span className="text-[10px] tabular-nums text-muted-foreground">
                           {o.be2627 != null && m.total.be2627
                             ? formatPct((o.be2627 / m.total.be2627) * 100)
-                            : '—'}
+                            : 'n/a'}
                         </span>
                         <div className="h-1 w-12 overflow-hidden rounded-full bg-muted">
                           <div
@@ -208,17 +208,43 @@ export default function MinistryPage({ ministry, mdata, docsById, onBack }) {
             </table>
           </div>
         ) : (
-          <div className="m-4 flex items-start gap-2 rounded-lg border border-dashed p-3 text-xs leading-relaxed text-muted-foreground">
-            <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-            <span>
-              The service-level table for this ministry could not be reconciled against its printed
-              total in the source document, so it is not shown — only the independently verified
-              totals are. Open the source below to read the full table as published.
-              <span className="mt-1 block font-medium text-foreground">
-                Verified totals: {YEAR_COLS.map((c) => `${c.label}: ${m.total[c.key] != null ? formatBn(m.total[c.key]) : '—'}`).join(' · ')}
+          // The service-level table failed reconciliation, so lead with the
+          // year totals that did verify and keep the caveat under them.
+          <>
+            <div className="grid grid-cols-2 gap-2 p-4 pt-3 sm:grid-cols-5">
+              {YEAR_COLS.map((c) => (
+                <div
+                  key={c.key}
+                  className={cn(
+                    'rounded-lg border px-3 py-2',
+                    c.primary && 'border-foreground/20 bg-muted/50'
+                  )}
+                >
+                  <div className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                    {c.label}
+                  </div>
+                  <div
+                    className={cn(
+                      'mt-0.5 tabular-nums',
+                      c.primary
+                        ? 'text-base font-bold'
+                        : 'text-sm font-semibold text-muted-foreground'
+                    )}
+                  >
+                    {m.total[c.key] != null ? formatBn(m.total[c.key]) : 'n/a'}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="flex items-start gap-2 border-t px-4 py-3 text-[11px] leading-relaxed text-muted-foreground">
+              <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+              <span>
+                Only these verified totals are shown. The ministry's service-level breakdown could
+                not be reconciled against its printed total in the source document, so it is left
+                out; open the source below to read the table as published.
               </span>
-            </span>
-          </div>
+            </div>
+          </>
         )}
       </section>
 
@@ -226,29 +252,30 @@ export default function MinistryPage({ ministry, mdata, docsById, onBack }) {
         <section>
           <div className="mb-1 flex flex-wrap items-baseline justify-between gap-2">
             <h3 className="text-sm font-bold">
-              What the money buys — object classification, demand by demand
+              What the money buys, demand by demand
             </h3>
             <span className="text-[11px] text-muted-foreground">
               salaries · operating · pensions · grants · assets
             </span>
           </div>
-          <p className="mb-3 max-w-3xl text-xs leading-relaxed text-muted-foreground">
+          <div className="mt-3 grid gap-3 lg:grid-cols-2">
+            {m.demands.map((dm) => (
+              <DemandCard key={dm.no} demand={dm} docsById={docsById} />
+            ))}
+          </div>
+          {/* method and caveats sit under the figures, not in front of them */}
+          <p className="mt-3 text-[11px] leading-relaxed text-muted-foreground">
             Each parliamentary demand for grants under this ministry, broken down by object of
             expenditure, from the Details of Demands for Grants and Appropriations. Every figure
             shown passed two checks: object heads sum exactly to the demand’s printed total, and
             that total matches Budget in Brief Table 21.
           </p>
           {m.demandsNote && (
-            <div className="mb-3 flex max-w-3xl items-start gap-2 rounded-lg border border-dashed p-2.5 text-[11px] leading-relaxed text-muted-foreground">
+            <div className="mt-2 flex items-start gap-2 rounded-lg border border-dashed p-2.5 text-[11px] leading-relaxed text-muted-foreground">
               <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
               {m.demandsNote}
             </div>
           )}
-          <div className="grid gap-3 lg:grid-cols-2">
-            {m.demands.map((dm) => (
-              <DemandCard key={dm.no} demand={dm} docsById={docsById} />
-            ))}
-          </div>
         </section>
       )}
 

@@ -142,11 +142,11 @@
       "side": "receipt",
       "parent": null,
       "value": 15264,
-      "description": "Taxes collected by the Federal Board of Revenue (FBR) — the single largest source of federal money. Split into direct taxes (mainly income tax) and indirect taxes (sales tax, customs and federal excise).",
+      "description": "Taxes collected by the Federal Board of Revenue (FBR), the single largest source of federal money. Split into direct taxes (mainly income tax) and indirect taxes (sales tax, customs and federal excise).",
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 4 — Revenue Receipts"
+        "table": "Table 4, Revenue Receipts"
       },
       "prior": 14131,
       "revised": 12983
@@ -161,7 +161,7 @@
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 4 — Revenue Receipts"
+        "table": "Table 4, Revenue Receipts"
       },
       "prior": 6902,
       "revised": 6431.754,
@@ -192,11 +192,11 @@
       "side": "receipt",
       "parent": "direct_taxes",
       "value": 7480.521,
-      "description": "Tax on the income of individuals and companies — the biggest single tax line in the federal budget.",
+      "description": "Tax on the income of individuals and companies, the biggest single tax line in the federal budget.",
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 4 — Revenue Receipts"
+        "table": "Table 4, Revenue Receipts"
       },
       "prior": 6811.243,
       "revised": 6331.484
@@ -211,7 +211,7 @@
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 4 — Revenue Receipts"
+        "table": "Table 4, Revenue Receipts"
       },
       "prior": 17.192,
       "revised": 19.606
@@ -226,7 +226,7 @@
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 4 — Revenue Receipts"
+        "table": "Table 4, Revenue Receipts"
       },
       "prior": 25.74,
       "revised": 8.453
@@ -241,7 +241,7 @@
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 4 — Revenue Receipts"
+        "table": "Table 4, Revenue Receipts"
       },
       "prior": 47.825,
       "revised": 72.211
@@ -256,7 +256,7 @@
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 4 — Revenue Receipts"
+        "table": "Table 4, Revenue Receipts"
       },
       "prior": 7229,
       "revised": 6551.246
@@ -267,11 +267,11 @@
       "side": "receipt",
       "parent": "indirect_taxes",
       "value": 4927,
-      "description": "General Sales Tax on goods — the largest indirect tax.",
+      "description": "General Sales Tax on goods, the largest indirect tax.",
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 4 — Revenue Receipts"
+        "table": "Table 4, Revenue Receipts"
       },
       "prior": 4753,
       "revised": 4333.908,
@@ -304,11 +304,11 @@
       "value": 4908.935,
       "prior": 4737.688,
       "revised": 4316.625,
-      "description": "GST on goods across the economy — imports and domestic supplies.",
+      "description": "GST on goods across the economy, imports and domestic supplies.",
       "source": {
         "docId": "emfr",
         "page": 9,
-        "table": "Table 5 — Sales Tax"
+        "table": "Table 5, Sales Tax"
       }
     },
     {
@@ -323,7 +323,7 @@
       "source": {
         "docId": "emfr",
         "page": 9,
-        "table": "Table 5 — Sales Tax"
+        "table": "Table 5, Sales Tax"
       }
     },
     {
@@ -336,18 +336,18 @@
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 4 — Revenue Receipts"
+        "table": "Table 4, Revenue Receipts"
       },
       "prior": 1588,
       "revised": 1366.047,
       "altBreakdowns": [
         {
           "title": "Gross collection by import category",
-          "note": "Major revenue spinners, gross (Rs 1,721 bn) before refunds and rebates of Rs 70 bn — the node value is net collection. Export Development Surcharge was discontinued from Dec 2025.",
+          "note": "Major revenue spinners, gross (Rs 1,721 bn) before refunds and rebates of Rs 70 bn; the node value is net collection. Export Development Surcharge was discontinued from Dec 2025.",
           "source": {
             "docId": "emfr",
             "page": 11,
-            "table": "Table 7 — Customs Duty"
+            "table": "Table 7, Customs Duty"
           },
           "items": [
             {
@@ -439,7 +439,7 @@
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 4 — Revenue Receipts"
+        "table": "Table 4, Revenue Receipts"
       },
       "prior": 888,
       "revised": 851.291,
@@ -476,7 +476,7 @@
       "source": {
         "docId": "emfr",
         "page": 10,
-        "table": "Table 6 — Federal Excise Duty"
+        "table": "Table 6, Federal Excise Duty"
       }
     },
     {
@@ -491,7 +491,7 @@
       "source": {
         "docId": "emfr",
         "page": 10,
-        "table": "Table 6 — Federal Excise Duty"
+        "table": "Table 6, Federal Excise Duty"
       }
     },
     {
@@ -506,7 +506,7 @@
       "source": {
         "docId": "emfr",
         "page": 10,
-        "table": "Table 6 — Federal Excise Duty"
+        "table": "Table 6, Federal Excise Duty"
       }
     },
     {
@@ -521,7 +521,7 @@
       "source": {
         "docId": "emfr",
         "page": 10,
-        "table": "Table 6 — Federal Excise Duty"
+        "table": "Table 6, Federal Excise Duty"
       }
     },
     {
@@ -536,7 +536,7 @@
       "source": {
         "docId": "emfr",
         "page": 10,
-        "table": "Table 6 — Federal Excise Duty"
+        "table": "Table 6, Federal Excise Duty"
       }
     },
     {
@@ -551,7 +551,7 @@
       "source": {
         "docId": "emfr",
         "page": 10,
-        "table": "Table 6 — Federal Excise Duty"
+        "table": "Table 6, Federal Excise Duty"
       }
     },
     {
@@ -566,7 +566,7 @@
       "source": {
         "docId": "emfr",
         "page": 10,
-        "table": "Table 6 — Federal Excise Duty"
+        "table": "Table 6, Federal Excise Duty"
       }
     },
     {
@@ -581,7 +581,7 @@
       "source": {
         "docId": "emfr",
         "page": 10,
-        "table": "Table 6 — Federal Excise Duty"
+        "table": "Table 6, Federal Excise Duty"
       }
     },
     {
@@ -590,11 +590,11 @@
       "side": "receipt",
       "parent": null,
       "value": 5335.598,
-      "description": "Federal income that is not a tax — chiefly the State Bank of Pakistan's profit, the Petroleum Levy, dividends, and various fees and surcharges.",
+      "description": "Federal income that is not a tax; chiefly the State Bank of Pakistan's profit, the Petroleum Levy, dividends, and various fees and surcharges.",
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 5 — Non-Tax Revenue Receipts"
+        "table": "Table 5, Non-Tax Revenue Receipts"
       },
       "prior": 5147.09,
       "revised": 5093.364
@@ -609,7 +609,7 @@
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 5 (A) — Levies & Fees"
+        "table": "Table 5 (A), Levies & Fees"
       },
       "prior": 29.79,
       "revised": 37
@@ -641,7 +641,7 @@
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (B) — Income from Property & Enterprises"
+        "table": "Table 5 (B), Income from Property & Enterprises"
       }
     },
     {
@@ -656,7 +656,7 @@
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (B) — Income from Property & Enterprises"
+        "table": "Table 5 (B), Income from Property & Enterprises"
       }
     },
     {
@@ -671,7 +671,7 @@
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (B) — Income from Property & Enterprises"
+        "table": "Table 5 (B), Income from Property & Enterprises"
       }
     },
     {
@@ -686,7 +686,7 @@
       "source": {
         "docId": "bib",
         "page": 6,
-        "table": "Table 5 (B) — Income from Property & Enterprises"
+        "table": "Table 5 (B), Income from Property & Enterprises"
       }
     },
     {
@@ -695,7 +695,7 @@
       "side": "receipt",
       "parent": "nontax",
       "value": 1480.183,
-      "description": "Receipts from civil administration functions — dominated by the State Bank of Pakistan's surplus profit (Rs. 1,436 bn), plus defence, law-and-order and other administrative receipts.",
+      "description": "Receipts from civil administration functions; dominated by the State Bank of Pakistan's surplus profit (Rs. 1,436 bn), plus defence, law-and-order and other administrative receipts.",
       "source": {
         "docId": "bib",
         "page": 6,
@@ -716,7 +716,7 @@
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (C) — Receipts from Civil Administration"
+        "table": "Table 5 (C), Receipts from Civil Administration"
       }
     },
     {
@@ -731,7 +731,7 @@
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (C) — Receipts from Civil Administration"
+        "table": "Table 5 (C), Receipts from Civil Administration"
       }
     },
     {
@@ -746,7 +746,7 @@
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (C) — Receipts from Civil Administration"
+        "table": "Table 5 (C), Receipts from Civil Administration"
       }
     },
     {
@@ -772,11 +772,11 @@
       "value": 1676.509,
       "prior": 1468.395,
       "revised": 1498,
-      "description": "Levy charged on petroleum products at the pump — the largest non-tax revenue source, and unlike FBR taxes it is not shared with the provinces.",
+      "description": "Levy charged on petroleum products at the pump; the largest non-tax revenue source, and unlike FBR taxes it is not shared with the provinces.",
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (D) — Miscellaneous Receipts"
+        "table": "Table 5 (D), Miscellaneous Receipts"
       }
     },
     {
@@ -787,11 +787,11 @@
       "value": 1035,
       "prior": 0,
       "revised": 0,
-      "description": "Grants/receipts from provinces under Article 164 of the Constitution — a new entry for FY2026-27 with no counterpart in the 2025-26 budget.",
+      "description": "Grants/receipts from provinces under Article 164 of the Constitution, a new entry for FY2026-27 with no counterpart in the 2025-26 budget.",
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (D) — Miscellaneous Receipts"
+        "table": "Table 5 (D), Miscellaneous Receipts"
       }
     },
     {
@@ -806,7 +806,7 @@
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (D) — Miscellaneous Receipts"
+        "table": "Table 5 (D), Miscellaneous Receipts"
       }
     },
     {
@@ -821,7 +821,7 @@
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (D) — Miscellaneous Receipts"
+        "table": "Table 5 (D), Miscellaneous Receipts"
       }
     },
     {
@@ -832,11 +832,11 @@
       "value": 70.814,
       "prior": 49.437,
       "revised": 63,
-      "description": "Natural Gas Development Surcharge — the margin between prescribed and sale price of gas.",
+      "description": "Natural Gas Development Surcharge, the margin between prescribed and sale price of gas.",
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (D) — Miscellaneous Receipts"
+        "table": "Table 5 (D), Miscellaneous Receipts"
       }
     },
     {
@@ -851,7 +851,7 @@
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (D) — Miscellaneous Receipts"
+        "table": "Table 5 (D), Miscellaneous Receipts"
       }
     },
     {
@@ -866,7 +866,7 @@
       "source": {
         "docId": "bib",
         "page": 7,
-        "table": "Table 5 (D) — Miscellaneous Receipts"
+        "table": "Table 5 (D), Miscellaneous Receipts"
       }
     },
     {
@@ -879,7 +879,7 @@
       "source": {
         "docId": "bib",
         "page": 3,
-        "table": "Table 2 — Fiscal Deficit & Financing"
+        "table": "Table 2, Fiscal Deficit & Financing"
       },
       "prior": 6501,
       "revised": 5157
@@ -890,11 +890,11 @@
       "side": "receipt",
       "parent": "financing",
       "value": 2034,
-      "description": "Borrowing from non-bank sources — National Savings Schemes, GP Fund and public-account deposits.",
+      "description": "Borrowing from non-bank sources; National Savings Schemes, GP Fund and public-account deposits.",
       "source": {
         "docId": "bib",
         "page": 2,
-        "table": "Table 1 — Budget at a Glance"
+        "table": "Table 1, Budget at a Glance"
       }
     },
     {
@@ -903,11 +903,11 @@
       "side": "receipt",
       "parent": "financing",
       "value": 813,
-      "description": "Net loans from external sources — multilateral and bilateral lenders plus commercial loans and bonds.",
+      "description": "Net loans from external sources, multilateral and bilateral lenders plus commercial loans and bonds.",
       "source": {
         "docId": "bib",
         "page": 2,
-        "table": "Table 1 — Budget at a Glance"
+        "table": "Table 1, Budget at a Glance"
       },
       "prior": 105.523,
       "revised": 1534.027
@@ -922,7 +922,7 @@
       "source": {
         "docId": "bib",
         "page": 2,
-        "table": "Table 1 — Budget at a Glance"
+        "table": "Table 1, Budget at a Glance"
       }
     },
     {
@@ -935,7 +935,7 @@
       "source": {
         "docId": "bib",
         "page": 2,
-        "table": "Table 1 — Budget at a Glance"
+        "table": "Table 1, Budget at a Glance"
       },
       "prior": 86.55,
       "revised": 14.257
@@ -950,7 +950,7 @@
       "source": {
         "docId": "bib",
         "page": 2,
-        "table": "Table 1 — Budget at a Glance"
+        "table": "Table 1, Budget at a Glance"
       },
       "prior": 19278.09,
       "revised": 18076.364
@@ -965,7 +965,7 @@
       "source": {
         "docId": "bib",
         "page": 2,
-        "table": "Table 1 — Budget at a Glance"
+        "table": "Table 1, Budget at a Glance"
       },
       "prior": 11072,
       "revised": 10485
@@ -976,11 +976,11 @@
       "side": "transfer",
       "parent": null,
       "value": 8848.493,
-      "description": "Under Article 160 of the Constitution and the NFC Award, a fixed share (about 57.5%) of the divisible pool of federal taxes is transferred to the four provinces. At Rs. 8,848 bn this is larger than any single federal spending category — the federal government collects this money but never spends it itself.",
+      "description": "The federal government collects this money but never spends it itself and transfers to provinces. Each province then passes its own budget on top of this transfer: schools, hospitals, police and provincial development programmes are funded there.",
       "source": {
         "docId": "bib",
         "page": 8,
-        "table": "Table 6 — Divisible Pool Taxes (Transfers to Provinces)"
+        "table": "Table 6, Divisible Pool Taxes (Transfers to Provinces)"
       },
       "prior": 8205.723,
       "revised": 7591.797,
@@ -991,7 +991,7 @@
           "source": {
             "docId": "bib",
             "page": 8,
-            "table": "NFC Award — Distribution of Revenues"
+            "table": "NFC Award, Distribution of Revenues"
           },
           "items": [
             {
@@ -1018,7 +1018,7 @@
           "source": {
             "docId": "bib",
             "page": 9,
-            "table": "NFC Award — Allocation of shares"
+            "table": "NFC Award, Allocation of shares"
           },
           "items": [
             {
@@ -1051,7 +1051,7 @@
       "source": {
         "docId": "bib",
         "page": 9,
-        "table": "Table 6 — Province-wise Share"
+        "table": "Table 6, Province-wise Share"
       },
       "prior": 4076.008,
       "revised": 3745.061
@@ -1066,7 +1066,7 @@
       "source": {
         "docId": "bib",
         "page": 9,
-        "table": "Table 6 — Province-wise Share"
+        "table": "Table 6, Province-wise Share"
       },
       "prior": 2043.762,
       "revised": 1879.057
@@ -1081,7 +1081,7 @@
       "source": {
         "docId": "bib",
         "page": 9,
-        "table": "Table 6 — Province-wise Share"
+        "table": "Table 6, Province-wise Share"
       },
       "prior": 1342.788,
       "revised": 1231.759
@@ -1096,7 +1096,7 @@
       "source": {
         "docId": "bib",
         "page": 9,
-        "table": "Table 6 — Province-wise Share"
+        "table": "Table 6, Province-wise Share"
       },
       "prior": 743.166,
       "revised": 735.919
@@ -1107,11 +1107,11 @@
       "side": "hub",
       "parent": null,
       "value": 18771.417,
-      "description": "The total pool of money the federal government has to spend: net federal revenue (Rs. 11,751 bn) plus borrowing and other financing (Rs. 7,020 bn). This equals total federal expenditure of Rs. 18,771 bn — the budget balances by design.",
+      "description": "The total pool of money the federal government has to spend: net federal revenue (Rs. 11,751 bn) plus borrowing and other financing (Rs. 7,020 bn). This equals total federal expenditure of Rs. 18,771 bn; the budget balances by design. This is the federal budget alone, not the country's: the four provincial governments pass separate budgets of their own, funded largely by the NFC transfer that leaves this chart.",
       "source": {
         "docId": "bib",
         "page": 2,
-        "table": "Table 1 — Budget at a Glance"
+        "table": "Table 1, Budget at a Glance"
       },
       "prior": 17573,
       "revised": 15642
@@ -1122,22 +1122,22 @@
       "side": "expenditure",
       "parent": null,
       "value": 17495.417,
-      "description": "Day-to-day running costs of the federal government — 93% of all federal spending. Dominated by interest payments on debt, defence, pensions, grants and subsidies.",
+      "description": "Day-to-day running costs of the federal government, 93% of all federal spending. Dominated by interest payments on debt, defence, pensions, grants and subsidies.",
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 — Current Expenditures"
+        "table": "Table 10, Current Expenditures"
       },
       "prior": 16286.045,
       "revised": 15006.324,
       "altBreakdowns": [
         {
           "title": "Largest demands (ministry / division-wise)",
-          "note": "Current-expenditure demands for grants (charged + voted) from the demand-wise schedule — the parliamentary view of who is allocated money. Debt and loan repayments are excluded (refinancing, not expenditure). Classification differs slightly from the object-wise breakdown above.",
+          "note": "Current-expenditure demands for grants (charged + voted) from the demand-wise schedule, the parliamentary view of who is allocated money. Debt and loan repayments are excluded (refinancing, not expenditure). Classification differs slightly from the object-wise breakdown above.",
           "source": {
             "docId": "bib",
             "page": 35,
-            "table": "Table 21 — Demand-Wise Budget Estimates"
+            "table": "Table 21, Demand-Wise Budget Estimates"
           },
           "items": [
             {
@@ -1208,7 +1208,7 @@
           "source": {
             "docId": "abs",
             "page": 11,
-            "table": "Summary of Expenditure — Current Exp. on Revenue Account"
+            "table": "Summary of Expenditure, Current Exp. on Revenue Account"
           },
           "items": [
             {
@@ -1271,11 +1271,11 @@
       "side": "expenditure",
       "parent": "current_exp",
       "value": 8054,
-      "description": "Mark-up (interest) on government debt — the single largest expense in the budget, larger than defence and development combined. Most of it services domestic debt.",
+      "description": "Mark-up (interest) on government debt, the single largest expense in the budget, larger than defence and development combined. Most of it services domestic debt.",
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 (i) — Mark-up Payments"
+        "table": "Table 10 (i), Mark-up Payments"
       },
       "prior": 8206.657,
       "revised": 6937.459
@@ -1290,7 +1290,7 @@
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 (i) — Mark-up Payments"
+        "table": "Table 10 (i), Mark-up Payments"
       },
       "prior": 7197.335,
       "revised": 6006.541
@@ -1305,7 +1305,7 @@
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 (i) — Mark-up Payments"
+        "table": "Table 10 (i), Mark-up Payments"
       },
       "prior": 1009.322,
       "revised": 930.918
@@ -1320,7 +1320,7 @@
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 (ii) — Pension"
+        "table": "Table 10 (ii), Pension"
       },
       "prior": 1055,
       "revised": 1055
@@ -1335,7 +1335,7 @@
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 (ii) — Pension"
+        "table": "Table 10 (ii), Pension"
       },
       "prior": 742,
       "revised": 742
@@ -1350,7 +1350,7 @@
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 (ii) — Pension"
+        "table": "Table 10 (ii), Pension"
       },
       "prior": 243,
       "revised": 243
@@ -1365,7 +1365,7 @@
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 (ii) — Pension"
+        "table": "Table 10 (ii), Pension"
       },
       "prior": 65.7,
       "revised": 65.7
@@ -1380,7 +1380,7 @@
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 (ii) — Pension"
+        "table": "Table 10 (ii), Pension"
       },
       "prior": 4.3,
       "revised": 4.3
@@ -1395,7 +1395,7 @@
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 (iii) — Defence Affairs and Services"
+        "table": "Table 10 (iii), Defence Affairs and Services"
       },
       "prior": 2550,
       "revised": 2588.218
@@ -1410,7 +1410,7 @@
       "source": {
         "docId": "bib",
         "page": 22,
-        "table": "Table 13 — Grants and Transfers"
+        "table": "Table 13, Grants and Transfers"
       },
       "prior": 1927.895,
       "revised": 1971.429
@@ -1421,11 +1421,11 @@
       "side": "expenditure",
       "parent": "grants",
       "value": 838,
-      "description": "BISP — Pakistan's flagship cash-transfer / social-protection programme for the poorest households.",
+      "description": "BISP, Pakistan's flagship cash-transfer / social-protection programme for the poorest households.",
       "source": {
         "docId": "bib",
         "page": 23,
-        "table": "Table 13 (II) — Grants to Others"
+        "table": "Table 13 (II), Grants to Others"
       },
       "prior": 716,
       "revised": 706.188
@@ -1440,7 +1440,7 @@
       "source": {
         "docId": "bib",
         "page": 22,
-        "table": "Table 13 (II) — Grants to Others"
+        "table": "Table 13 (II), Grants to Others"
       },
       "prior": 300,
       "revised": 300
@@ -1451,11 +1451,11 @@
       "side": "expenditure",
       "parent": "grants",
       "value": 152,
-      "description": "Discretionary grants to provinces (over and above the NFC divisible-pool transfer) — e.g. Sindh OZT and KP merged-districts support.",
+      "description": "Discretionary grants to provinces (over and above the NFC divisible-pool transfer), e.g. Sindh OZT and KP merged-districts support.",
       "source": {
         "docId": "bib",
         "page": 22,
-        "table": "Table 13 (I) — Grants to Provinces"
+        "table": "Table 13 (I), Grants to Provinces"
       },
       "prior": 150,
       "revised": 150
@@ -1470,7 +1470,7 @@
       "source": {
         "docId": "bib",
         "page": 24,
-        "table": "Table 13 (II) — Grants to Others"
+        "table": "Table 13 (II), Grants to Others"
       },
       "prior": 140,
       "revised": 140
@@ -1485,7 +1485,7 @@
       "source": {
         "docId": "bib",
         "page": 24,
-        "table": "Table 13 (II) — Grants to Others"
+        "table": "Table 13 (II), Grants to Others"
       },
       "prior": 80,
       "revised": 80
@@ -1500,7 +1500,7 @@
       "source": {
         "docId": "bib",
         "page": 22,
-        "table": "Table 13 (II) — Grants to Others"
+        "table": "Table 13 (II), Grants to Others"
       },
       "prior": 70,
       "revised": 70
@@ -1515,7 +1515,7 @@
       "source": {
         "docId": "bib",
         "page": 24,
-        "table": "Table 13 (II) — Grants to Others"
+        "table": "Table 13 (II), Grants to Others"
       },
       "prior": 65,
       "revised": 65
@@ -1526,11 +1526,11 @@
       "side": "expenditure",
       "parent": "grants",
       "value": 798.417,
-      "description": "All remaining grants and transfers grouped together — AJK/GB subventions aside, this includes provision for relief, Bait-ul-Mal, EPI, insurance schemes and many smaller bodies.",
+      "description": "All remaining grants and transfers grouped together. AJK/GB subventions aside, this includes provision for relief, Bait-ul-Mal, EPI, insurance schemes and many smaller bodies.",
       "source": {
         "docId": "bib",
         "page": 22,
-        "table": "Table 13 — Grants and Transfers"
+        "table": "Table 13, Grants and Transfers"
       },
       "prior": 212.895,
       "revised": 309.091
@@ -1547,7 +1547,7 @@
       "source": {
         "docId": "bib",
         "page": 22,
-        "table": "Table 13 (II) — Grants to Others"
+        "table": "Table 13 (II), Grants to Others"
       }
     },
     {
@@ -1562,7 +1562,7 @@
       "source": {
         "docId": "bib",
         "page": 23,
-        "table": "Table 13 (II) — Grants to Others"
+        "table": "Table 13 (II), Grants to Others"
       }
     },
     {
@@ -1571,11 +1571,11 @@
       "side": "expenditure",
       "parent": "current_exp",
       "value": 1091,
-      "description": "Subsidies that keep prices below cost — overwhelmingly to the power sector.",
+      "description": "Subsidies that keep prices below what they actually cost, overwhelmingly to the power sector.",
       "source": {
         "docId": "bib",
         "page": 20,
-        "table": "Table 12 — Subsidies"
+        "table": "Table 12, Subsidies"
       },
       "prior": 1186.036,
       "revised": 1157.007
@@ -1586,11 +1586,11 @@
       "side": "expenditure",
       "parent": "subsidies",
       "value": 830,
-      "description": "Subsidies to the electricity sector (WAPDA/PEPCO, K-Electric, inter-DISCO tariff differential, AJK, merged districts, etc.) — the bulk of all subsidies.",
+      "description": "Subsidies to the electricity sector (WAPDA/PEPCO, K-Electric, inter-DISCO tariff differential, AJK, merged districts, etc.), the bulk of all subsidies.",
       "source": {
         "docId": "bib",
         "page": 20,
-        "table": "Table 12 — Subsidies"
+        "table": "Table 12, Subsidies"
       },
       "prior": 1036.136,
       "revised": 893.136
@@ -1605,7 +1605,7 @@
       "source": {
         "docId": "bib",
         "page": 21,
-        "table": "Table 12 — Subsidies (Others)"
+        "table": "Table 12, Subsidies (Others)"
       },
       "prior": 104.7,
       "revised": 230.478
@@ -1616,11 +1616,11 @@
       "side": "expenditure",
       "parent": "subsidies",
       "value": 37,
-      "description": "Subsidies to industry — urea fertiliser production, the electric-vehicle incentive scheme, and Utility Stores arrears.",
+      "description": "Subsidies to industry; urea fertiliser production, the electric-vehicle incentive scheme, and Utility Stores arrears.",
       "source": {
         "docId": "bib",
         "page": 20,
-        "table": "Table 12 — Subsidies"
+        "table": "Table 12, Subsidies"
       },
       "prior": 24,
       "revised": 12.193
@@ -1635,7 +1635,7 @@
       "source": {
         "docId": "bib",
         "page": 20,
-        "table": "Table 12 — Subsidies"
+        "table": "Table 12, Subsidies"
       },
       "prior": 20,
       "revised": 20
@@ -1646,11 +1646,11 @@
       "side": "expenditure",
       "parent": "current_exp",
       "value": 1071,
-      "description": "The cost of running federal ministries, divisions and attached departments — salaries and operating costs of the civil government.",
+      "description": "The cost of running federal ministries, divisions and attached departments, salaries and operating costs of the civil government.",
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 (vi) — Running of Civil Government"
+        "table": "Table 10 (vi), Running of Civil Government"
       },
       "prior": 971,
       "revised": 1021.322
@@ -1665,7 +1665,7 @@
       "source": {
         "docId": "bib",
         "page": 13,
-        "table": "Table 10 (vii) — Provision for Emergency and others"
+        "table": "Table 10 (vii), Provision for Emergency and others"
       },
       "prior": 389,
       "revised": 275.888
@@ -1676,11 +1676,11 @@
       "side": "expenditure",
       "parent": null,
       "value": 1276,
-      "description": "Money spent building things and lending onward — the Federal Public Sector Development Programme (PSDP) plus net lending. Just 7% of federal spending.",
+      "description": "Money spent building things and lending onward, the Federal Public Sector Development Programme (PSDP) plus net lending. Just 7% of federal spending, and only the federal share of development spending nationally: each province budgets its own Annual Development Programme out of its NFC transfer.",
       "source": {
         "docId": "bib",
         "page": 2,
-        "table": "Table 1 — Budget at a Glance"
+        "table": "Table 1, Budget at a Glance"
       },
       "prior": 1286.955,
       "revised": 635.676
@@ -1691,11 +1691,11 @@
       "side": "expenditure",
       "parent": "development",
       "value": 1000,
-      "description": "The Federal Public Sector Development Programme — the federal government's development / infrastructure budget, spread across ministries, corporations and special areas.",
+      "description": "The Federal Public Sector Development Programme, the federal government's development / infrastructure budget, spread across ministries, corporations and special areas. It is not the country's development budget: the provinces run their own Annual Development Programmes, and state-owned enterprises and public-private partnerships invest outside the PSDP as well.",
       "source": {
         "docId": "bib",
         "page": 29,
-        "table": "Table 17 — Public Sector Development Program (PSDP)"
+        "table": "Table 17, Public Sector Development Program (PSDP)"
       },
       "prior": 1000
     },
@@ -1705,11 +1705,11 @@
       "side": "expenditure",
       "parent": "psdp",
       "value": 224.515,
-      "description": "Roads and highways built by the NHA — the largest single PSDP allocation.",
+      "description": "Roads and highways built by the NHA, the largest single PSDP allocation.",
       "source": {
         "docId": "bib",
         "page": 31,
-        "table": "Table 17 (B) — Corporations"
+        "table": "Table 17 (B), Corporations"
       },
       "prior": 226.982
     },
@@ -1723,7 +1723,7 @@
       "source": {
         "docId": "bib",
         "page": 31,
-        "table": "Table 17 (A) — Federal Ministries/Divisions"
+        "table": "Table 17 (A), Federal Ministries/Divisions"
       },
       "prior": 133.424
     },
@@ -1737,7 +1737,7 @@
       "source": {
         "docId": "bib",
         "page": 31,
-        "table": "Table 17 (A) — Federal Ministries/Divisions"
+        "table": "Table 17 (A), Federal Ministries/Divisions"
       },
       "prior": 82
     },
@@ -1751,7 +1751,7 @@
       "source": {
         "docId": "bib",
         "page": 31,
-        "table": "Table 17 (A) — Federal Ministries/Divisions"
+        "table": "Table 17 (A), Federal Ministries/Divisions"
       },
       "prior": 105.786
     },
@@ -1765,7 +1765,7 @@
       "source": {
         "docId": "bib",
         "page": 31,
-        "table": "Table 17 (B) — Corporations"
+        "table": "Table 17 (B), Corporations"
       },
       "prior": 90.226
     },
@@ -1779,7 +1779,7 @@
       "source": {
         "docId": "bib",
         "page": 29,
-        "table": "Table 17 (A) — Federal Ministries/Divisions"
+        "table": "Table 17 (A), Federal Ministries/Divisions"
       },
       "prior": 70.388
     },
@@ -1793,7 +1793,7 @@
       "source": {
         "docId": "bib",
         "page": 31,
-        "table": "Table 17 (A) — Federal Ministries/Divisions"
+        "table": "Table 17 (A), Federal Ministries/Divisions"
       },
       "prior": 65.444
     },
@@ -1807,7 +1807,7 @@
       "source": {
         "docId": "bib",
         "page": 29,
-        "table": "Table 17 (A) — Federal Ministries/Divisions"
+        "table": "Table 17 (A), Federal Ministries/Divisions"
       },
       "prior": 39.488
     },
@@ -1821,7 +1821,7 @@
       "source": {
         "docId": "bib",
         "page": 31,
-        "table": "Table 17 (A) — Federal Ministries/Divisions"
+        "table": "Table 17 (A), Federal Ministries/Divisions"
       },
       "prior": 22.415
     },
@@ -1835,7 +1835,7 @@
       "source": {
         "docId": "bib",
         "page": 29,
-        "table": "Table 17 (A) — Federal Ministries/Divisions"
+        "table": "Table 17 (A), Federal Ministries/Divisions"
       },
       "prior": 18.58
     },
@@ -1845,11 +1845,11 @@
       "side": "expenditure",
       "parent": "psdp",
       "value": 163.964,
-      "description": "All remaining PSDP allocations grouped together — dozens of smaller ministries and divisions, plus SOEs, project liabilities and CPEC 2.0 new initiatives.",
+      "description": "All remaining PSDP allocations grouped together, dozens of smaller ministries and divisions, plus SOEs, project liabilities and CPEC 2.0 new initiatives.",
       "source": {
         "docId": "bib",
         "page": 29,
-        "table": "Table 17 — Public Sector Development Program (PSDP)"
+        "table": "Table 17, Public Sector Development Program (PSDP)"
       },
       "prior": 145.267
     },
@@ -1863,7 +1863,7 @@
       "source": {
         "docId": "bib",
         "page": 2,
-        "table": "Table 1 — Budget at a Glance"
+        "table": "Table 1, Budget at a Glance"
       },
       "prior": 286.955
     }

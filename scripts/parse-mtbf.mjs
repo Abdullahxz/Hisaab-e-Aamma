@@ -347,11 +347,11 @@ for (const sec of sections) {
 // Gross consolidated-fund frame (Rs bn): includes principal repayments
 // (refinancing), so the total (51,156) exceeds the Rs 18,771 bn budget frame.
 const OBJECT_WISE = {
-  title: 'What the money buys — object classification (federal government)',
+  title: 'What the money buys, by object classification (federal government)',
   note:
     'Gross Federal Consolidated Fund frame: the total (Rs 51,156 bn) includes Rs 31,959 bn of principal debt repayments (refinancing of maturing debt, not expenditure in the Rs 18,771 bn budget frame). Per-ministry object splits are published in the separate Demands for Grants volumes.',
   // printed page (abs pageOffset in budget.json maps it to the physical PDF page)
-  source: { docId: 'abs', page: 31, table: 'Schedule III — Object Classification Wise Expenditure' },
+  source: { docId: 'abs', page: 31, table: 'Schedule III, Object Classification Wise Expenditure' },
   total: { be2627: 51156.209, prior: 37855.301 },
   items: [
     { code: 'A01', label: 'Employees Related Expenses (salaries)', value: 1608.289, prior: 1438.843,

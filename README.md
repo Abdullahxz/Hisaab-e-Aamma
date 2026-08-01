@@ -8,6 +8,8 @@ Hisaab-e-Aamma, which literally means public accounts takes the official federal
 
 The budget is already public, this is one attempt to make budget information more accessible to the people whose money it describes.
 
+**One thing to keep in mind throughout:** this is the *federal* budget, not the country's. Punjab, Sindh, Khyber Pakhtunkhwa and Balochistan each pass a budget of their own, funded largely by the transfer you can watch leaving the diagram — and since the 18th Amendment they run most schools, hospitals and police. For the same reason the federal PSDP is not all the development spending in Pakistan: every province has its own Annual Development Programme. Nothing here should be read as a national total.
+
 ## What you can explore
 
 🌊 **The budget flow** - a single interactive diagram of the entire FY 2026-27 federal budget: taxes and borrowing flowing in, the constitutionally mandated NFC transfer to the provinces, and spending flowing out. Click any stream to drill deeper, from *FBR Tax Revenue* all the way down to excise duty on cement, or from *Current Expenditure* down to domestic versus foreign debt interest.
@@ -16,7 +18,7 @@ The budget is already public, this is one attempt to make budget information mor
 
 🧾 **Your tax receipt** - enter the income tax you pay and get a personalised receipt showing how much goes to the provinces under the NFC Award and what the federal share funds, including debt interest, defence, pensions, and development.
 
-📖 **Budget basics** - a plain-language primer and glossary. What is a "divisible pool"? Why is repaying debt not the same as spending? No economics degree required.
+📖 **Glossary & budget basics** - a plain-language primer and glossary. What is a "divisible pool"? Why is repaying debt not the same as spending? No economics degree required.
 
 📊 **Context on every number** - year-over-year change against last year's budget and revised estimates, share of the total, and plain-language descriptions of what each line means.
 

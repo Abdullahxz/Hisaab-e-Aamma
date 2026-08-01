@@ -73,7 +73,7 @@ function YoYBlock({ node, yoyLabels }) {
   const cell = (label, v) => (
     <div className="flex-1 rounded-md bg-muted/50 px-2.5 py-2">
       <div className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">{label}</div>
-      <div className="mt-0.5 text-sm font-semibold tabular-nums">{v != null ? formatCompact(v) : '—'}</div>
+      <div className="mt-0.5 text-sm font-semibold tabular-nums">{v != null ? formatCompact(v) : 'n/a'}</div>
     </div>
   )
   return (

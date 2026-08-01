@@ -23,11 +23,11 @@ const OBJECT_LABELS = {
 }
 
 const DOC_ROLES = {
-  bib: 'The best starting point — headline totals and all the summary tables (revenue, transfers to provinces, current expenditure, subsidies, grants, PSDP, demand-wise estimates).',
+  bib: 'The best starting point, with headline totals and all the summary tables (revenue, transfers to provinces, current expenditure, subsidies, grants, PSDP, demand-wise estimates).',
   emfr: 'Deep detail on the receipts side: every tax and non-tax revenue source, with in-year collection performance.',
-  abs: 'The constitutional statement laid before the National Assembly — receipts and expenditure by function and by object, charged vs voted.',
+  abs: 'The constitutional statement laid before the National Assembly, setting out receipts and expenditure by function and by object, charged vs voted.',
   grants: 'Mid-year additions to the previous year\'s budget (supplementary grants).',
-  mtbf: 'The "Green Book" — every ministry\'s goals, services and budgets over a rolling 3-year horizon.',
+  mtbf: 'The "Green Book", with every ministry\'s goals, services and budgets over a rolling 3-year horizon.',
   dfg1: 'Line-item detail of every parliamentary demand: Vol-I covers current-expenditure demands 1–42.',
   dfg2: 'Line-item detail of demands 43–67 (includes Finance Division, FBR, Foreign Affairs).',
   dfg3: 'Line-item detail of demands 68–91.',
@@ -38,17 +38,19 @@ const GLOSSARY = [
   ['Budget Estimate (BE)', 'The planned amount for the coming fiscal year, as approved by the National Assembly. This site shows BE 2026-27 as the primary figures.'],
   ['Revised Estimate (RE)', 'The government\'s updated mid-year expectation of what will actually be collected or spent in the current year. Comparing BE to RE shows how realistic the original plan was.'],
   ['Fiscal year', 'Pakistan\'s government year runs 1 July to 30 June. "2026-27" means July 2026 through June 2027.'],
-  ['FBR', 'Federal Board of Revenue — the tax authority that collects income tax, sales tax, customs duties and federal excise.'],
+  ['FBR', 'Federal Board of Revenue, the tax authority that collects income tax, sales tax, customs duties and federal excise.'],
   ['NFC Award', 'The National Finance Commission agreement (Article 160 of the Constitution) that fixes how tax revenue is shared between the federation and the provinces. Under the 7th Award, provinces receive 57.5% of the divisible pool.'],
-  ['Divisible pool', 'The federal taxes that must be shared with provinces: income tax, sales tax, customs, most federal excise. The Petroleum Levy is NOT in the pool — one reason the federal government leans on it.'],
+  ['Divisible pool', 'The federal taxes that must be shared with provinces: income tax, sales tax, customs, most federal excise. The Petroleum Levy is NOT in the pool, one reason the federal government leans on it.'],
   ['Current expenditure', 'Day-to-day running costs: debt interest, defence, pensions, salaries, subsidies, grants. 93% of the 2026-27 federal budget.'],
-  ['Development expenditure / PSDP', 'The Public Sector Development Programme — spending that builds things: dams, roads, universities. Rs 1,000 bn in 2026-27, about 5% of the budget.'],
+  ['Development expenditure / PSDP', 'The Public Sector Development Programme, spending that builds things: dams, roads, universities. The federal PSDP is Rs 1,000 bn in 2026-27, about 5% of the federal budget. It is not all the development spending in the country: each province funds its own ADP separately.'],
+  ['ADP (Annual Development Programme)', 'A province\'s own development budget, the provincial equivalent of the federal PSDP, passed by that province\'s assembly and funded mainly from its NFC share. Provincial ADPs are not part of the federal budget and do not appear anywhere on this site.'],
+  ['18th Amendment', 'The 2010 constitutional amendment that devolved most service delivery to the provinces, including schools, hospitals, agriculture and local roads, along with a larger share of the divisible pool. It is the reason the federal budget shows so little education and health spending: those are now mostly provincial subjects.'],
   ['Charged vs voted', 'Charged expenditure (debt servicing, judges\' and the President\'s salaries…) is paid by constitutional obligation and is discussed but not voted by the Assembly. Voted expenditure requires Assembly approval, demand by demand.'],
-  ['Demand for grants', 'The unit in which the Assembly approves spending — one "demand" per ministry/purpose (135 of them in 2026-27). Explore them on the ministry pages.'],
-  ['PAO', 'Principal Accounting Officer — the secretary of a ministry/division who is personally accountable for its budget.'],
-  ['Fiscal deficit', 'The gap between what the federal government spends and what it keeps in revenue — filled by borrowing. Rs 7,020 bn (3.6% of GDP) in 2026-27.'],
+  ['Demand for grants', 'The unit in which the Assembly approves spending, one "demand" per ministry/purpose (135 of them in 2026-27). Explore them on the ministry pages.'],
+  ['PAO', 'Principal Accounting Officer, the secretary of a ministry/division who is personally accountable for its budget.'],
+  ['Fiscal deficit', 'The gap between what the federal government spends and what it keeps in revenue, filled by borrowing. Rs 7,020 bn (3.6% of GDP) in 2026-27.'],
   ['T-bills, PIBs, Sukuk', 'The instruments the government borrows with domestically: short-term Treasury bills, longer-term Pakistan Investment Bonds, and Shariah-compliant Sukuk.'],
-  ['Supplementary grant', 'Extra spending authorised during the year, beyond the passed budget — approved retrospectively by the Assembly.'],
+  ['Supplementary grant', 'Extra spending authorised during the year, beyond the passed budget, approved retrospectively by the Assembly.'],
   ['Gross vs net revenue', 'Gross revenue (Rs 20,600 bn) is everything collected; net federal revenue (Rs 11,751 bn) is what remains after the provinces\' NFC share is transferred.'],
 ]
 
@@ -70,7 +72,7 @@ export default function BasicsPage({ data, docsById }) {
           Budget basics
         </h2>
         <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
-          A plain-language guide to reading Pakistan's federal budget — no economics degree
+          A plain-language guide to reading Pakistan's federal budget. No economics degree
           required.
         </p>
       </header>
@@ -79,61 +81,74 @@ export default function BasicsPage({ data, docsById }) {
         <p>
           Every June, the government presents to the National Assembly its plan for the year
           starting 1 July: how much money it expects to raise, and how it intends to spend it. For
-          2026-27 that plan totals <strong className="text-foreground">Rs 18,771 billion</strong>{' '}
-          (about Rs 18.8 trillion). Once the Assembly passes it, ministries may spend against it —
-          the "budget estimates" (BE) you see across this site.
+          2026-27 that plan totals Rs 18,771 billion (about Rs 18.8 trillion). Once the Assembly
+          passes it, ministries may spend against it.
+        </p>
+      </Section>
+
+      <Section title="What this budget leaves out">
+        <p>
+          This is the budget of the federal government only. Punjab, Sindh, Khyber Pakhtunkhwa and
+          Balochistan each pass a budget of their own, funded mainly by the NFC transfer you can
+          watch leaving the chart. Since the 18th Amendment most of the services people actually
+          meet are provincial subjects, paid for out of those provincial budgets: government
+          schools, hospitals and basic health units, police, local roads, agriculture.
+        </p>
+        <p>
+          The figures shown here represent only the federal government's share of spending. In education and health,
+          this includes the Higher Education Commission, federal institutions, Islamabad, and the special areas.
+          Provincial spending is not included, so the numbers on this site should not be read as Pakistan's total
+          expenditure on provincial subjects.
         </p>
       </Section>
 
       <Section title="Where does the money come from?">
         <p>
-          Three places. <strong className="text-foreground">Taxes</strong> (Rs 15,264 bn via FBR:
-          income tax, sales tax, customs, excise);{' '}
-          <strong className="text-foreground">non-tax revenue</strong> (Rs 5,336 bn: the State
-          Bank's profit, the Petroleum Levy you pay at the pump, royalties, fees); and because that
-          isn't enough, <strong className="text-foreground">borrowing</strong> (Rs 7,020 bn — the
-          fiscal deficit).
+          Three places. Taxes (Rs 15,264 bn via FBR: income tax, sales tax, customs, excise);
+          non-tax revenue (Rs 5,336 bn: the State Bank's profit, the Petroleum Levy you pay at the
+          pump, royalties, fees); and because that isn't enough, borrowing (Rs 7,020 bn, the fiscal
+          deficit).
         </p>
       </Section>
 
       <Section title="Why do provinces take such a big slice?">
         <p>
           The Constitution (Article 160) requires federal taxes to be shared with the provinces
-          through the NFC Award. In 2026-27, <strong className="text-foreground">Rs 8,848 bn</strong>{' '}
-          — 43% of gross revenue — transfers to Punjab, Sindh, KP and Balochistan before the
-          federal government spends a rupee. It is the single largest flow in the budget, which is
-          why the chart on the home page shows it splitting away at the top. Provinces fund
-          schools, hospitals and police from this money — services the federal budget therefore
-          does not show.
+          through the NFC Award. In 2026-27, Rs 8,848 bn, 43% of gross revenue, transfers to
+          Punjab, Sindh, KP and Balochistan before the federal government spends a rupee. It is the
+          single largest flow in the budget. Provinces fund schools, hospitals and police from this money,
+          so those are services the federal budget does not show.
         </p>
       </Section>
 
       <Section title="Current vs development spending">
         <p>
-          <strong className="text-foreground">Current expenditure</strong> (Rs 17,495 bn, 93%)
-          keeps the state running: debt interest (the largest single expense at Rs 8,054 bn),
-          defence, pensions, salaries, subsidies and grants.{' '}
-          <strong className="text-foreground">Development spending</strong> (the PSDP plus net
-          lending, Rs 1,276 bn, 7%) builds new things. When people say the budget has "no fiscal
-          space", they mean the current bill leaves little for development.
+          Current expenditure (Rs 17,495 bn, 93%) keeps the state running: debt interest (the
+          largest single expense at Rs 8,054 bn), defence, pensions, salaries, subsidies and
+          grants. Development spending (the PSDP plus net lending, Rs 1,276 bn, 7%) builds new
+          things. When people say the budget has "no fiscal space", they mean the current bill
+          leaves little for development.
+        </p>
+        <p>
+          The federal PSDP is not the whole development story, though. Each province funds its own
+          Annual Development Programme from its NFC share, and state-owned enterprises and
+          public-private partnerships invest outside the budget altogether. A project missing from
+          the PSDP has not necessarily gone unfunded; it may simply be someone else's line item.
         </p>
       </Section>
 
-      <Section title="Interest vs repaying debt — don't confuse them">
+      <Section title="Don't confuse interest with repaying debt">
         <p>
-          Like a home loan, public debt has two costs: the{' '}
-          <strong className="text-foreground">interest</strong> (Rs 8,054 bn — real spending that
-          consumes tax revenue) and the <strong className="text-foreground">principal</strong>{' '}
-          falling due (Rs 31,959 bn). The principal is not paid from taxes — the government issues
-          new debt to retire old debt ("rolling over"). That's why repayments sit outside the
-          Rs 18,771 bn budget and are marked "below the line" wherever they appear on this site.
+          Like a home loan, public debt has two costs: the interest (Rs 8,054 bn, real spending
+          that consumes tax revenue) and the principal falling due (Rs 31,959 bn). The principal is
+          not paid from taxes; the government issues new debt to retire old debt (rolling over).
         </p>
       </Section>
 
-      <Section title="What the money buys — the object heads">
+      <Section title="What the money buys, head by head">
         <p>
-          Accountants classify every rupee by "object" — what it purchases. These 13 heads appear
-          throughout the ministry pages:
+          Accountants classify every rupee by "object", meaning what it purchases. These 13 heads
+          appear throughout the ministry pages:
         </p>
         <dl className="mt-1 space-y-2.5">
           {Object.entries(OBJECT_LABELS).map(([code, label]) => (
@@ -187,24 +202,21 @@ export default function BasicsPage({ data, docsById }) {
         </h3>
         <div className="mt-2 space-y-2.5 text-xs leading-relaxed text-muted-foreground">
           <p>
-            <strong className="text-foreground">This is not an official government product.</strong>{' '}
-            It is an independent, non-commercial visualisation built for public understanding. It
-            carries no advertising and takes no position on whether any allocation is right or
-            wrong — it reports what the published documents say.
+            This is not an official government product. It is an independent, non-commercial
+            visualisation built for public understanding. It carries no advertising and takes no
+            position on whether any allocation is right or wrong; it reports what the published
+            documents say.
           </p>
           <p>
-            <strong className="text-foreground">Figures may contain errors.</strong> Numbers are
-            transcribed and computed from official PDFs by automated parsers with reconciliation
-            checks, but transcription and interpretation mistakes are always possible. Every figure
-            on this site links to the exact page of the official document behind it —{' '}
-            <strong className="text-foreground">
-              verify against that source before relying on any number
-            </strong>{' '}
+            Figures may contain errors. Numbers are transcribed and computed from official PDFs by
+            automated parsers with reconciliation checks, but transcription and interpretation
+            mistakes are always possible. Every figure on this site links to the exact page of the
+            official document behind it; verify against that source before relying on any number
             for reporting, research or any decision. No warranty of accuracy or fitness for any
             purpose is given.
           </p>
           <p>
-            <strong className="text-foreground">Found a mistake?</strong> Please{' '}
+            Found a mistake? Please{' '}
             <a
               href={REPORT_ERROR_URL}
               target="_blank"
@@ -212,16 +224,15 @@ export default function BasicsPage({ data, docsById }) {
               className="font-medium text-foreground underline underline-offset-2"
             >
               report it
-            </a>{' '}
-            — corrections are made promptly and in public.
+            </a>
+            ; corrections are made promptly and in public.
           </p>
           <p>
-            <strong className="text-foreground">Underlying data</strong> is published by the Finance
-            Division, Government of Pakistan, and belongs to the Government; this site reproduces
-            official figures and links to the Government's own copies of the documents rather than
-            re-hosting them. <strong className="text-foreground">The software</strong> — the
-            visualisation, parsers and derived datasets — is open source under the Apache-2.0
-            licence and available on{' '}
+            Underlying data is published by the Finance Division, Government of Pakistan, and
+            belongs to the Government; this site reproduces official figures and links to the
+            Government's own copies of the documents rather than re-hosting them. The software,
+            meaning the visualisation, parsers and derived datasets, is open source under the
+            Apache-2.0 licence and available on{' '}
             <a
               href={REPO_URL}
               target="_blank"
