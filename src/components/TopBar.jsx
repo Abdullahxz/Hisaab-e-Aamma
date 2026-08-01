@@ -42,7 +42,7 @@ export default function TopBar({ meta, mode, onToggleMode, route, onNavigate, ha
         <button
           onClick={() => onNavigate('#/')}
           className="flex items-baseline gap-2 rounded-md transition-opacity hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          aria-label="Pakistan Federal Budget 2026-27 — go to the budget flow"
+          aria-label="Pakistan Federal Budget 2026-27, go to the budget flow"
         >
           <span>Pakistan Federal Budget</span>
           <span className="rounded-md bg-receipt/15 px-1.5 py-0.5 text-sm font-bold text-receipt">
@@ -51,7 +51,11 @@ export default function TopBar({ meta, mode, onToggleMode, route, onNavigate, ha
         </button>
       </h1>
 
+      {/* Glossary leads: a first-time reader needs the vocabulary before the chart. */}
       <nav className="flex items-center gap-1" aria-label="Views">
+        <NavTab active={page === 'basics'} onClick={() => onNavigate('#/basics')}>
+          Glossary
+        </NavTab>
         <NavTab active={onFlow} onClick={() => onNavigate('#/')}>
           Budget flow
         </NavTab>
@@ -64,10 +68,7 @@ export default function TopBar({ meta, mode, onToggleMode, route, onNavigate, ha
           </NavTab>
         )}
         <NavTab active={page === 'receipt'} onClick={() => onNavigate('#/receipt')}>
-          Tax receipt
-        </NavTab>
-        <NavTab active={page === 'basics'} onClick={() => onNavigate('#/basics')}>
-          Basics
+          Your tax receipt
         </NavTab>
       </nav>
 

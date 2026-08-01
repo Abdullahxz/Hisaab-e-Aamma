@@ -37,15 +37,9 @@ export default function MinistriesPage({ mdata, docsById, onOpenMinistry }) {
   const expensesTotal = expenses.reduce((a, i) => a + i.value, 0)
 
   return (
-    <div className="mx-auto w-full max-w-5xl space-y-8 px-4 py-6 sm:px-6">
+    <div className="mx-auto w-full max-w-5xl space-y-6 px-4 py-6 sm:px-6">
       <header>
         <h2 className="text-xl font-bold tracking-tight">Explore by ministry</h2>
-        <p className="mt-1 max-w-3xl text-sm text-muted-foreground">
-          Every ministry and division (Principal Accounting Officer) with its full budget —
-          current + development — and the services it delivers, from the{' '}
-          <span className="font-medium text-foreground">Medium Term Performance Based Budget</span>{' '}
-          (the “Green Book”). Amounts are Rs. billion.
-        </p>
       </header>
 
       {/* Federal-wide object classification: the salaries / pensions / line-item view */}
@@ -53,7 +47,7 @@ export default function MinistriesPage({ mdata, docsById, onOpenMinistry }) {
         <h3 className="text-sm font-bold">{ow.title}</h3>
         <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
           What the federal government's money actually buys, across all ministries. Tap ⓘ on any
-          line for what it means. Debt <em>refinancing</em> is shown separately below the line — it
+          line for what it means. Debt <em>refinancing</em> is shown separately below the line; it
           is not expenditure.
         </p>
         <ul className="mt-4 space-y-1">
@@ -64,8 +58,8 @@ export default function MinistriesPage({ mdata, docsById, onOpenMinistry }) {
                   {it.label}
                   <ObjectInfo code={it.code} label={it.label} />
                   {it.detail && (
-                    <span className="ml-1 hidden text-[11px] font-normal text-muted-foreground lg:inline">
-                      — {it.detail}
+                    <span className="hidden text-[11px] font-normal text-muted-foreground lg:inline">
+                      , {it.detail}
                     </span>
                   )}
                 </span>
@@ -95,7 +89,7 @@ export default function MinistriesPage({ mdata, docsById, onOpenMinistry }) {
             <Separator className="my-3" />
             <div className="rounded-md bg-muted/40 px-2 py-2">
               <div className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-                Below the line — debt rollover, not expenditure
+                Below the line, debt rollover rather than expenditure
               </div>
               <div className="mt-1.5 flex items-baseline justify-between gap-3">
                 <span className="text-[13px] font-medium text-muted-foreground">
@@ -110,7 +104,7 @@ export default function MinistriesPage({ mdata, docsById, onOpenMinistry }) {
                 </span>
               </div>
               <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">
-                Maturing debt paid off by issuing new debt — matched by equally large borrowing on
+                Maturing debt paid off by issuing new debt, matched by equally large borrowing on
                 the receipts side, so it funds no services and sits outside the Rs 18,771 bn budget
                 frame. Included here because the official schedule reports it.
               </p>
@@ -181,9 +175,11 @@ export default function MinistriesPage({ mdata, docsById, onOpenMinistry }) {
         </ul>
         <p className="mt-2 text-[11px] leading-relaxed text-muted-foreground">
           Ministry totals are the Green Book PAO budgets (current + development, gross frame). Large
-          structural budgets sit with their accounting ministry — e.g. debt servicing &amp;
+          structural budgets sit with their accounting ministry, e.g. debt servicing &amp;
           repayments under Finance Division, external repayments under Economic Affairs, Defence
-          Services under Defense Division.
+          Services under Defense Division. These are federal ministries and divisions only. The
+          schools, hospitals and police most people deal with are provincial departments, budgeted
+          by the four provincial governments, and appear nowhere on this site.
         </p>
       </section>
     </div>

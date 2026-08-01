@@ -4,7 +4,7 @@
 // Rs. 18,771 bn -> "Rs 18.77 trillion"; Rs. 430 bn -> "Rs 430 bn".
 // Large numbers read more naturally in trillions.
 export function formatPKR(billion) {
-  if (billion == null || Number.isNaN(billion)) return '—'
+  if (billion == null || Number.isNaN(billion)) return 'n/a'
   // round before comparing so 999.6 -> "Rs 1.00 tn", not "Rs 1,000 bn"
   if (Math.round(billion) >= 1000) {
     const tn = billion / 1000
@@ -15,14 +15,14 @@ export function formatPKR(billion) {
 
 // Compact form for chart labels: "Rs 8,054 bn".
 export function formatCompact(billion) {
-  if (billion == null || Number.isNaN(billion)) return '—'
+  if (billion == null || Number.isNaN(billion)) return 'n/a'
   return `Rs ${Math.round(billion).toLocaleString('en-US')} bn`
 }
 
 // Table form that keeps sub-billion amounts readable: "Rs 0.48 bn", "Rs 7.1 bn",
 // "Rs 112 bn". Used in the ministry explorer where many services are < Rs 1 bn.
 export function formatBn(billion) {
-  if (billion == null || Number.isNaN(billion)) return '—'
+  if (billion == null || Number.isNaN(billion)) return 'n/a'
   const abs = Math.abs(billion)
   if (abs >= 100) return `Rs ${Math.round(billion).toLocaleString('en-US')} bn`
   if (abs >= 10) return `Rs ${billion.toFixed(1)} bn`
@@ -32,7 +32,7 @@ export function formatBn(billion) {
 
 // Format a raw percentage number, e.g. 4.6 -> "4.6%".
 export function formatPct(pct) {
-  if (pct == null || Number.isNaN(pct)) return '—'
+  if (pct == null || Number.isNaN(pct)) return 'n/a'
   if (pct >= 10) return `${pct.toFixed(0)}%`
   if (pct >= 1) return `${pct.toFixed(1)}%`
   return `${pct.toFixed(2)}%`
@@ -40,7 +40,7 @@ export function formatPct(pct) {
 
 // Percentage of a reference total, e.g. 4.6%.
 export function formatPercent(value, total) {
-  if (!total) return '—'
+  if (!total) return 'n/a'
   return formatPct((value / total) * 100)
 }
 

@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState } from 'react'
 import { ReceiptText } from 'lucide-react'
-import { SourceLine } from './bits.jsx'
+import { InfoPopover, SourceLine } from './bits.jsx'
 import { formatPct } from '../lib/format.js'
 import { trackEvent } from '../lib/usage.js'
 import { cn } from '@/lib/utils'
@@ -20,21 +20,29 @@ export default function TaxReceiptPage({ data, docsById }) {
   const [amount, setAmount] = useState(250_000)
   const trackedRef = useRef(false)
 
-  // Records only that the calculator was used — never the amount, which is the
-  // visitor's actual tax paid.
-  const trackUse = () => {
+  // Records that the calculator was used and whether they took a preset or
+  // typed their own figure — never the amount itself, which is the visitor's
+  // actual tax paid. First interaction only, once per page load.
+  const trackUse = (mode) => {
     if (trackedRef.current) return
     trackedRef.current = true
-    trackEvent('receipt-used')
+    trackEvent('receipt-used', { mode })
   }
 
   const model = useMemo(() => {
     const byId = new Map(data.nodes.map((n) => [n.id, n]))
     const total = data.meta.totalOutlay
-    // top-level spending categories = children of current_exp + development
+    // top-level spending categories = children of current_exp + development.
+    // Each line carries its node's own description, so a reader who doesn't
+    // know what "Grants & Transfers" covers can read it in place.
     const categories = data.nodes
       .filter((n) => n.parent === 'current_exp' || n.parent === 'development')
-      .map((n) => ({ id: n.id, label: n.label, share: n.value / total }))
+      .map((n) => ({
+        id: n.id,
+        label: n.label,
+        description: n.description,
+        share: n.value / total,
+      }))
       .sort((a, b) => b.share - a.share)
     const provinceShare = INCOME_TAX_TO_PROVINCES / INCOME_TAX_TOTAL
     return { categories, provinceShare, byId }
@@ -48,7 +56,7 @@ export default function TaxReceiptPage({ data, docsById }) {
   const setFromInput = (v) => {
     const n = Number(String(v).replace(/[^0-9]/g, ''))
     setAmount(Number.isFinite(n) ? Math.min(n, 10_000_000_000) : 0)
-    trackUse()
+    trackUse('custom')
   }
 
   return (
@@ -59,9 +67,10 @@ export default function TaxReceiptPage({ data, docsById }) {
           Your tax receipt
         </h2>
         <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
-          Enter the income tax you pay in a year and see where it goes — first the
+          Enter the income tax you pay in a year and see where it goes, first the
           constitutionally-mandated share to the provinces, then the federal budget's own
-          priorities. Every share is computed from the official 2026-27 estimates.
+          priorities. Every share is computed from the official 2026-27 estimates. Tap ⓘ on any
+          line for what it covers.
         </p>
       </header>
 
@@ -87,7 +96,7 @@ export default function TaxReceiptPage({ data, docsById }) {
               key={p}
               onClick={() => {
                 setAmount(p)
-                trackUse()
+                trackUse('preset')
               }}
               className={cn(
                 'rounded-full border px-3 py-1.5 text-xs font-medium transition-colors hover:bg-accent',
@@ -104,7 +113,7 @@ export default function TaxReceiptPage({ data, docsById }) {
       <section className="overflow-hidden rounded-xl border bg-card">
         <div className="border-b bg-muted/40 px-5 py-3">
           <div className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-            Receipt — how your {fmtRs(amount)} is used
+            Receipt, how your {fmtRs(amount)} is used
           </div>
         </div>
 
@@ -112,6 +121,7 @@ export default function TaxReceiptPage({ data, docsById }) {
           {/* provinces first: the biggest single claim on an income-tax rupee */}
           <div className="rounded-lg border border-transfer/30 bg-transfer/5 px-3 py-2.5">
             <div className="flex items-baseline justify-between gap-3">
+              {/* no ⓘ here: this row already carries its explanation below */}
               <span className="text-sm font-semibold">
                 To provincial governments{' '}
                 <span className="font-normal text-muted-foreground">(NFC divisible pool)</span>
@@ -125,20 +135,21 @@ export default function TaxReceiptPage({ data, docsById }) {
               />
             </div>
             <p className="mt-1.5 text-[11px] leading-relaxed text-muted-foreground">
-              {formatPct(model.provinceShare * 100)} of every rupee of income tax goes straight to
-              Punjab, Sindh, KP and Balochistan under the 7th NFC Award — before the federal
-              government spends anything.
+              The federal government collects this money but never spends it itself and transfers to provinces. Each province then passes its own budget on top of this transfer: schools, hospitals, police and provincial development programmes are funded there.
             </p>
           </div>
 
           <div className="mt-4 mb-1 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-            The federal share — {fmtRs(federal)} — funds:
+            The federal share, {fmtRs(federal)}, funds:
           </div>
           <ul>
             {rows.map((r) => (
               <li key={r.id} className="border-b py-2 last:border-0">
                 <div className="flex items-baseline justify-between gap-3">
-                  <span className="text-[13px] font-medium">{r.label}</span>
+                  <span className="text-[13px] font-medium">
+                    {r.label}
+                    <InfoPopover label={r.label} text={r.description} trackAs={r.id} />
+                  </span>
                   <span className="shrink-0 text-[13px] font-semibold tabular-nums">
                     {fmtRs(r.rupees)}
                   </span>
@@ -172,7 +183,7 @@ export default function TaxReceiptPage({ data, docsById }) {
         <ul className="mt-2 list-disc space-y-1.5 pl-4">
           <li>
             Of the Rs 7,480.5 bn income-tax target, Rs 4,246.4 bn belongs to the provincial
-            divisible pool — so {formatPct(model.provinceShare * 100)} of your income tax is
+            divisible pool, so {formatPct(model.provinceShare * 100)} of your income tax is
             attributed to the provinces.{' '}
             <SourceLine
               source={{ docId: 'bib', page: 8, table: 'Table 6' }}

@@ -41,7 +41,9 @@ const infoStore = {
 }
 let infoSeq = 0
 
-export function ObjectInfo({ code, label }) {
+// The ⓘ explainer shell: a label, a paragraph, and the shared-slot behaviour
+// above. Renders nothing when there is no text to show.
+export function InfoPopover({ label, text, trackAs }) {
   const idRef = React.useRef(null)
   if (idRef.current === null) idRef.current = `oi${++infoSeq}`
   const openId = React.useSyncExternalStore(infoStore.subscribe, infoStore.get, infoStore.get)
@@ -55,13 +57,12 @@ export function ObjectInfo({ code, label }) {
     []
   )
 
-  const description = OBJECT_INFO[code]
-  if (!description) return null
+  if (!text) return null
 
   const handleOpenChange = (next) => {
     if (next) {
       infoStore.set(idRef.current)
-      trackEvent('explainer-open', { code })
+      trackEvent('explainer-open', { code: trackAs ?? label })
     } else if (infoStore.openId === idRef.current) {
       infoStore.set(null) // ownership guard
     }
@@ -81,10 +82,15 @@ export function ObjectInfo({ code, label }) {
       </PopoverTrigger>
       <PopoverContent className="w-80">
         <div className="text-[13px] font-semibold">{label}</div>
-        <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{description}</p>
+        <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{text}</p>
       </PopoverContent>
     </Popover>
   )
+}
+
+// Object heads A01…A13, explained from the hand-written glossary.
+export function ObjectInfo({ code, label }) {
+  return <InfoPopover label={label} text={OBJECT_INFO[code]} trackAs={code} />
 }
 
 // source.page is the document's PRINTED page number (what we display), but
@@ -137,7 +143,7 @@ export function SourceCard({ source, docsById }) {
         <span>
           {doc.title}
           {source.table ? `, ${source.table}` : ''}
-          {source.page ? ` — p. ${source.page}` : ''}
+          {source.page ? `, p. ${source.page}` : ''}
         </span>
         <ExternalLink className="mt-0.5 h-3.5 w-3.5 shrink-0 text-muted-foreground" />
       </a>

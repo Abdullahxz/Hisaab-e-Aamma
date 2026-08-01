@@ -16,7 +16,7 @@ The budget is already public, this is one attempt to make budget information mor
 
 🧾 **Your tax receipt** - enter the income tax you pay and get a personalised receipt showing how much goes to the provinces under the NFC Award and what the federal share funds, including debt interest, defence, pensions, and development.
 
-📖 **Budget basics** - a plain-language primer and glossary. What is a "divisible pool"? Why is repaying debt not the same as spending? No economics degree required.
+📖 **Glossary & budget basics** - a plain-language primer and glossary. What is a "divisible pool"? Why is repaying debt not the same as spending? No economics degree required.
 
 📊 **Context on every number** - year-over-year change against last year's budget and revised estimates, share of the total, and plain-language descriptions of what each line means.
 

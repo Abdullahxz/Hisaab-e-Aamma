@@ -16,12 +16,12 @@
     "demandsNote": "Object classification per demand is from the Details of Demands for Grants and Appropriations (Vols I–IV). Every demand shown passed two independent checks: object heads sum exactly to the printed demand total, and the total matches Budget in Brief Table 21."
   },
   "objectWise": {
-    "title": "What the money buys — object classification (federal government)",
+    "title": "What the money buys, by object classification (federal government)",
     "note": "Gross Federal Consolidated Fund frame: the total (Rs 51,156 bn) includes Rs 31,959 bn of principal debt repayments (refinancing of maturing debt, not expenditure in the Rs 18,771 bn budget frame). Per-ministry object splits are published in the separate Demands for Grants volumes.",
     "source": {
       "docId": "abs",
       "page": 31,
-      "table": "Schedule III — Object Classification Wise Expenditure"
+      "table": "Schedule III, Object Classification Wise Expenditure"
     },
     "total": {
       "be2627": 51156.209,

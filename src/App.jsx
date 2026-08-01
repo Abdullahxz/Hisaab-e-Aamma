@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState, useCallback, useRef } from 'react'
 import SankeyChart from './components/SankeyChart.jsx'
 import DetailSheet from './components/DetailSheet.jsx'
-import Breadcrumb from './components/Breadcrumb.jsx'
 import TopBar from './components/TopBar.jsx'
 import ChartTooltip from './components/ChartTooltip.jsx'
+import CollapseAllButton from './components/CollapseAllButton.jsx'
+import GlossaryPrompt from './components/GlossaryPrompt.jsx'
 import MinistriesPage from './components/MinistriesPage.jsx'
 import MinistryPage from './components/MinistryPage.jsx'
 import TaxReceiptPage from './components/TaxReceiptPage.jsx'
@@ -14,6 +15,9 @@ import { OFFICIAL_BUDGET_URL, REPORT_ERROR_URL } from './lib/site.js'
 import { trackPageview, trackEvent } from './lib/usage.js'
 
 const BASE = import.meta.env.BASE_URL
+
+// Read-depth thresholds reported on the long pages (see handlePageScroll).
+const SCROLL_MARKS = [25, 50, 75, 100]
 
 // Light is the default; the toggle switches to dark on demand.
 function initialMode() {
@@ -80,7 +84,9 @@ export default function App() {
   const [expandedIds, setExpandedIds] = useState(() => new Set())
   const [selectedNodeId, setSelectedNodeId] = useState(null)
   const [hover, setHover] = useState(null)
+  const [glossaryPrompt, setGlossaryPrompt] = useState(false)
   const chartContainerRef = useRef(null)
+  const pageScrollRef = useRef(null)
   const [route, navigate] = useHashRoute()
 
   // Load and validate the data once.
@@ -151,6 +157,14 @@ export default function App() {
     replaceState(null, '', h)
   }, [expandedIds, selectedNodeId, route.page, data])
 
+  // Start every page at the top. The scrolling element is the same <main> for
+  // the ministry list and a ministry, so React keeps it mounted across that
+  // navigation and it would otherwise open halfway down, wherever the list was
+  // scrolled to.
+  useEffect(() => {
+    pageScrollRef.current?.scrollTo({ top: 0 })
+  }, [route.page, route.slug])
+
   // One pageview per logical page. Keyed on page/slug rather than the whole
   // route object so that mirroring chart state into the URL never counts as a
   // navigation (see src/lib/usage.js).
@@ -158,6 +172,106 @@ export default function App() {
     trackPageview(route)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [route.page, route.slug])
+
+  // --- how far down the long pages people actually read ----------------------
+  // Only the glossary and a ministry: the flow view doesn't scroll and the
+  // receipt is short. Each threshold fires once per page.
+  const scrollMarksRef = useRef(new Set())
+  const tracksScroll = route.page === 'basics' || route.page === 'ministry'
+
+  const markScroll = useCallback(
+    (percent) => {
+      if (scrollMarksRef.current.has(percent)) return
+      scrollMarksRef.current.add(percent)
+      trackEvent('scroll-depth', { page: route.page, percent })
+    },
+    [route.page]
+  )
+
+  const handlePageScroll = useCallback(
+    (e) => {
+      if (!tracksScroll) return
+      const el = e.currentTarget
+      if (el.scrollHeight <= el.clientHeight) return
+      const seen = ((el.scrollTop + el.clientHeight) / el.scrollHeight) * 100
+      for (const mark of SCROLL_MARKS) if (seen >= mark - 0.5) markScroll(mark)
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [tracksScroll, markScroll]
+  )
+
+  // Reset per page, and credit a page that needs no scrolling as fully read —
+  // otherwise short ministries would look like nobody got past the fold. Waits
+  // on the data the page renders from, so a loading placeholder can't count.
+  useEffect(() => {
+    scrollMarksRef.current = new Set()
+    if (!tracksScroll) return
+    const ready = route.page === 'basics' ? !!data : !!mdata
+    const el = pageScrollRef.current
+    if (!ready || !el || el.scrollHeight > el.clientHeight) return
+    for (const mark of SCROLL_MARKS) markScroll(mark)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [route.page, route.slug, data, mdata, tracksScroll])
+
+  // Offer the glossary once the site is up — but not to someone already reading
+  // it. Fires once per load: `data` is fetched a single time.
+  useEffect(() => {
+    if (data && route.page !== 'basics') {
+      setGlossaryPrompt(true)
+      // 'shown' is the denominator: without it an acceptance count means nothing
+      trackEvent('glossary-prompt', { action: 'shown' })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data])
+
+  // 'dismissed' (they closed it) and 'expired' (they ignored it) read very
+  // differently — annoying vs invisible — so keep them apart.
+  const dismissGlossaryPrompt = useCallback((reason = 'dismissed') => {
+    setGlossaryPrompt(false)
+    trackEvent('glossary-prompt', { action: reason })
+  }, [])
+
+  const openGlossary = useCallback(() => {
+    setGlossaryPrompt(false)
+    trackEvent('glossary-prompt', { action: 'accepted' })
+    navigate('#/basics')
+  }, [navigate])
+
+  // One "did this session touch the chart at all" signal, so a session that
+  // lands and leaves is distinguishable from one that explores.
+  const engagedRef = useRef(false)
+  const markEngaged = useCallback((via) => {
+    if (engagedRef.current) return
+    engagedRef.current = true
+    trackEvent('chart-engaged', { via })
+  }, [])
+
+  // How deep into the hierarchy a node sits: roots are 0. Depth is the measure
+  // of whether progressive disclosure is actually used.
+  const depthOf = useCallback(
+    (id) => {
+      const byId = new Map((data?.nodes ?? []).map((n) => [n.id, n]))
+      let depth = 0
+      for (let cur = byId.get(id); cur?.parent && byId.has(cur.parent); cur = byId.get(cur.parent)) {
+        depth++
+      }
+      return depth
+    },
+    [data]
+  )
+
+  // Did this visit arrive on a shared deep link? Pairs with `copy-link` to show
+  // whether shared links are actually opened. Once per load, initial route only.
+  const sharedLinkRef = useRef(false)
+  useEffect(() => {
+    if (!data || sharedLinkRef.current) return
+    sharedLinkRef.current = true
+    const nodes = route.expanded?.length ?? 0
+    if (route.page === 'flow' && (nodes > 0 || route.selected)) {
+      trackEvent('shared-link-open', { nodes, selected: !!route.selected })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data])
 
   const graph = useMemo(() => (data ? buildGraph(data, expandedIds) : null), [data, expandedIds])
 
@@ -208,25 +322,29 @@ export default function App() {
     [expandedIds, expand, collapse]
   )
 
+  // `via` separates the three ways in — clicking a node, clicking a flow, or
+  // picking from the sheet's breakdown list — which is the only way to tell
+  // whether people discover that the flows themselves are clickable.
+  const handleSelectById = useCallback(
+    (id, via = 'sheet') => {
+      setSelectedNodeId(id)
+      trackEvent('node-open', { node: id, via, depth: depthOf(id) })
+      markEngaged(via)
+      const hasChildren = data?.nodes.some((n) => n.parent === id)
+      if (hasChildren && !expandedIds.has(id)) expand(id)
+    },
+    [data, expandedIds, expand, depthOf, markEngaged]
+  )
+
   // Clicking a chart node: open its sheet, and drill in if it has hidden children.
   const handleNodeClick = useCallback(
     (node) => {
       setSelectedNodeId(node.id)
-      trackEvent('node-open', { node: node.id })
+      trackEvent('node-open', { node: node.id, via: 'node', depth: depthOf(node.id) })
+      markEngaged('node')
       if (node.hasChildren && !expandedIds.has(node.id)) expand(node.id)
     },
-    [expandedIds, expand]
-  )
-
-  // Selecting from the breakdown list inside the sheet.
-  const handleSelectById = useCallback(
-    (id) => {
-      setSelectedNodeId(id)
-      trackEvent('node-open', { node: id })
-      const hasChildren = data?.nodes.some((n) => n.parent === id)
-      if (hasChildren && !expandedIds.has(id)) expand(id)
-    },
-    [data, expandedIds, expand]
+    [expandedIds, expand, depthOf, markEngaged]
   )
 
   // A flow carries the full story of exactly one node: for parent<->child flows
@@ -245,7 +363,7 @@ export default function App() {
         subjectId =
           [link.source.id, link.target.id].find((id) => !PASS_THROUGH.has(id)) ?? link.source.id
       }
-      handleSelectById(subjectId)
+      handleSelectById(subjectId, 'link')
     },
     [data, handleSelectById]
   )
@@ -254,7 +372,11 @@ export default function App() {
     setSelectedNodeId(null)
   }, [])
 
-  const reset = useCallback(() => {
+  // Back to the landing view. The selection goes too: a nested node would be
+  // invisible afterwards, and leaving its id in the hash makes for a share link
+  // that reopens in a different state than the one on screen.
+  const collapseAll = useCallback(() => {
+    trackEvent('collapse-all')
     setExpandedIds(new Set())
     clearSelection()
   }, [clearSelection])
@@ -310,7 +432,7 @@ export default function App() {
               selection ? 'sm:mr-[400px]' : ''
             }`}
           >
-            <Breadcrumb data={data} expandedIds={expandedIds} onCollapseTo={collapse} onReset={reset} />
+            <CollapseAllButton show={expandedIds.size >= 2} onCollapseAll={collapseAll} />
             <SankeyChart
               graph={graph}
               mode={mode}
@@ -338,19 +460,19 @@ export default function App() {
       )}
 
       {route.page === 'receipt' && (
-        <main className="min-h-0 flex-1 overflow-y-auto">
+        <main ref={pageScrollRef} onScroll={handlePageScroll} className="min-h-0 flex-1 overflow-y-auto">
           <TaxReceiptPage data={data} docsById={docsById} />
         </main>
       )}
 
       {route.page === 'basics' && (
-        <main className="min-h-0 flex-1 overflow-y-auto">
+        <main ref={pageScrollRef} onScroll={handlePageScroll} className="min-h-0 flex-1 overflow-y-auto">
           <BasicsPage data={data} docsById={docsById} />
         </main>
       )}
 
       {(route.page === 'ministries' || route.page === 'ministry') && (
-        <main className="min-h-0 flex-1 overflow-y-auto">
+        <main ref={pageScrollRef} onScroll={handlePageScroll} className="min-h-0 flex-1 overflow-y-auto">
           {mdata === undefined ? (
             <div className="p-10 text-center text-sm text-muted-foreground">
               Loading ministries…
@@ -381,9 +503,16 @@ export default function App() {
         </main>
       )}
 
+      <GlossaryPrompt
+        open={glossaryPrompt}
+        onDismiss={dismissGlossaryPrompt}
+        onOpenGlossary={openGlossary}
+      />
+
       <footer className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 border-t px-4 py-1.5 text-[11px] text-muted-foreground sm:px-6">
         <span>
-          All figures in Rs. billion, FY {data.meta.fiscalYear} · every number links to its official{' '}
+          All figures in Rs. billion, FY {data.meta.fiscalYear} · federal budget only; the four
+          provinces pass their own budgets · every number links to its official{' '}
           <a
             href={OFFICIAL_BUDGET_URL}
             target="_blank"
@@ -403,7 +532,7 @@ export default function App() {
           </a>
         </span>
         <span className="text-muted-foreground/70">
-          Independent visualisation — not an official government product
+          Independent visualisation, not an official government product
         </span>
       </footer>
     </div>
