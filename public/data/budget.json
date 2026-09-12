@@ -192,7 +192,7 @@
       "side": "receipt",
       "parent": "direct_taxes",
       "value": 7480.521,
-      "description": "Tax on the income of individuals and companies, the biggest single tax line in the federal budget.",
+      "description": "Tax on the income of individuals and companies. The budget documents publish it as one figure and go no further: they classify revenue by the levy that raised it, not by who paid it, so there is no split here between salaried employees, companies, retailers or any other group. Collection by taxpayer type is reported after the year ends, in the Federal Board of Revenue's Year Book.",
       "source": {
         "docId": "bib",
         "page": 6,
