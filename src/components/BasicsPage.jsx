@@ -48,7 +48,7 @@ const GLOSSARY = [
   ['Charged vs voted', 'Charged expenditure (debt servicing, judges\' and the President\'s salaries…) is paid by constitutional obligation and is discussed but not voted by the Assembly. Voted expenditure requires Assembly approval, demand by demand.'],
   ['Demand for grants', 'The unit in which the Assembly approves spending, one "demand" per ministry/purpose (135 of them in 2026-27). Explore them on the ministry pages.'],
   ['PAO', 'Principal Accounting Officer, the secretary of a ministry/division who is personally accountable for its budget.'],
-  ['Fiscal deficit', 'The gap between what the federal government spends and what it keeps in revenue, filled by borrowing. Rs 7,020 bn (3.6% of GDP) in 2026-27.'],
+  ['Fiscal deficit', 'The gap between what a government spends and what it raises, filled by borrowing. Two different figures carry this name in 2026-27. The federal deficit is Rs 7,020 bn, the gap this budget fills by borrowing. The overall fiscal deficit is Rs 5,226 bn, or 3.6% of GDP: the federal deficit after netting off the Rs 1,794 bn surplus the four provinces are projected to run between them. A percentage of GDP quoted in the news is almost always the second one.'],
   ['T-bills, PIBs, Sukuk', 'The instruments the government borrows with domestically: short-term Treasury bills, longer-term Pakistan Investment Bonds, and Shariah-compliant Sukuk.'],
   ['Supplementary grant', 'Extra spending authorised during the year, beyond the passed budget, approved retrospectively by the Assembly.'],
   ['Gross vs net revenue', 'Gross revenue (Rs 20,600 bn) is everything collected; net federal revenue (Rs 11,751 bn) is what remains after the provinces\' NFC share is transferred.'],
@@ -106,7 +106,7 @@ export default function BasicsPage({ data, docsById }) {
         <p>
           Three places. Taxes (Rs 15,264 bn via FBR: income tax, sales tax, customs, excise);
           non-tax revenue (Rs 5,336 bn: the State Bank's profit, the Petroleum Levy you pay at the
-          pump, royalties, fees); and because that isn't enough, borrowing (Rs 7,020 bn, the fiscal
+          pump, royalties, fees); and because that isn't enough, borrowing (Rs 7,020 bn, the federal
           deficit).
         </p>
       </Section>
